@@ -59,5 +59,11 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "@types/lodash": "^4.14.162",
+    "@types/styled-components": "^5.1.4",
+    "lodash": "^4.17.20",
+    "styled-components": "^5.2.0"
+  }
 }

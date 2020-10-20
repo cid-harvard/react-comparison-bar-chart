@@ -1,10 +1,18 @@
-import * as React from 'react'
-import styles from './styles.module.css'
+import React from 'react'
+import Root, {
+  Props as ComparisonBarChartProps,
+  BarDatum,
+} from './components/Root'
 
-interface Props {
-  text: string
+const ComparisonBarChart = (props: ComparisonBarChartProps) => {
+  return (
+    <Root {...props} />
+  );
 }
 
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+export {
+  ComparisonBarChartProps,
+  BarDatum,
 }
+
+export default ComparisonBarChart;
