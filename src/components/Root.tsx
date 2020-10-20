@@ -199,6 +199,18 @@ const AxisLine = styled.div`
   border-right: solid 1px #dfdfdf;
 `;
 
+const AxisTitle = styled.div`
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+  transform: translate(0, -100%);
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 0 0.3rem 1rem;
+  box-sizing: border-box;
+`;
+
 export interface BarDatum {
   id: string,
   title: string,
@@ -225,6 +237,7 @@ export interface Props {
     toExpand: string,
     toCollapse: string,
   }
+  axisLabel?: string;
 }
 
 const roundUpToHalf = (value: number) => {
@@ -249,7 +262,7 @@ interface Measurements {
 
 const Root = (props: Props) => {
   const {
-    primaryData, secondaryData, nValuesToShow, formatValue, titles, expandCollapseText,
+    primaryData, secondaryData, nValuesToShow, formatValue, titles, expandCollapseText, axisLabel,
   } = props;
 
   const [expanded, setExpanded] = useState<boolean>(false);
@@ -376,6 +389,10 @@ const Root = (props: Props) => {
     }
   }
 
+  const axisTitle = axisLabel
+    ? <AxisTitle style={{width: (primaryRange / 100) * chartWidth}}>{axisLabel}</AxisTitle>
+    : null;
+
   const h1Left = titles && titles.secondary ? (
     <H1>{titles.secondary.h1}</H1>
   ) : null;
@@ -420,6 +437,7 @@ const Root = (props: Props) => {
           <AxisValue style={{width: `${primaryRange}%`}}>
             {axisValuesRight}
           </AxisValue>
+          {axisTitle}
         </Axis>
         <Grid ref={rootRef} style={{gridTemplateRows: 'repeat(${totalValues}, auto)'}}>
           <ExpandButtonRow

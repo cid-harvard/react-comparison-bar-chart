@@ -148,6 +148,7 @@ const App = () => {
           toExpand: 'Click to see all industries',
           toCollapse: 'Click to show only Top 10',
         }}
+        axisLabel={'Difference in Share'}
       />
     </Root>
   )
