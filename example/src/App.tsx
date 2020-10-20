@@ -149,6 +149,7 @@ const App = () => {
           toCollapse: 'Click to show only Top 10',
         }}
         axisLabel={'Difference in Share'}
+        onRowHover={e => console.log(e)}
       />
     </Root>
   )

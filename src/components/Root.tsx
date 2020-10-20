@@ -75,8 +75,7 @@ const Grid = styled.div`
   height: 100%;
   grid-row: 1;
   display: grid;
-  grid-template-columns: clamp(150px, 300px, 25%) 1fr;
-  grid-column-gap: 2rem;
+  grid-template-columns: clamp(150px, 300px, 25%) 2rem 1fr;
   position: relative;
   /* both auto and overlay required for browsers that don't support overlay */
   overflow: auto;
@@ -103,7 +102,7 @@ const Cell = styled.div`
   transition: all 0.3s ease;
   overflow: hidden;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 `;
 
 const LabelText = styled.div`
@@ -160,7 +159,7 @@ const RangeBase = styled.div`
   height: 100%;
   box-sizing: border-box;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 `;
 
 const RangeLeft = styled(RangeBase)`
@@ -174,7 +173,7 @@ const RangeRight = styled(RangeBase)`
 
 const Bar = styled.div`
   height: 70%;
-  margin-top: auto;
+  // margin-top: auto;
 `;
 
 const AxisValue = styled.div`
@@ -209,6 +208,7 @@ const AxisTitle = styled.div`
   justify-content: flex-end;
   padding: 0 0 0.3rem 1rem;
   box-sizing: border-box;
+  pointer-events: none;
 `;
 
 export interface BarDatum {
@@ -216,6 +216,11 @@ export interface BarDatum {
   title: string,
   value: number,
   color: string,
+}
+
+interface RowHoverEvent {
+  datum: BarDatum | undefined;
+  mouseCoords: {x: number, y: number};
 }
 
 export interface Props {
@@ -238,6 +243,7 @@ export interface Props {
     toCollapse: string,
   }
   axisLabel?: string;
+  onRowHover?: (event: RowHoverEvent) => void;
 }
 
 const roundUpToHalf = (value: number) => {
@@ -263,9 +269,11 @@ interface Measurements {
 const Root = (props: Props) => {
   const {
     primaryData, secondaryData, nValuesToShow, formatValue, titles, expandCollapseText, axisLabel,
+    onRowHover,
   } = props;
 
   const [expanded, setExpanded] = useState<boolean>(false);
+  const [hoveredId, setHoveredId] = useState<BarDatum['id'] | undefined>(undefined); 
   const [{gridHeight, chartWidth}, setMeasurements] = useState<Measurements>({gridHeight: 0, chartWidth: 0});
   const rootRef = useRef<HTMLDivElement | null>(null);
   const chartRef = useRef<HTMLDivElement | null>(null);
@@ -310,6 +318,7 @@ const Root = (props: Props) => {
     const style: React.CSSProperties = isRowVisible ? {
       height: rowHeight,
       opacity: 1,
+      backgroundColor: hoveredId === d.id ? '#f1f1f1' : undefined,
     } : {
       height: 0,
       opacity: 0,
@@ -321,18 +330,33 @@ const Root = (props: Props) => {
     const rightBar = category === Category.Primary ? (
       <Bar style={{backgroundColor: d.color, width: `${d.value / primaryMax * 100}%`}} />
     ) : null;
+    const onMouseEnter = (e: React.MouseEvent) => {
+      setHoveredId(d.id);
+      if (onRowHover) {
+        onRowHover({
+          datum: d,
+          mouseCoords: {
+            x: e.clientX,
+            y: e.clientY,
+          },
+        })
+      }
+    }
     return (
       <Row
         key={d.id}
       >
         <Cell
           style={style}
+          onMouseEnter={onMouseEnter}
         >
           <LabelText>{d.title}</LabelText>
         </Cell>
+        <Cell style={style} />
         <BarCell
           style={style}
           ref={ref}
+          onMouseEnter={onMouseEnter}
         >
           <RangeLeft style={{width: `${secondaryRange}%`}}>
             {leftBar}
@@ -413,6 +437,19 @@ const Root = (props: Props) => {
     expandCollapseButtonText = expandCollapseText ? expandCollapseText.toExpand : 'Expand';
   }
 
+  const onMouseLeave = (e: React.MouseEvent) => {
+    setHoveredId(undefined);
+    if (onRowHover) {
+      onRowHover({
+        datum: undefined,
+        mouseCoords: {
+          x: e.clientX,
+          y: e.clientY,
+        },
+      })
+    }
+  }
+
   return (
     <Container>
       <TitleRoot style={{width: chartWidth}}>
@@ -439,12 +476,17 @@ const Root = (props: Props) => {
           </AxisValue>
           {axisTitle}
         </Axis>
-        <Grid ref={rootRef} style={{gridTemplateRows: 'repeat(${totalValues}, auto)'}}>
+        <Grid
+          ref={rootRef}
+          style={{gridTemplateRows: 'repeat(${totalValues}, auto)'}}
+          onMouseLeave={onMouseLeave}
+        >
           <ExpandButtonRow
             style={{top: (gridHeight / 2)}}
           >
             <ExpandButton
               onClick={() => setExpanded(current => !current)}
+              onMouseEnter={onMouseLeave}
             >
               <Arrow>↕</Arrow> {expandCollapseButtonText}
             </ExpandButton>
