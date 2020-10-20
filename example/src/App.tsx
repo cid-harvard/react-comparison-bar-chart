@@ -144,6 +144,10 @@ const App = () => {
             h2: 'New York > Boston',
           }
         }}
+        expandCollapseText={{
+          toExpand: 'Click to see all industries',
+          toCollapse: 'Click to show only Top 10',
+        }}
       />
     </Root>
   )

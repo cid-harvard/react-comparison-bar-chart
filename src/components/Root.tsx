@@ -81,6 +81,7 @@ const Grid = styled.div`
   /* both auto and overlay required for browsers that don't support overlay */
   overflow: auto;
   overflow-y: overlay;
+  overflow-x: hidden
 
   ::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -114,10 +115,41 @@ const LabelText = styled.div`
   text-align: right;
 `;
 
+const ExpandButtonRow = styled.div`
+  grid-column: 1 / -1;
+  pointer-events: none;
+  position: sticky;
+  height: 0;
+  display: flex;
+`;
+
 const ExpandButton = styled.button`
-  position: absolute;
-  top: 0;
-  right: 0;
+  pointer-events: all;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: clamp(0.45rem, 1.25vw, 0.85rem);
+  text-shadow:
+   -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+     1px 1px 0 #fff;
+  transform: translate(0, 1rem);
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+`;
+
+const Arrow = styled.span`
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-right: 0.4rem;
+  transform: translate(0, -0.1rem)
 `;
 
 const BarCell = styled(Cell)`
@@ -189,6 +221,10 @@ export interface Props {
       h2?: string,
     }
   }
+  expandCollapseText?: {
+    toExpand: string,
+    toCollapse: string,
+  }
 }
 
 const roundUpToHalf = (value: number) => {
@@ -213,7 +249,7 @@ interface Measurements {
 
 const Root = (props: Props) => {
   const {
-    primaryData, secondaryData, nValuesToShow, formatValue, titles,
+    primaryData, secondaryData, nValuesToShow, formatValue, titles, expandCollapseText,
   } = props;
 
   const [expanded, setExpanded] = useState<boolean>(false);
@@ -232,7 +268,7 @@ const Root = (props: Props) => {
       if (rootRef && rootRef.current && chartRef && chartRef.current) {
         setMeasurements({gridHeight: rootRef.current.offsetHeight, chartWidth: chartRef.current.offsetWidth});
       }
-    }, 500);
+    }, 10);
     window.addEventListener('resize', updateWindowWidth);
     return () => {
       window.removeEventListener('resize', updateWindowWidth);
@@ -353,11 +389,15 @@ const Root = (props: Props) => {
     <H2>{titles.primary.h2}</H2>
   ) : null;
 
+  let expandCollapseButtonText: string;
+  if (expanded) {
+    expandCollapseButtonText = expandCollapseText ? expandCollapseText.toCollapse : 'Collapse';
+  } else {
+    expandCollapseButtonText = expandCollapseText ? expandCollapseText.toExpand : 'Expand';
+  }
+
   return (
     <Container>
-      <ExpandButton onClick={() => setExpanded(current => !current)}>
-        Click to see all industries
-      </ExpandButton>
       <TitleRoot style={{width: chartWidth}}>
         <TitleLeft style={{width: `${secondaryRange}%`}}>
           <div>
@@ -382,6 +422,15 @@ const Root = (props: Props) => {
           </AxisValue>
         </Axis>
         <Grid ref={rootRef} style={{gridTemplateRows: 'repeat(${totalValues}, auto)'}}>
+          <ExpandButtonRow
+            style={{top: (gridHeight / 2)}}
+          >
+            <ExpandButton
+              onClick={() => setExpanded(current => !current)}
+            >
+              <Arrow>↕</Arrow> {expandCollapseButtonText}
+            </ExpandButton>
+          </ExpandButtonRow>
           {rows}
         </Grid>
       </ChartContainer>
