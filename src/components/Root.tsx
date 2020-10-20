@@ -3,11 +3,16 @@ import styled from 'styled-components/macro';
 import orderBy from 'lodash/orderBy';
 import debounce from 'lodash/debounce';
 
+const titleHeight = 120; // in px
+
 const Container = styled.div`
   width: 100%;
   height: 100%;
+  padding-top: ${titleHeight}px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
   position: relative;
 `;
 
@@ -19,8 +24,44 @@ const ChartContainer = styled.div`
   grid-template-rows: 1fr 2rem;
 `;
 
-const Title = styled.div`
+const TitleRoot = styled.div`
   margin-left: auto;
+  display: flex;
+  height: ${titleHeight}px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: clamp(0.65rem, 2vw, 0.95rem);
+`;
+
+const TitleBase = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+`;
+
+const TitleLeft = styled(TitleBase)`
+  border-right: solid 1px #333;
+  align-items: flex-end;
+  padding-right: 1.5rem;
+`;
+
+const TitleRight = styled(TitleBase)`
+  border-left: solid 1px #333;
+  padding-left: 1.5rem;
+`;
+
+const H1 = styled.h1`
+  font-size: inherit;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 400;
+`;
+const H2 = styled.h2`
+  font-size: inherit;
+  margin: 0;
+  font-weight: 400;
 `;
 
 const Axis = styled.div`
@@ -35,7 +76,7 @@ const Grid = styled.div`
   grid-row: 1;
   display: grid;
   grid-template-columns: clamp(150px, 300px, 25%) 1fr;
-  grid-column-gap: 1rem;
+  grid-column-gap: 2rem;
   position: relative;
   /* both auto and overlay required for browsers that don't support overlay */
   overflow: auto;
@@ -115,6 +156,7 @@ const AxisLeft = styled(AxisValue)`
 
 const AxisText = styled.span`
   transform: translate(-50%, 0);
+  font-size: clamp(0.65rem, 2vw, 1rem);
 `;
 
 const AxisLine = styled.div`
@@ -136,6 +178,17 @@ export interface Props {
   primaryData: BarDatum[];
   secondaryData: BarDatum[];
   nValuesToShow: number;
+  formatValue?: (value: number) => string | number;
+  titles?: {
+    primary?: {
+      h1: string,
+      h2?: string,
+    }
+    secondary?: {
+      h1: string,
+      h2?: string,
+    }
+  }
 }
 
 const roundUpToHalf = (value: number) => {
@@ -159,7 +212,9 @@ interface Measurements {
 }
 
 const Root = (props: Props) => {
-  const {primaryData, secondaryData, nValuesToShow} = props;
+  const {
+    primaryData, secondaryData, nValuesToShow, formatValue, titles,
+  } = props;
 
   const [expanded, setExpanded] = useState<boolean>(false);
   const [{gridHeight, chartWidth}, setMeasurements] = useState<Measurements>({gridHeight: 0, chartWidth: 0});
@@ -170,7 +225,7 @@ const Root = (props: Props) => {
     if (rootRef && rootRef.current && chartRef && chartRef.current) {
       setMeasurements({gridHeight: rootRef.current.offsetHeight, chartWidth: chartRef.current.offsetWidth});
     }
-  }, [rootRef, chartRef, expanded])
+  }, [rootRef, chartRef])
 
   useEffect(() => {
     const updateWindowWidth = debounce(() => {
@@ -248,8 +303,9 @@ const Root = (props: Props) => {
   const axisValuesLeft: React.ReactElement<any>[] = [];
 
   for (let i = 1; i < totalValuesLeftOfZero + 1; i++) {
-    const value = parseFloat((axisIncrement * i).toFixed(1));
+    const value = axisIncrement * i;
     if (value <= secondaryMax) {
+      const formatted = formatValue ? formatValue(value) : value;
       axisValuesLeft.push(
         <AxisValue
           key={'axis-value-' + i}
@@ -257,7 +313,7 @@ const Root = (props: Props) => {
         >
           <AxisLine />
           <AxisText>
-            {value}
+            {formatted}
           </AxisText>
         </AxisValue>
       );
@@ -267,8 +323,9 @@ const Root = (props: Props) => {
   const axisValuesRight: React.ReactElement<any>[] = [];
   for (let i = 0; i < totalValuesRightOfZero + 1; i++) {
     const line = i !== 0 ? <AxisLine /> : null;
-    const value = parseFloat((axisIncrement * i).toFixed(1));
+    const value = axisIncrement * i;
     if (value <= primaryMax) {
+      const formatted = formatValue ? formatValue(value) : value;
       axisValuesRight.push(
         <AxisValue
           key={'axis-value-' + i}
@@ -276,21 +333,45 @@ const Root = (props: Props) => {
         >
           {line}
           <AxisText>
-            {value}
+            {formatted}
           </AxisText>
         </AxisValue>
       );
     }
   }
 
+  const h1Left = titles && titles.secondary ? (
+    <H1>{titles.secondary.h1}</H1>
+  ) : null;
+  const h2Left = titles && titles.secondary && titles.secondary.h2 ? (
+    <H2>{titles.secondary.h2}</H2>
+  ) : null;
+  const h1Right = titles && titles.primary ? (
+    <H1>{titles.primary.h1}</H1>
+  ) : null;
+  const h2Right = titles && titles.primary && titles.primary.h2 ? (
+    <H2>{titles.primary.h2}</H2>
+  ) : null;
+
   return (
     <Container>
       <ExpandButton onClick={() => setExpanded(current => !current)}>
         Click to see all industries
       </ExpandButton>
-      <Title style={{width: chartWidth}}>
-        Title
-      </Title>
+      <TitleRoot style={{width: chartWidth}}>
+        <TitleLeft style={{width: `${secondaryRange}%`}}>
+          <div>
+            {h1Left}
+            {h2Left}
+          </div>
+        </TitleLeft>
+        <TitleRight style={{width: `${primaryRange}%`}}>
+          <div>
+            {h1Right}
+            {h2Right}
+          </div>
+        </TitleRight>
+      </TitleRoot>
       <ChartContainer>
         <Axis style={{width: chartWidth}}>
           <AxisLeft style={{width: `${secondaryRange}%`}}>

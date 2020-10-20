@@ -122,6 +122,10 @@ const Root = styled.div`
   padding: 3rem;
 `;
 
+const formatValue = (value: number) => {
+  return parseFloat((value).toFixed(1)) + '%';
+}
+
 const App = () => {
   return (
     <Root>
@@ -129,6 +133,17 @@ const App = () => {
         primaryData={sharesDataBoston}
         secondaryData={sharesDataNewYork}
         nValuesToShow={10}
+        formatValue={formatValue}
+        titles={{
+          primary: {
+            h1: 'Positive Boston Share (%) (Top 10)',
+            h2: 'Boston > New York',
+          },
+          secondary: {
+            h1: 'Positive New York Share (%) (Top 10)',
+            h2: 'New York > Boston',
+          }
+        }}
       />
     </Root>
   )
