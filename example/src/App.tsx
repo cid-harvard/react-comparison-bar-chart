@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ComparisonBarChart, {
   BarDatum,
+  RowHoverEvent,
 } from 'react-comparison-bar-chart';
 import styled from 'styled-components/macro';
 import raw from 'raw.macro';
+import {rgba} from 'polished';
 
 const colorMap = [
   { id: '0', color: '#A973BE' },
@@ -122,11 +124,128 @@ const Root = styled.div`
   padding: 3rem;
 `;
 
+const Tooltip = styled.div`
+  position: fixed;
+  z-index: 3000;
+  max-width: 16rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  text-transform: none;
+  transition: opacity 0.15s ease;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+  transform: translate(-50%, calc(-100% - 1.5rem));
+`;
+
+const TooltipTitle = styled.div`
+  padding: 0.5rem;
+`;
+
+const TooltipSubsectionGrid = styled.div`
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 0.5rem;
+  padding: 0.5rem;
+`;
+
+const SemiBold = styled.span`
+  font-weight: 500;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+`;
+const Cell = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+`;
+
+const ArrowContainer = styled.div`
+  width: 100%;
+  height: 0.5rem;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  transform: translate(0, 100%);
+`;
+
+const Arrow = styled.div`
+  width: 0.5rem;
+  height: 0.5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  left: -0.25rem;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid #dfdfdf;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 1px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #fff;
+  }
+`;
+
 const formatValue = (value: number) => {
   return parseFloat((value).toFixed(1)) + '%';
 }
 
 const App = () => {
+  const [hovered, setHovered] = useState<RowHoverEvent | undefined>(undefined);
+
+  let tooltip: React.ReactElement<any> | null;
+  if (hovered && hovered.datum) {
+    const {datum, mouseCoords} = hovered;
+    const bostonDatum = bostonData.find(d => d.id === datum.id);
+    const newYorkDatum = newYorkData.find(d => d.id === datum.id);
+    const newYorkValue = newYorkDatum ? newYorkDatum.value / newYorkTotal * 100 : 0;
+    const bostonValue = bostonDatum ? bostonDatum.value / bostonTotal * 100 : 0;
+    const nyDiff = newYorkValue > bostonValue ? '+' + datum.value.toFixed(2) + '%' : '';
+    const bosDiff = bostonValue > newYorkValue ? '+' + datum.value.toFixed(2) + '%' : '';
+    tooltip = (
+      <Tooltip
+        style={{left: mouseCoords.x, top: mouseCoords.y}}
+      >
+        <TooltipTitle style={{backgroundColor: rgba(datum.color, 0.3)}}>
+          {datum.title}
+        </TooltipTitle>
+        <TooltipSubsectionGrid>
+          <div />
+          <SemiBold>New York</SemiBold>
+          <SemiBold>Boston</SemiBold>
+          <Cell>Share of Employees</Cell>
+          <SemiBold>{newYorkValue.toFixed(2) + '%'}</SemiBold>
+          <SemiBold>{bostonValue.toFixed(2) + '%'}</SemiBold>
+          <Cell>Difference</Cell>
+          <SemiBold>{nyDiff}</SemiBold>
+          <SemiBold>{bosDiff}</SemiBold>
+        </TooltipSubsectionGrid>
+        <ArrowContainer>
+          <Arrow />
+        </ArrowContainer>
+      </Tooltip>
+    );
+  } else {
+    tooltip = null;
+  }
+
   return (
     <Root>
       <ComparisonBarChart
@@ -149,8 +268,9 @@ const App = () => {
           toCollapse: 'Show only top industries',
         }}
         axisLabel={'Difference in Share'}
-        onRowHover={e => console.log(e)}
+        onRowHover={e => setHovered(e)}
       />
+      {tooltip}
     </Root>
   )
 }

@@ -229,7 +229,7 @@ export interface BarDatum {
   color: string,
 }
 
-interface RowHoverEvent {
+export interface RowHoverEvent {
   datum: BarDatum | undefined;
   mouseCoords: {x: number, y: number};
 }
@@ -344,7 +344,7 @@ const Root = (props: Props) => {
     const rightBar = category === Category.Primary ? (
       <Bar style={{backgroundColor: d.color, width: `${d.value / primaryMax * 100}%`}} />
     ) : null;
-    const onMouseEnter = (e: React.MouseEvent) => {
+    const onMouseMove = (e: React.MouseEvent) => {
       setHoveredId(d.id);
       if (onRowHover) {
         onRowHover({
@@ -362,7 +362,7 @@ const Root = (props: Props) => {
       >
         <Cell
           style={style}
-          onMouseEnter={onMouseEnter}
+          onMouseMove={onMouseMove}
         >
           {label}
         </Cell>
@@ -370,7 +370,7 @@ const Root = (props: Props) => {
         <BarCell
           style={style}
           ref={ref}
-          onMouseEnter={onMouseEnter}
+          onMouseMove={onMouseMove}
         >
           <RangeLeft style={{width: `${secondaryRange}%`}}>
             {leftBar}

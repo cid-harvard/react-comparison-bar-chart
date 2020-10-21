@@ -2,6 +2,7 @@ import React from 'react'
 import Root, {
   Props as ComparisonBarChartProps,
   BarDatum,
+  RowHoverEvent,
 } from './components/Root'
 
 const ComparisonBarChart = (props: ComparisonBarChartProps) => {
@@ -13,6 +14,7 @@ const ComparisonBarChart = (props: ComparisonBarChartProps) => {
 export {
   ComparisonBarChartProps,
   BarDatum,
+  RowHoverEvent,
 }
 
 export default ComparisonBarChart;
