@@ -4,16 +4,19 @@ import orderBy from 'lodash/orderBy';
 import debounce from 'lodash/debounce';
 
 const titleHeight = 120; // in px
+const overflowPadding = 1; // in rem. Needed to allow for final axis value to remain visible
 
 const Container = styled.div`
   width: 100%;
   height: 100%;
   padding-top: ${titleHeight}px;
+  padding-right: ${overflowPadding}rem;
   display: flex;
   flex-direction: column;
   position: relative;
   box-sizing: border-box;
   position: relative;
+  overflow: hidden;
 `;
 
 const ChartContainer = styled.div`
@@ -31,7 +34,8 @@ const TitleRoot = styled.div`
   position: absolute;
   top: 0;
   right: 0;
-  font-size: clamp(0.65rem, 2vw, 0.95rem);
+  font-size: clamp(0.5rem, 2vw, 0.95rem);
+  padding-right: ${overflowPadding}rem;
 `;
 
 const TitleBase = styled.div`
