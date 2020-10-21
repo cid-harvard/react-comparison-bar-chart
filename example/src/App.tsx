@@ -146,7 +146,7 @@ const App = () => {
         }}
         expandCollapseText={{
           toExpand: 'Click to see all industries',
-          toCollapse: 'Click to show only Top 10',
+          toCollapse: 'Show only top industries',
         }}
         axisLabel={'Difference in Share'}
         onRowHover={e => console.log(e)}

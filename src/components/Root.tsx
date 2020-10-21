@@ -1,5 +1,5 @@
 import React, {useState, useRef, useEffect} from 'react';
-import styled from 'styled-components/macro';
+import styled, {keyframes} from 'styled-components/macro';
 import orderBy from 'lodash/orderBy';
 import debounce from 'lodash/debounce';
 
@@ -105,6 +105,16 @@ const Cell = styled.div`
   align-items: center;
 `;
 
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+`;
+
 const LabelText = styled.div`
   width: 100%;
   font-size: clamp(0.65rem, 2vh, 0.85rem);
@@ -112,6 +122,8 @@ const LabelText = styled.div`
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: right;
+  opacity: 0;
+  animation: ${fadeIn} 0.15s linear 1 forwards 0.3s;
 `;
 
 const ExpandButtonRow = styled.div`
@@ -173,7 +185,6 @@ const RangeRight = styled(RangeBase)`
 
 const Bar = styled.div`
   height: 70%;
-  // margin-top: auto;
 `;
 
 const AxisValue = styled.div`
@@ -317,13 +328,16 @@ const Root = (props: Props) => {
     const category: Category = i < orderedPrimaryData.length ? Category.Primary : Category.Secondary;
     const style: React.CSSProperties = isRowVisible ? {
       height: rowHeight,
-      opacity: 1,
+      // opacity: 1,
       backgroundColor: hoveredId === d.id ? '#f1f1f1' : undefined,
     } : {
       height: 0,
-      opacity: 0,
+      // opacity: 0,
       pointerEvents: 'none',
     };
+    const label = isRowVisible ? (
+      <LabelText>{d.title}</LabelText>
+    ) : null;
     const leftBar = category === Category.Secondary ? (
       <Bar style={{backgroundColor: d.color, width: `${d.value / secondaryMax * 100}%`}} />
     ) : null;
@@ -350,7 +364,7 @@ const Root = (props: Props) => {
           style={style}
           onMouseEnter={onMouseEnter}
         >
-          <LabelText>{d.title}</LabelText>
+          {label}
         </Cell>
         <Cell style={style} />
         <BarCell
