@@ -2,6 +2,9 @@ import React, {useState, useRef, useEffect} from 'react';
 import styled, {keyframes} from 'styled-components/macro';
 import orderBy from 'lodash/orderBy';
 import debounce from 'lodash/debounce';
+import raw from 'raw.macro';
+const ArrowCollapseSVG = raw('../assets/arrow-collapse.svg');
+const ArrowExpandSVG = raw('../assets/arrow-expand.svg');
 
 const titleHeight = 120; // in px
 const overflowPadding = 1; // in rem. Needed to allow for final axis value to remain visible
@@ -27,14 +30,18 @@ const ChartContainer = styled.div`
   grid-template-rows: 1fr 2rem;
 `;
 
-const TitleRoot = styled.div`
+interface WithDyanmicFont {
+  $dynamicFont: string; // should be value of clamp
+}
+
+const TitleRoot = styled.div<WithDyanmicFont>`
   margin-left: auto;
   display: flex;
   height: ${titleHeight}px;
   position: absolute;
   top: 0;
   right: 0;
-  font-size: clamp(0.5rem, 2vw, 0.95rem);
+  font-size: ${({$dynamicFont}) => $dynamicFont};
   padding-right: ${overflowPadding}rem;
 `;
 
@@ -79,7 +86,7 @@ const Grid = styled.div`
   height: 100%;
   grid-row: 1;
   display: grid;
-  grid-template-columns: clamp(150px, 300px, 25%) 2rem 1fr;
+  grid-template-columns: clamp(75px, 300px, 25%) 2rem 1fr;
   position: relative;
   /* both auto and overlay required for browsers that don't support overlay */
   overflow: auto;
@@ -103,7 +110,7 @@ const Row = styled.div`
   display: contents;
 `;
 const Cell = styled.div`
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -119,9 +126,9 @@ const fadeIn = keyframes`
   }
 `;
 
-const LabelText = styled.div`
+const LabelText = styled.div<WithDyanmicFont>`
   width: 100%;
-  font-size: clamp(0.65rem, 2vh, 0.85rem);
+  font-size: ${({$dynamicFont}) => $dynamicFont};
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -138,16 +145,17 @@ const ExpandButtonRow = styled.div`
   display: flex;
 `;
 
-const ExpandButton = styled.button`
+const ExpandButton = styled.button<WithDyanmicFont & {$dynamicMaxWidth: string}>`
   pointer-events: all;
   margin-left: auto;
   border: none;
   background-color: transparent;
-  font-size: 1rem;
+  text-align: left;
   cursor: pointer;
   display: flex;
   align-items: center;
-  font-size: clamp(0.45rem, 1.25vw, 0.85rem);
+  font-size: ${({$dynamicFont}) => $dynamicFont};
+  max-width: ${({$dynamicMaxWidth}) => $dynamicMaxWidth};
   text-shadow:
    -1px -1px 0 #fff,  
     1px -1px 0 #fff,
@@ -161,10 +169,26 @@ const ExpandButton = styled.button`
 `;
 
 const Arrow = styled.span`
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-right: 0.4rem;
-  transform: translate(0, -0.1rem)
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.5rem;
+
+  svg {
+    width: 100%;
+    height: 100%;
+
+    .cls-1 {
+      fill: none;
+      stroke: #2d2d2d;
+      stroke-miterlimit: 10;
+      stroke-width: 0.94px;
+    }
+
+    .cls-2 {
+      fill: #2d2d2d;
+    }
+  }
+
 `;
 
 const BarCell = styled(Cell)`
@@ -189,6 +213,7 @@ const RangeRight = styled(RangeBase)`
 
 const Bar = styled.div`
   height: 70%;
+  transition: width 0.2s ease-in-out;
 `;
 
 const AxisValue = styled.div`
@@ -200,9 +225,9 @@ const AxisLeft = styled(AxisValue)`
   justify-content: flex-end;
 `;
 
-const AxisText = styled.span`
+const AxisText = styled.span<WithDyanmicFont>`
   transform: translate(-50%, 0);
-  font-size: clamp(0.65rem, 2vw, 1rem);
+  font-size: ${({$dynamicFont}) => $dynamicFont};
 `;
 
 const AxisLine = styled.div`
@@ -213,14 +238,15 @@ const AxisLine = styled.div`
   border-right: solid 1px #dfdfdf;
 `;
 
-const AxisTitle = styled.div`
+const AxisTitle = styled.div<WithDyanmicFont>`
   position: absolute;
   right: 0;
   z-index: 1;
-  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+  font-size: ${({$dynamicFont}) => $dynamicFont};
   transform: translate(0, -100%);
   display: flex;
   justify-content: flex-end;
+  text-align: right;
   padding: 0 0 0.3rem 1rem;
   box-sizing: border-box;
   pointer-events: none;
@@ -332,21 +358,39 @@ const Root = (props: Props) => {
     const category: Category = i < orderedPrimaryData.length ? Category.Primary : Category.Secondary;
     const style: React.CSSProperties = isRowVisible ? {
       height: rowHeight,
-      // opacity: 1,
       backgroundColor: hoveredId === d.id ? '#f1f1f1' : undefined,
     } : {
       height: 0,
-      // opacity: 0,
       pointerEvents: 'none',
+      transitionDelay: '0.15s',
     };
     const label = isRowVisible ? (
-      <LabelText>{d.title}</LabelText>
+      <LabelText
+        className={'react-comparison-bar-chart-row-label'}
+        $dynamicFont={`clamp(0.5rem, ${gridHeight * 0.04}px, 0.9rem)`}
+      >
+        {d.title}
+      </LabelText>
     ) : null;
     const leftBar = category === Category.Secondary ? (
-      <Bar style={{backgroundColor: d.color, width: `${d.value / secondaryMax * 100}%`}} />
+      <Bar
+        className={'react-comparison-bar-chart-bar react-comparison-bar-chart-bar-left'}
+        style={{
+          backgroundColor: d.color,
+          width: isRowVisible ? `${d.value / secondaryMax * 100}%` : 0,
+          transitionDelay: isRowVisible ? '0.3s' : undefined,
+        }}
+      />
     ) : null;
     const rightBar = category === Category.Primary ? (
-      <Bar style={{backgroundColor: d.color, width: `${d.value / primaryMax * 100}%`}} />
+      <Bar
+        className={'react-comparison-bar-chart-bar react-comparison-bar-chart-bar-right'}
+        style={{
+          backgroundColor: d.color,
+          width: isRowVisible ? `${d.value / secondaryMax * 100}%` : 0,
+          transitionDelay: isRowVisible ? '0.3s' : undefined,
+        }}
+      />
     ) : null;
     const onMouseMove = (e: React.MouseEvent) => {
       setHoveredId(d.id);
@@ -401,9 +445,12 @@ const Root = (props: Props) => {
         <AxisValue
           key={'axis-value-' + i}
           style={{width: chartWidth / totalAxisValues}}
+          className={'react-comparison-bar-chart-axis-value'}
         >
           <AxisLine />
-          <AxisText>
+          <AxisText
+            $dynamicFont={`clamp(0.45rem, ${chartWidth * 0.035}px, 1rem)`}
+          >
             {formatted}
           </AxisText>
         </AxisValue>
@@ -421,9 +468,12 @@ const Root = (props: Props) => {
         <AxisValue
           key={'axis-value-' + i}
           style={{width: chartWidth / totalAxisValues}}
+          className={'react-comparison-bar-chart-axis-value'}
         >
           {line}
-          <AxisText>
+          <AxisText
+            $dynamicFont={`clamp(0.45rem, ${chartWidth * 0.035}px, 1rem)`}
+          >
             {formatted}
           </AxisText>
         </AxisValue>
@@ -431,9 +481,15 @@ const Root = (props: Props) => {
     }
   }
 
-  const axisTitle = axisLabel
-    ? <AxisTitle style={{width: (primaryRange / 100) * chartWidth}}>{axisLabel}</AxisTitle>
-    : null;
+  const axisTitle = axisLabel ? (
+    <AxisTitle
+      style={{width: (primaryRange / 100) * chartWidth}}
+      className={'react-comparison-bar-chart-axis-title'}
+      $dynamicFont={`clamp(0.75rem, ${chartWidth * 0.025}px, 1.1rem)`}
+    >
+      {axisLabel}
+    </AxisTitle>
+  ) : null;
 
   const h1Left = titles && titles.secondary ? (
     <H1>{titles.secondary.h1}</H1>
@@ -470,22 +526,28 @@ const Root = (props: Props) => {
 
   return (
     <Container>
-      <TitleRoot style={{width: chartWidth}}>
+      <TitleRoot
+        style={{width: chartWidth}}
+        $dynamicFont={`clamp(0.65rem, ${chartWidth * 0.03}px, 0.95rem)`}
+      >
         <TitleLeft style={{width: `${secondaryRange}%`}}>
-          <div>
+          <div className={'react-comparison-bar-chart-title react-comparison-bar-chart-title-left'}>
             {h1Left}
             {h2Left}
           </div>
         </TitleLeft>
         <TitleRight style={{width: `${primaryRange}%`}}>
-          <div>
+          <div className={'react-comparison-bar-chart-title react-comparison-bar-chart-title-right'}>
             {h1Right}
             {h2Right}
           </div>
         </TitleRight>
       </TitleRoot>
       <ChartContainer>
-        <Axis style={{width: chartWidth}}>
+        <Axis
+          style={{width: chartWidth}}
+          className={'react-comparison-bar-chart-axis'}
+        >
           <AxisLeft style={{width: `${secondaryRange}%`}}>
             {axisValuesLeft.reverse()}
           </AxisLeft>
@@ -498,15 +560,22 @@ const Root = (props: Props) => {
           ref={rootRef}
           style={{gridTemplateRows: 'repeat(${totalValues}, auto)'}}
           onMouseLeave={onMouseLeave}
+          className={'react-comparison-bar-chart-grid'}
         >
           <ExpandButtonRow
             style={{top: (gridHeight / 2)}}
+            className={'react-comparison-bar-chart-expand-button-container'}
           >
             <ExpandButton
               onClick={() => setExpanded(current => !current)}
               onMouseEnter={onMouseLeave}
+              className={'react-comparison-bar-chart-expand-button'}
+              $dynamicFont={`clamp(0.7rem, ${chartWidth * 0.015}px, 0.85rem)`}
+              $dynamicMaxWidth={chartWidth > 300 ? `${chartWidth * 0.25}px` : '75px'}
             >
-              <Arrow>↕</Arrow> {expandCollapseButtonText}
+              <Arrow
+                dangerouslySetInnerHTML={{__html: expanded ? ArrowCollapseSVG : ArrowExpandSVG}}
+              /> {expandCollapseButtonText}
             </ExpandButton>
           </ExpandButtonRow>
           {rows}

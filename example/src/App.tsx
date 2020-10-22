@@ -122,6 +122,10 @@ const Root = styled.div`
   height: 100vh;
   box-sizing: border-box;
   padding: 3rem;
+
+  @media (max-width: 720px) {
+    padding: 0.75rem;
+  }
 `;
 
 const Tooltip = styled.div`
