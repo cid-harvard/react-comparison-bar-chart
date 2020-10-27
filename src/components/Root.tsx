@@ -1,8 +1,14 @@
 import React, {useState, useRef, useEffect} from 'react';
-import styled, {keyframes} from 'styled-components/macro';
+import styled from 'styled-components/macro';
 import orderBy from 'lodash/orderBy';
 import debounce from 'lodash/debounce';
 import raw from 'raw.macro';
+import Row from './Row';
+import {
+  WithDyanmicFont,
+  BarDatum,
+  RowHoverEvent,
+} from './Utils';
 const ArrowCollapseSVG = raw('../assets/arrow-collapse.svg');
 const ArrowExpandSVG = raw('../assets/arrow-expand.svg');
 
@@ -29,10 +35,6 @@ const ChartContainer = styled.div`
   display: grid;
   grid-template-rows: 1fr 2rem;
 `;
-
-interface WithDyanmicFont {
-  $dynamicFont: string; // should be value of clamp
-}
 
 const TitleRoot = styled.div<WithDyanmicFont>`
   margin-left: auto;
@@ -106,37 +108,6 @@ const Grid = styled.div`
   }
 `;
 
-const Row = styled.div`
-  display: contents;
-`;
-const Cell = styled.div`
-  transition: all 0.3s ease-in-out;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-`;
-
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-`;
-
-const LabelText = styled.div<WithDyanmicFont>`
-  width: 100%;
-  font-size: ${({$dynamicFont}) => $dynamicFont};
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-align: right;
-  opacity: 0;
-  animation: ${fadeIn} 0.15s linear 1 forwards 0.3s;
-`;
-
 const ExpandButtonRow = styled.div`
   grid-column: 1 / -1;
   pointer-events: none;
@@ -191,31 +162,6 @@ const Arrow = styled.span`
 
 `;
 
-const BarCell = styled(Cell)`
-  display: flex;
-`;
-
-const RangeBase = styled.div`
-  height: 100%;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-`;
-
-const RangeLeft = styled(RangeBase)`
-  border-right: solid 1px #333;
-  justify-content: flex-end;
-`;
-
-const RangeRight = styled(RangeBase)`
-  border-left: solid 1px #333;
-`;
-
-const Bar = styled.div`
-  height: 70%;
-  transition: width 0.2s ease-in-out;
-`;
-
 const AxisValue = styled.div`
   display: flex;
   flex-shrink: 0;
@@ -252,18 +198,6 @@ const AxisTitle = styled.div<WithDyanmicFont>`
   pointer-events: none;
 `;
 
-export interface BarDatum {
-  id: string,
-  title: string,
-  value: number,
-  color: string,
-}
-
-export interface RowHoverEvent {
-  datum: BarDatum | undefined;
-  mouseCoords: {x: number, y: number};
-}
-
 export interface Props {
   primaryData: BarDatum[];
   secondaryData: BarDatum[];
@@ -297,11 +231,6 @@ const roundUpToHalf = (value: number) => {
   }
 }
 
-enum Category {
-  Primary,
-  Secondary,
-}
-
 interface Measurements {
   gridHeight: number,
   chartWidth: number,
@@ -314,7 +243,6 @@ const Root = (props: Props) => {
   } = props;
 
   const [expanded, setExpanded] = useState<boolean>(false);
-  const [hoveredId, setHoveredId] = useState<BarDatum['id'] | undefined>(undefined); 
   const [{gridHeight, chartWidth}, setMeasurements] = useState<Measurements>({gridHeight: 0, chartWidth: 0});
   const rootRef = useRef<HTMLDivElement | null>(null);
   const chartRef = useRef<HTMLDivElement | null>(null);
@@ -353,81 +281,23 @@ const Root = (props: Props) => {
   const rowHeight = gridHeight ? (1 / totalTopValues) * gridHeight : 0;
 
   const rows = [...orderedPrimaryData, ...orderedSecondaryData.reverse()].map((d, i) => {
-    const ref = i === 0 ? chartRef : undefined;
-    const isRowVisible = expanded || (i < nValuesToShow || i > totalValues - (nValuesToShow + 1));
-    const category: Category = i < orderedPrimaryData.length ? Category.Primary : Category.Secondary;
-    const style: React.CSSProperties = isRowVisible ? {
-      height: rowHeight,
-      backgroundColor: hoveredId === d.id ? '#f1f1f1' : undefined,
-    } : {
-      height: 0,
-      pointerEvents: 'none',
-      transitionDelay: '0.15s',
-    };
-    const label = isRowVisible ? (
-      <LabelText
-        className={'react-comparison-bar-chart-row-label'}
-        $dynamicFont={`clamp(0.5rem, ${gridHeight * 0.04}px, 0.9rem)`}
-      >
-        {d.title}
-      </LabelText>
-    ) : null;
-    const leftBar = category === Category.Secondary ? (
-      <Bar
-        className={'react-comparison-bar-chart-bar react-comparison-bar-chart-bar-left'}
-        style={{
-          backgroundColor: d.color,
-          width: isRowVisible ? `${d.value / secondaryMax * 100}%` : 0,
-          transitionDelay: isRowVisible ? '0.3s' : undefined,
-        }}
-      />
-    ) : null;
-    const rightBar = category === Category.Primary ? (
-      <Bar
-        className={'react-comparison-bar-chart-bar react-comparison-bar-chart-bar-right'}
-        style={{
-          backgroundColor: d.color,
-          width: isRowVisible ? `${d.value / secondaryMax * 100}%` : 0,
-          transitionDelay: isRowVisible ? '0.3s' : undefined,
-        }}
-      />
-    ) : null;
-    const onMouseMove = (e: React.MouseEvent) => {
-      setHoveredId(d.id);
-      if (onRowHover) {
-        onRowHover({
-          datum: d,
-          mouseCoords: {
-            x: e.clientX,
-            y: e.clientY,
-          },
-        })
-      }
-    }
     return (
       <Row
         key={d.id}
-      >
-        <Cell
-          style={style}
-          onMouseMove={onMouseMove}
-        >
-          {label}
-        </Cell>
-        <Cell style={style} />
-        <BarCell
-          style={style}
-          ref={ref}
-          onMouseMove={onMouseMove}
-        >
-          <RangeLeft style={{width: `${secondaryRange}%`}}>
-            {leftBar}
-          </RangeLeft>
-          <RangeRight style={{width: `${primaryRange}%`}}>
-            {rightBar}
-          </RangeRight>
-        </BarCell>
-      </Row>
+        i={i}
+        d={d}
+        expanded={expanded}
+        nValuesToShow={nValuesToShow}
+        totalValues={totalValues}
+        rowHeight={rowHeight}
+        orderedPrimaryData={orderedPrimaryData}
+        gridHeight={gridHeight}
+        secondaryMax={secondaryMax}
+        onRowHover={onRowHover}
+        secondaryRange={secondaryRange}
+        primaryRange={primaryRange}
+        chartRef={chartRef}
+      />
     );
   })
 
@@ -511,19 +381,6 @@ const Root = (props: Props) => {
     expandCollapseButtonText = expandCollapseText ? expandCollapseText.toExpand : 'Expand';
   }
 
-  const onMouseLeave = (e: React.MouseEvent) => {
-    setHoveredId(undefined);
-    if (onRowHover) {
-      onRowHover({
-        datum: undefined,
-        mouseCoords: {
-          x: e.clientX,
-          y: e.clientY,
-        },
-      })
-    }
-  }
-
   return (
     <Container>
       <TitleRoot
@@ -559,7 +416,6 @@ const Root = (props: Props) => {
         <Grid
           ref={rootRef}
           style={{gridTemplateRows: 'repeat(${totalValues}, auto)'}}
-          onMouseLeave={onMouseLeave}
           className={'react-comparison-bar-chart-grid'}
         >
           <ExpandButtonRow
@@ -568,7 +424,6 @@ const Root = (props: Props) => {
           >
             <ExpandButton
               onClick={() => setExpanded(current => !current)}
-              onMouseEnter={onMouseLeave}
               className={'react-comparison-bar-chart-expand-button'}
               $dynamicFont={`clamp(0.7rem, ${chartWidth * 0.015}px, 0.85rem)`}
               $dynamicMaxWidth={chartWidth > 300 ? `${chartWidth * 0.25}px` : '75px'}
