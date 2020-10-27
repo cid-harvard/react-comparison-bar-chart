@@ -329,8 +329,7 @@ const Root = (props: Props) => {
   })
 
   const totalAxisValues = 11;
-  const axisIncrement = totalRange / totalAxisValues;
-  const totalValuesLeftOfZero = Math.round(secondaryMax / totalRange * totalAxisValues);
+  const totalValuesLeftOfZero = Math.round((secondaryRange / 100) * totalAxisValues);
   const totalValuesRightOfZero = totalAxisValues - totalValuesLeftOfZero;
 
   let axisFontSize: string;
@@ -344,14 +343,15 @@ const Root = (props: Props) => {
   const axisValuesLeft: React.ReactElement<any>[] = [];
 
   for (let i = 1; i < totalValuesLeftOfZero + 1; i++) {
-    const value = axisIncrement * i;
+    const value = (secondaryMax / totalValuesLeftOfZero) * i;
     const AxisText = i === totalValuesLeftOfZero ? AxisTextLeft : AxisTextCenter;
     if (value <= secondaryMax) {
       const formatted = formatValue ? formatValue(value) : value;
+      const width = ((secondaryRange / 100) * chartWidth) / totalValuesLeftOfZero;
       axisValuesLeft.push(
         <AxisValue
-          key={'axis-value-' + i}
-          style={{width: chartWidth / totalAxisValues}}
+          key={'axis-value-left-' + i}
+          style={{width}}
           className={'react-comparison-bar-chart-axis-value'}
         >
           <AxisText
@@ -364,7 +364,7 @@ const Root = (props: Props) => {
       axisLines.push(
         <AxisValue
           key={'axis-line-left-' + i}
-          style={{width: chartWidth / totalAxisValues}}
+          style={{width}}
           className={'react-comparison-bar-chart-axis-value'}
         >
           <AxisLine />
@@ -376,13 +376,14 @@ const Root = (props: Props) => {
   const axisValuesRight: React.ReactElement<any>[] = [];
   for (let i = 0; i < totalValuesRightOfZero + 1; i++) {
     const AxisText = i === totalValuesRightOfZero ? AxisTextRight : AxisTextCenter;
-    const value = axisIncrement * i;
+    const value = (primaryMax / totalValuesRightOfZero) * i;
+    const width = ((primaryRange / 100) * chartWidth) / totalValuesRightOfZero;
     if (value <= primaryMax) {
       const formatted = formatValue ? formatValue(value) : value;
       axisValuesRight.push(
         <AxisValue
-          key={'axis-value-' + i}
-          style={{width: chartWidth / totalAxisValues}}
+          key={'axis-value-right-' + i}
+          style={{width}}
           className={'react-comparison-bar-chart-axis-value'}
         >
           <AxisText
@@ -395,7 +396,7 @@ const Root = (props: Props) => {
       axisLines.push(
         <AxisValue
           key={'axis-line-right-' + i}
-          style={{width: chartWidth / totalAxisValues}}
+          style={{width}}
           className={'react-comparison-bar-chart-axis-value'}
         >
           <AxisLine />
