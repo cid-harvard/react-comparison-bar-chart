@@ -163,7 +163,11 @@ const Row = (props: Props) => {
       >
         {label}
       </Cell>
-      <Cell style={style} />
+      <Cell
+        style={style}
+        onMouseMove={onMouseMove}
+        onMouseLeave={onMouseLeave}
+      />
       <BarCell
         style={style}
         ref={ref}
