@@ -73,6 +73,7 @@ interface Props {
   rowHeight: number;
   orderedPrimaryData: BarDatum[];
   gridHeight: number;
+  primaryMax: number;
   secondaryMax: number;
   onRowHover: undefined | ((event: RowHoverEvent) => void);
   secondaryRange: number;
@@ -83,8 +84,8 @@ interface Props {
 const Row = (props: Props) => {
   const {
     i, d, expanded, nValuesToShow, rowHeight, totalValues, gridHeight,
-    orderedPrimaryData, secondaryMax, onRowHover, secondaryRange, primaryRange,
-    chartRef,
+    orderedPrimaryData, primaryMax, secondaryMax, onRowHover,
+    secondaryRange, primaryRange, chartRef,
   } = props;
 
   const [hoveredId, setHoveredId] = useState<BarDatum['id'] | undefined>(undefined); 
@@ -123,7 +124,7 @@ const Row = (props: Props) => {
       className={'react-comparison-bar-chart-bar react-comparison-bar-chart-bar-right'}
       style={{
         backgroundColor: d.color,
-        width: isRowVisible ? `${d.value / secondaryMax * 100}%` : 0,
+        width: isRowVisible ? `${d.value / primaryMax * 100}%` : 0,
         transitionDelay: isRowVisible ? '0.3s' : undefined,
       }}
     />

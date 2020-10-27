@@ -318,6 +318,7 @@ const Root = (props: Props) => {
         rowHeight={rowHeight}
         orderedPrimaryData={orderedPrimaryData}
         gridHeight={gridHeight}
+        primaryMax={primaryMax}
         secondaryMax={secondaryMax}
         onRowHover={onRowHover}
         secondaryRange={secondaryRange}
