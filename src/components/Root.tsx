@@ -2,15 +2,13 @@ import React, {useState, useRef, useEffect} from 'react';
 import styled from 'styled-components/macro';
 import orderBy from 'lodash/orderBy';
 import raw from 'raw.macro';
-import Row, {highlightedIdName} from './Row';
+import Row, {Cell, highlightedIdName} from './Row';
 import {
   WithDyanmicFont,
   BarDatum,
   RowHoverEvent,
   Layout,
 } from './Utils';
-
-const maxRows = 998;
 
 const ArrowCollapseSVG = raw('../assets/arrow-collapse.svg');
 const ArrowExpandSVG = raw('../assets/arrow-expand.svg');
@@ -35,6 +33,11 @@ const ChartContainer = styled.div`
   width: 100%;
   height: 100%;
   position: relative;
+`;
+
+const ChartBlock = styled.div`
+  grid-column: 1 / -1;
+  width: 100%;
 `;
 
 const TitleRoot = styled.div<WithDyanmicFont>`
@@ -253,6 +256,7 @@ const roundUpToHalf = (value: number) => {
 interface Measurements {
   gridHeight: number,
   chartWidth: number,
+  textWidth: number,
 }
 
 const Root = (props: Props) => {
@@ -270,22 +274,31 @@ const Root = (props: Props) => {
   const rightData = layout === Layout.Right ? secondaryData : primaryData;
 
   const [expanded, setExpanded] = useState<boolean>(initialExpanded ? true : false);
-  const [{gridHeight, chartWidth}, setMeasurements] = useState<Measurements>({gridHeight: 0, chartWidth: 0});
+  const [{gridHeight, chartWidth, textWidth}, setMeasurements] = useState<Measurements>({
+    gridHeight: 0, chartWidth: 0, textWidth: 0
+  });
   const rootRef = useRef<HTMLDivElement | null>(null);
+  const textRef = useRef<HTMLDivElement | null>(null);
   const chartRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    if (rootRef && rootRef.current && chartRef && chartRef.current) {
+    if (rootRef && rootRef.current && chartRef && chartRef.current && textRef && textRef.current) {
       const chartRect = chartRef.current.getBoundingClientRect();
-      setMeasurements({gridHeight: rootRef.current.offsetHeight, chartWidth: chartRect.width});
+      const textRect = textRef.current.getBoundingClientRect();
+      setMeasurements({
+        gridHeight: rootRef.current.offsetHeight, chartWidth: chartRect.width, textWidth: textRect.width,
+      });
     }
   }, [rootRef, chartRef])
 
   useEffect(() => {
     const updateWindowWidth = () => {
-      if (rootRef && rootRef.current && chartRef && chartRef.current) {
+      if (rootRef && rootRef.current && chartRef && chartRef.current && textRef && textRef.current) {
         const chartRect = chartRef.current.getBoundingClientRect();
-        setMeasurements({gridHeight: rootRef.current.offsetHeight, chartWidth: chartRect.width});
+        const textRect = textRef.current.getBoundingClientRect();
+        setMeasurements({
+          gridHeight: rootRef.current.offsetHeight, chartWidth: chartRect.width, textWidth: textRect.width,
+        });
       }
     };
     window.addEventListener('resize', updateWindowWidth);
@@ -314,21 +327,6 @@ const Root = (props: Props) => {
 
   const orderedRightData = orderBy(rightData, ['value'], 'desc');
   const orderedLeftData = orderBy(leftData, ['value'], 'desc');
-
-  if (expanded && orderedRightData.length + orderedLeftData.length > maxRows) {
-    if (orderedRightData.length > maxRows / 2) {
-      console.warn(
-        'Data to right of 0 exceeds maximum node count of 998. The following nodes have been removed:',
-        orderedRightData.splice(maxRows / 2, orderedRightData.length),
-      );
-    }
-    if (orderedLeftData.length > maxRows / 2) {
-      console.warn(
-        'Data to left of 0 exceeds maximum node count of 998. The following nodes have been removed:',
-        orderedLeftData.splice(maxRows / 2, orderedLeftData.length),
-      );
-    }
-  }
 
   const rightTop = orderedRightData.slice(0, nValuesToShow);
   const leftTop = orderedLeftData.slice(0, nValuesToShow);
@@ -394,9 +392,10 @@ const Root = (props: Props) => {
         onRowHover={onRowHover}
         leftRange={leftRange}
         rightRange={rightRange}
-        chartRef={chartRef}
         layout={layout}
         highlighted={highlighted}
+        textWidth={textWidth}
+        chartWidth={chartWidth}
       />
     );
   })
@@ -581,7 +580,16 @@ const Root = (props: Props) => {
           >
             {expandCollapseButton}
           </ExpandButtonRow>
-          {rows}
+          <Cell
+            ref={layout !== Layout.Right ? textRef : chartRef}
+          />
+          <Cell />
+          <Cell
+            ref={layout !== Layout.Right ? chartRef : textRef}
+          />
+          <ChartBlock>
+            {rows}
+          </ChartBlock>
         </Grid>
       </ChartContainer>
     </Container>

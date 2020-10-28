@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styled, {keyframes} from 'styled-components/macro';
 import {
   WithDyanmicFont,
@@ -21,7 +21,11 @@ const fadeIn = keyframes`
 `;
 
 const Root = styled.div`
-  display: contents;
+  display: flex;
+
+  &:hover {
+    background-color: #f1f1f1;
+  }
 `;
 
 const LabelText = styled.div<WithDyanmicFont>`
@@ -34,7 +38,7 @@ const LabelText = styled.div<WithDyanmicFont>`
   animation: ${fadeIn} 0.15s linear 1 forwards 0.3s;
 `;
 
-const Cell = styled.div`
+export const Cell = styled.div`
   transition: height 0.3s ease-in-out;
   overflow: hidden;
   display: flex;
@@ -81,35 +85,29 @@ interface Props {
   onRowHover: undefined | ((event: RowHoverEvent) => void);
   leftRange: number;
   rightRange: number;
-  chartRef: React.MutableRefObject<HTMLDivElement | null>;
   layout: Layout | undefined;
   highlighted: string | undefined;
+  chartWidth: number;
+  textWidth: number;
 }
-
-const maxCellsForAnimation = 900;
 
 const Row = (props: Props) => {
   const {
     i, d, expanded, totalRightValues, totalLeftValues, rowHeight, totalValues, gridHeight,
     orderedRightData, rightMax, leftMax, onRowHover,
-    leftRange, rightRange, chartRef, layout, highlighted,
+    leftRange, rightRange, layout, highlighted, chartWidth, textWidth,
   } = props;
 
-  const [hoveredId, setHoveredId] = useState<BarDatum['id'] | undefined>(undefined); 
   
-  const ref = i === 0 ? chartRef : undefined;
   const isRowVisible = expanded || (i < totalRightValues || i > totalValues - (totalLeftValues + 1));
-  if (!isRowVisible && totalValues > maxCellsForAnimation) {
-    return null;
-  }
   const category: Category = i < orderedRightData.length ? Category.Primary : Category.Secondary;
   const style: React.CSSProperties = isRowVisible ? {
     height: rowHeight,
-    backgroundColor: hoveredId === d.id || highlighted === d.id ? '#f1f1f1' : undefined,
+    backgroundColor: highlighted === d.id ? '#f1f1f1' : undefined,
   } : {
     height: 0,
     pointerEvents: 'none',
-    transitionDelay: totalValues <= maxCellsForAnimation && !highlighted ? '0.15s' : undefined,
+    transitionDelay: !highlighted ? '0.15s' : undefined,
   };
   const label = isRowVisible ? (
     <LabelText
@@ -128,7 +126,7 @@ const Row = (props: Props) => {
       style={{
         backgroundColor: d.color,
         width: isRowVisible ? `${d.value / leftMax * 100}%` : 0,
-        transitionDelay: isRowVisible && totalValues <= maxCellsForAnimation && !highlighted ? '0.3s' : undefined,
+        transitionDelay: isRowVisible && !highlighted ? '0.3s' : undefined,
       }}
     />
   ) : null;
@@ -138,12 +136,11 @@ const Row = (props: Props) => {
       style={{
         backgroundColor: d.color,
         width: isRowVisible ? `${d.value / rightMax * 100}%` : 0,
-        transitionDelay: isRowVisible && totalValues <= maxCellsForAnimation && !highlighted ? '0.3s' : undefined,
+        transitionDelay: isRowVisible && !highlighted ? '0.3s' : undefined,
       }}
     />
   ) : null;
   const onMouseMove = (e: React.MouseEvent) => {
-    setHoveredId(d.id);
     if (onRowHover) {
       onRowHover({
         datum: d,
@@ -156,7 +153,6 @@ const Row = (props: Props) => {
   }
 
   const onMouseLeave = (e: React.MouseEvent) => {
-    setHoveredId(undefined);
     if (onRowHover) {
       onRowHover({
         datum: undefined,
@@ -173,8 +169,7 @@ const Row = (props: Props) => {
       <Root>
         <BarCell
           id={highlighted === d.id ? highlightedIdName : undefined}
-          style={style}
-          ref={ref}
+          style={{...style, width: chartWidth}}
           onMouseMove={onMouseMove}
           onMouseLeave={onMouseLeave}
         >
@@ -186,12 +181,12 @@ const Row = (props: Props) => {
           </RangeRight>
         </BarCell>
         <Cell
-          style={style}
+          style={{...style, width: '2rem'}}
           onMouseMove={onMouseMove}
           onMouseLeave={onMouseLeave}
         />
         <Cell
-          style={style}
+          style={{...style, width: textWidth}}
           onMouseMove={onMouseMove}
           onMouseLeave={onMouseLeave}
         >
@@ -203,21 +198,20 @@ const Row = (props: Props) => {
     return (
       <Root>
         <Cell
-          style={style}
+          style={{...style, width: textWidth}}
           onMouseMove={onMouseMove}
           onMouseLeave={onMouseLeave}
         >
           {label}
         </Cell>
         <Cell
-          style={style}
+          style={{...style, width: '2rem'}}
           onMouseMove={onMouseMove}
           onMouseLeave={onMouseLeave}
         />
         <BarCell
           id={highlighted === d.id ? highlightedIdName : undefined}
-          style={style}
-          ref={ref}
+          style={{...style, width: chartWidth}}
           onMouseMove={onMouseMove}
           onMouseLeave={onMouseLeave}
         >
