@@ -1,0 +1,286 @@
+{
+  "filteredPrimaryData": [
+    {
+      "id": "50",
+      "value": 473,
+      "title": "Agriculture, Forestry, Fishing and Hunting",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "51",
+      "value": 39,
+      "title": "Mining, Quarrying, and Oil and Gas Extraction",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "52",
+      "value": 465,
+      "title": "Utilities",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "53",
+      "value": 13970,
+      "title": "Construction",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "54",
+      "value": 4771,
+      "title": "Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "55",
+      "value": 4889,
+      "title": "Wholesale Trade",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "56",
+      "value": 14127,
+      "title": "Retail Trade",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "57",
+      "value": 4228,
+      "title": "Transportation and Warehousing",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "58",
+      "value": 4777,
+      "title": "Information",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "59",
+      "value": 11386,
+      "title": "Finance and Insurance",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "60",
+      "value": 12643,
+      "title": "Real Estate and Rental and Leasing",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "61",
+      "value": 27287,
+      "title": "Professional, Scientific, and Technical Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "62",
+      "value": 805,
+      "title": "Management of Companies and Enterprises",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "63",
+      "value": 15079,
+      "title": "Administrative and Support and Waste Management and Remediation Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "64",
+      "value": 5003,
+      "title": "Educational Services",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "65",
+      "value": 18109,
+      "title": "Health Care and Social Assistance",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "66",
+      "value": 3641,
+      "title": "Arts, Entertainment, and Recreation",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "67",
+      "value": 8990,
+      "title": "Accommodation and Food Services",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "68",
+      "value": 17174,
+      "title": "Other Services (except Public Administration)",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "69",
+      "value": 1850,
+      "title": "Public Administration",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    }
+  ],
+  "filteredSecondaryData": [
+    {
+      "id": "50",
+      "value": 198,
+      "title": "Agriculture, Forestry, Fishing and Hunting",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "51",
+      "value": 46,
+      "title": "Mining, Quarrying, and Oil and Gas Extraction",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "52",
+      "value": 30,
+      "title": "Utilities",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "53",
+      "value": 3439,
+      "title": "Construction",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "54",
+      "value": 3684,
+      "title": "Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "55",
+      "value": 1122,
+      "title": "Wholesale Trade",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "56",
+      "value": 14828,
+      "title": "Retail Trade",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "57",
+      "value": 2110,
+      "title": "Transportation and Warehousing",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "58",
+      "value": 1013,
+      "title": "Information",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "59",
+      "value": 1480,
+      "title": "Finance and Insurance",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "60",
+      "value": 2444,
+      "title": "Real Estate and Rental and Leasing",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "61",
+      "value": 4139,
+      "title": "Professional, Scientific, and Technical Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "62",
+      "value": 75,
+      "title": "Management of Companies and Enterprises",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "63",
+      "value": 3234,
+      "title": "Administrative and Support and Waste Management and Remediation Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "64",
+      "value": 1490,
+      "title": "Educational Services",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "65",
+      "value": 2849,
+      "title": "Health Care and Social Assistance",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "66",
+      "value": 1042,
+      "title": "Arts, Entertainment, and Recreation",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "67",
+      "value": 5410,
+      "title": "Accommodation and Food Services",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "68",
+      "value": 8956,
+      "title": "Other Services (except Public Administration)",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "69",
+      "value": 152,
+      "title": "Public Administration",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    }
+  ]
+}

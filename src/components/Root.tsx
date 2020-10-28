@@ -237,6 +237,7 @@ export interface Props {
   }
   axisLabel?: string;
   onRowHover?: (event: RowHoverEvent) => void;
+  hideExpandCollapseButton?: boolean;
 }
 
 const roundUpToHalf = (value: number) => {
@@ -257,9 +258,12 @@ interface Measurements {
 const Root = (props: Props) => {
   const {
     primaryData, secondaryData, nValuesToShow, formatValue, titles, expandCollapseText,
-    axisLabel,
-    onRowHover,
+    axisLabel, onRowHover, hideExpandCollapseButton,
   } = props;
+
+  if (!primaryData.length && !secondaryData.length) {
+    return null;
+  }
 
   const [expanded, setExpanded] = useState<boolean>(false);
   const [{gridHeight, chartWidth}, setMeasurements] = useState<Measurements>({gridHeight: 0, chartWidth: 0});
@@ -289,25 +293,38 @@ const Root = (props: Props) => {
   const primaryTop = orderedPrimaryData.slice(0, nValuesToShow);
   const secondaryTop = orderedSecondaryData.slice(0, nValuesToShow);
 
-  const rawTotalRange = primaryTop[0].value + secondaryTop[0].value;
+  let primaryTopValue = primaryTop.length ? primaryTop[0].value : 0;
+  let secondaryTopValue = secondaryTop.length ? secondaryTop[0].value : 0;
+  if (!primaryTopValue) {
+    primaryTopValue = secondaryTopValue;
+  }
+  if (!secondaryTopValue) {
+    secondaryTopValue = primaryTopValue;
+  }
+  if (!secondaryTopValue && !primaryTopValue) {
+    primaryTopValue = 1;
+    secondaryTopValue = 1;
+  }
+
+  const rawTotalRange = primaryTopValue + secondaryTopValue;
   let primaryMax: number;
   let secondaryMax: number;
   let axisIncrement: number;
   if (rawTotalRange < 7) {
-    primaryMax = roundUpToHalf(primaryTop[0].value);
-    secondaryMax = roundUpToHalf(secondaryTop[0].value);
+    primaryMax = roundUpToHalf(primaryTopValue);
+    secondaryMax = roundUpToHalf(secondaryTopValue);
     axisIncrement = 0.5;
   } else if (rawTotalRange < 14) {
-    primaryMax = Math.ceil(primaryTop[0].value);
-    secondaryMax = Math.ceil(secondaryTop[0].value);
+    primaryMax = Math.ceil(primaryTopValue);
+    secondaryMax = Math.ceil(secondaryTopValue);
     axisIncrement = 1;
   } else if (rawTotalRange < 21) {
-    primaryMax = 2 * Math.ceil(primaryTop[0].value / 2);
-    secondaryMax = 2 * Math.ceil(secondaryTop[0].value / 2);
+    primaryMax = 2 * Math.ceil(primaryTopValue / 2);
+    secondaryMax = 2 * Math.ceil(secondaryTopValue / 2);
     axisIncrement = 2;
   } else {
-    primaryMax = 3 * Math.ceil(primaryTop[0].value / 3);
-    secondaryMax = 3 * Math.ceil(secondaryTop[0].value / 3);
+    primaryMax = 3 * Math.ceil(primaryTopValue / 3);
+    secondaryMax = 3 * Math.ceil(secondaryTopValue / 3);
     axisIncrement = 3;
   }
 
@@ -326,7 +343,8 @@ const Root = (props: Props) => {
         i={i}
         d={d}
         expanded={expanded}
-        nValuesToShow={nValuesToShow}
+        totalPrimaryValues={primaryTop.length}
+        totalSecondaryValues={secondaryTop.length}
         totalValues={totalValues}
         rowHeight={rowHeight}
         orderedPrimaryData={orderedPrimaryData}
@@ -428,6 +446,21 @@ const Root = (props: Props) => {
     expandCollapseButtonText = expandCollapseText ? expandCollapseText.toExpand : 'Expand';
   }
 
+  const expandCollapseButton = hideExpandCollapseButton ||
+    (primaryTop.length < nValuesToShow && secondaryTop.length < nValuesToShow)
+    ? null : (
+      <ExpandButton
+        onClick={() => setExpanded(current => !current)}
+        className={'react-comparison-bar-chart-expand-button'}
+        $dynamicFont={`clamp(0.7rem, ${chartWidth * 0.015}px, 0.85rem)`}
+        $dynamicMaxWidth={chartWidth > 300 ? `${chartWidth * 0.25}px` : '75px'}
+      >
+        <Arrow
+          dangerouslySetInnerHTML={{__html: expanded ? ArrowCollapseSVG : ArrowExpandSVG}}
+        /> {expandCollapseButtonText}
+      </ExpandButton>
+    );
+
   return (
     <Container>
       <TitleRoot
@@ -464,16 +497,7 @@ const Root = (props: Props) => {
             style={{top: (gridHeight / 2)}}
             className={'react-comparison-bar-chart-expand-button-container'}
           >
-            <ExpandButton
-              onClick={() => setExpanded(current => !current)}
-              className={'react-comparison-bar-chart-expand-button'}
-              $dynamicFont={`clamp(0.7rem, ${chartWidth * 0.015}px, 0.85rem)`}
-              $dynamicMaxWidth={chartWidth > 300 ? `${chartWidth * 0.25}px` : '75px'}
-            >
-              <Arrow
-                dangerouslySetInnerHTML={{__html: expanded ? ArrowCollapseSVG : ArrowExpandSVG}}
-              /> {expandCollapseButtonText}
-            </ExpandButton>
+            {expandCollapseButton}
           </ExpandButtonRow>
           {rows}
         </Grid>

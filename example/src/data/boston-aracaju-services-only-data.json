@@ -1,0 +1,20 @@
+{
+  "filteredPrimaryData": [
+    {
+      "id": "7",
+      "value": 47948,
+      "title": "Professional and business services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    }
+  ],
+  "filteredSecondaryData": [
+    {
+      "id": "7",
+      "value": 8461,
+      "title": "Professional and business services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    }
+  ]
+}

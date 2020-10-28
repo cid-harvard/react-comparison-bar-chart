@@ -1,0 +1,132 @@
+{
+  "filteredPrimaryData": [
+    {
+      "id": "0",
+      "value": 14435,
+      "title": "Construction and utilities",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "1",
+      "value": 23112,
+      "title": "Education and health services",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2",
+      "value": 24029,
+      "title": "Financial activities",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "3",
+      "value": 12631,
+      "title": "Leisure and hospitality",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "4",
+      "value": 4771,
+      "title": "Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "5",
+      "value": 512,
+      "title": "Natural resources and mining",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "6",
+      "value": 19024,
+      "title": "Other",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "7",
+      "value": 47948,
+      "title": "Professional and business services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "8",
+      "value": 23244,
+      "title": "Trade and transportation",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    }
+  ],
+  "filteredSecondaryData": [
+    {
+      "id": "0",
+      "value": 3469,
+      "title": "Construction and utilities",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "1",
+      "value": 4339,
+      "title": "Education and health services",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2",
+      "value": 3924,
+      "title": "Financial activities",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "3",
+      "value": 6452,
+      "title": "Leisure and hospitality",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "4",
+      "value": 3684,
+      "title": "Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "5",
+      "value": 244,
+      "title": "Natural resources and mining",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "6",
+      "value": 9108,
+      "title": "Other",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "7",
+      "value": 8461,
+      "title": "Professional and business services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "8",
+      "value": 18060,
+      "title": "Trade and transportation",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    }
+  ]
+}

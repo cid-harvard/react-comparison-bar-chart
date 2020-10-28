@@ -68,7 +68,8 @@ interface Props {
   i: number;
   d: BarDatum;
   expanded: boolean;
-  nValuesToShow: number;
+  totalPrimaryValues: number;
+  totalSecondaryValues: number;
   totalValues: number;
   rowHeight: number;
   orderedPrimaryData: BarDatum[];
@@ -81,9 +82,11 @@ interface Props {
   chartRef: React.MutableRefObject<HTMLDivElement | null>;
 }
 
+const maxCellsForAnimation = 900;
+
 const Row = (props: Props) => {
   const {
-    i, d, expanded, nValuesToShow, rowHeight, totalValues, gridHeight,
+    i, d, expanded, totalPrimaryValues, totalSecondaryValues, rowHeight, totalValues, gridHeight,
     orderedPrimaryData, primaryMax, secondaryMax, onRowHover,
     secondaryRange, primaryRange, chartRef,
   } = props;
@@ -91,7 +94,10 @@ const Row = (props: Props) => {
   const [hoveredId, setHoveredId] = useState<BarDatum['id'] | undefined>(undefined); 
   
   const ref = i === 0 ? chartRef : undefined;
-  const isRowVisible = expanded || (i < nValuesToShow || i > totalValues - (nValuesToShow + 1));
+  const isRowVisible = expanded || (i < totalPrimaryValues || i > totalValues - (totalSecondaryValues + 1));
+  if (!isRowVisible && totalValues > maxCellsForAnimation) {
+    return null;
+  }
   const category: Category = i < orderedPrimaryData.length ? Category.Primary : Category.Secondary;
   const style: React.CSSProperties = isRowVisible ? {
     height: rowHeight,
@@ -99,7 +105,7 @@ const Row = (props: Props) => {
   } : {
     height: 0,
     pointerEvents: 'none',
-    transitionDelay: '0.15s',
+    transitionDelay: totalValues <= maxCellsForAnimation ? '0.15s' : undefined,
   };
   const label = isRowVisible ? (
     <LabelText
@@ -115,7 +121,7 @@ const Row = (props: Props) => {
       style={{
         backgroundColor: d.color,
         width: isRowVisible ? `${d.value / secondaryMax * 100}%` : 0,
-        transitionDelay: isRowVisible ? '0.3s' : undefined,
+        transitionDelay: isRowVisible && totalValues <= maxCellsForAnimation ? '0.3s' : undefined,
       }}
     />
   ) : null;
@@ -125,7 +131,7 @@ const Row = (props: Props) => {
       style={{
         backgroundColor: d.color,
         width: isRowVisible ? `${d.value / primaryMax * 100}%` : 0,
-        transitionDelay: isRowVisible ? '0.3s' : undefined,
+        transitionDelay: isRowVisible && totalValues <= maxCellsForAnimation ? '0.3s' : undefined,
       }}
     />
   ) : null;
