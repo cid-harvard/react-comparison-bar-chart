@@ -19,6 +19,7 @@ const Container = styled.div`
   height: 100%;
   padding-top: ${titleHeight}px;
   padding-right: ${overflowPadding}rem;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -79,22 +80,6 @@ const H2 = styled.h2`
   font-size: inherit;
   margin: 0;
   font-weight: 400;
-`;
-
-const AxisMargin = styled.div`
-  grid-column: 1 / 3;
-  background-color: #fff;
-  position: sticky;
-  bottom: 0;
-`;
-
-const Axis = styled.div`
-  display: flex;
-  border-top: solid 2px #333;
-  grid-column: 3;
-  position: sticky;
-  bottom: 0;
-  overflow-x: hidden
 `;
 
 const Grid = styled.div`
@@ -180,26 +165,37 @@ const AxisValue = styled.div`
   display: flex;
   flex-shrink: 0;
   background-color: #fff;
-`;
+  position: relative;
+  pointer-events: none;
 
-const AxisLeft = styled(AxisValue)`
-  justify-content: flex-end;
+
+  &:after {
+    content: '';
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+  }
+
+  &:not(:last-child) {
+    &:after {
+      border-bottom: solid 2px #333;
+      z-index: 10;
+    }
+  }
+
+  :last-child {
+    &:after {
+      border-bottom: solid 2px transparent;
+    }
+  }
 `;
 
 const AxisText = styled.span<WithDyanmicFont>`
   font-size: ${({$dynamicFont}) => $dynamicFont};
-`;
-
-const AxisTextCenter = styled(AxisText)`
-  transform: translate(-50%, 0);
-`;
-
-const AxisTextLeft = styled(AxisText)`
-  transform: translate(0%, 0);
-`;
-
-const AxisTextRight = styled(AxisText)`
-  transform: translate(-100%, 0);
+  transform: translate(-50%, calc(100% + 4px));
+  position: absolute;
+  bottom: 0;
 `;
 
 const AxisLine = styled.div`
@@ -212,16 +208,17 @@ const AxisLine = styled.div`
 
 const AxisTitle = styled.div<WithDyanmicFont>`
   position: absolute;
+  bottom: 0;
   right: 0;
   z-index: 1;
   font-size: ${({$dynamicFont}) => $dynamicFont};
-  transform: translate(0, -100%);
   display: flex;
   justify-content: flex-end;
   text-align: right;
   padding: 0 0 0.3rem 1rem;
   box-sizing: border-box;
   pointer-events: none;
+  transform: translate(-1rem, 0);
 `;
 
 export interface Props {
@@ -259,7 +256,8 @@ interface Measurements {
 
 const Root = (props: Props) => {
   const {
-    primaryData, secondaryData, nValuesToShow, formatValue, titles, expandCollapseText, axisLabel,
+    primaryData, secondaryData, nValuesToShow, formatValue, titles, expandCollapseText,
+    axisLabel,
     onRowHover,
   } = props;
 
@@ -317,9 +315,9 @@ const Root = (props: Props) => {
   const secondaryRange = secondaryMax / totalRange * 100
   const primaryRange = primaryMax / totalRange * 100
 
-  const totalValues = primaryData.length + secondaryData.length + 1;
+  const totalValues = primaryData.length + secondaryData.length;
   const totalTopValues = primaryTop.length + secondaryTop.length;
-  const rowHeight = gridHeight ? ((1 / (totalTopValues + 1)) * gridHeight) : 0;
+  const rowHeight = gridHeight ? ((1 / totalTopValues) * gridHeight) : 0;
 
   const rows = [...orderedPrimaryData, ...orderedSecondaryData.reverse()].map((d, i) => {
     return (
@@ -329,7 +327,7 @@ const Root = (props: Props) => {
         d={d}
         expanded={expanded}
         nValuesToShow={nValuesToShow}
-        totalValues={totalValues - 1}
+        totalValues={totalValues}
         rowHeight={rowHeight}
         orderedPrimaryData={orderedPrimaryData}
         gridHeight={gridHeight}
@@ -353,20 +351,17 @@ const Root = (props: Props) => {
   } else {
     axisFontSize = `clamp(0.55rem, ${gridHeight * 0.025}px, 1rem)`;
   }
+  const axisWidth = chartWidth / totalAxisValues;
 
   const axisLines: React.ReactElement<any>[] = [];
-  const axisValuesLeft: React.ReactElement<any>[] = [];
-
-  for (let i = 1; i < totalValuesLeftOfZero + 1; i++) {
+  for (let i = totalValuesLeftOfZero + 1; i > 0; i--) {
     const value = axisIncrement * i;
-    const AxisText = i === totalValuesLeftOfZero ? AxisTextLeft : AxisTextCenter;
     if (value <= secondaryMax) {
       const formatted = formatValue ? formatValue(value) : value;
-      const width = ((secondaryRange / 100) * chartWidth) / totalValuesLeftOfZero;
-      axisValuesLeft.push(
+      axisLines.push(
         <AxisValue
-          key={'axis-value-left-' + i}
-          style={{width}}
+          key={'axis-line-left-' + i}
+          style={{width: axisWidth}}
           className={'react-comparison-bar-chart-axis-value'}
         >
           <AxisText
@@ -374,31 +369,20 @@ const Root = (props: Props) => {
           >
             {formatted}
           </AxisText>
-        </AxisValue>
-      );
-      axisLines.push(
-        <AxisValue
-          key={'axis-line-left-' + i}
-          style={{width}}
-          className={'react-comparison-bar-chart-axis-value'}
-        >
           <AxisLine />
         </AxisValue>
       );
     }
   }
 
-  const axisValuesRight: React.ReactElement<any>[] = [];
   for (let i = 0; i < totalValuesRightOfZero + 1; i++) {
-    const AxisText = i === totalValuesRightOfZero ? AxisTextRight : AxisTextCenter;
     const value = axisIncrement * i;
-    const width = ((primaryRange / 100) * chartWidth) / totalValuesRightOfZero;
     if (value <= primaryMax) {
       const formatted = formatValue ? formatValue(value) : value;
-      axisValuesRight.push(
+      axisLines.push(
         <AxisValue
-          key={'axis-value-right-' + i}
-          style={{width}}
+          key={'axis-line-right-' + i}
+          style={{width: axisWidth}}
           className={'react-comparison-bar-chart-axis-value'}
         >
           <AxisText
@@ -406,14 +390,6 @@ const Root = (props: Props) => {
           >
             {formatted}
           </AxisText>
-        </AxisValue>
-      );
-      axisLines.push(
-        <AxisValue
-          key={'axis-line-right-' + i}
-          style={{width}}
-          className={'react-comparison-bar-chart-axis-value'}
-        >
           <AxisLine />
         </AxisValue>
       );
@@ -470,7 +446,8 @@ const Root = (props: Props) => {
             {h2Right}
           </div>
         </TitleRight>
-        <AxisLines style={{height: gridHeight - rowHeight}}>
+        <AxisLines style={{height: gridHeight}}>
+          {axisTitle}
           {axisLines}
         </AxisLines>
       </TitleRoot>
@@ -499,19 +476,6 @@ const Root = (props: Props) => {
             </ExpandButton>
           </ExpandButtonRow>
           {rows}
-          <AxisMargin style={{height: rowHeight}} />
-          <Axis
-            style={{height: rowHeight}}
-            className={'react-comparison-bar-chart-axis'}
-          >
-            <AxisLeft style={{width: `${secondaryRange}%`}}>
-              {axisValuesLeft.reverse()}
-            </AxisLeft>
-            <AxisValue style={{width: `${primaryRange}%`}}>
-              {axisValuesRight}
-            </AxisValue>
-            {axisTitle}
-          </Axis>
         </Grid>
       </ChartContainer>
     </Container>
