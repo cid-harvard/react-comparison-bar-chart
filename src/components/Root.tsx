@@ -234,6 +234,7 @@ export interface Props {
   initialExpanded?: boolean;
   layout?: Layout;
   highlighted?: string;
+  onExpandCollapseButtonHover?: (event: React.MouseEvent<HTMLElement>) => void;
 }
 
 const roundUpToHalf = (value: number) => {
@@ -255,6 +256,7 @@ const Root = (props: Props) => {
   const {
     primaryData, secondaryData, nValuesToShow, formatValue, titles, expandCollapseText,
     axisLabel, onRowHover, hideExpandCollapseButton, initialExpanded, layout, highlighted,
+    onExpandCollapseButtonHover,
   } = props;
 
   if (!primaryData.length && !secondaryData.length) {
@@ -493,6 +495,7 @@ const Root = (props: Props) => {
         }}
         $dynamicFont={`clamp(0.7rem, ${chartWidth * 0.015}px, 0.85rem)`}
         $dynamicMaxWidth={chartWidth > 300 ? `${chartWidth * 0.25}px` : '75px'}
+        onMouseMove={onExpandCollapseButtonHover}
       >
         <Arrow
           dangerouslySetInnerHTML={{__html: expanded ? ArrowCollapseSVG : ArrowExpandSVG}}
