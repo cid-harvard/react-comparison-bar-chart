@@ -273,14 +273,16 @@ const Root = (props: Props) => {
 
   useEffect(() => {
     if (rootRef && rootRef.current && chartRef && chartRef.current) {
-      setMeasurements({gridHeight: rootRef.current.offsetHeight, chartWidth: chartRef.current.offsetWidth});
+      const chartRect = chartRef.current.getBoundingClientRect();
+      setMeasurements({gridHeight: rootRef.current.offsetHeight, chartWidth: chartRect.width});
     }
   }, [rootRef, chartRef])
 
   useEffect(() => {
     const updateWindowWidth = () => {
       if (rootRef && rootRef.current && chartRef && chartRef.current) {
-        setMeasurements({gridHeight: rootRef.current.offsetHeight, chartWidth: chartRef.current.offsetWidth});
+        const chartRect = chartRef.current.getBoundingClientRect();
+        setMeasurements({gridHeight: rootRef.current.offsetHeight, chartWidth: chartRect.width});
       }
     };
     window.addEventListener('resize', updateWindowWidth);
