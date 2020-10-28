@@ -296,8 +296,28 @@ const Root = (props: Props) => {
   const primaryTop = orderedPrimaryData.slice(0, nValuesToShow);
   const secondaryTop = orderedSecondaryData.slice(0, nValuesToShow);
 
-  const primaryMax = roundUpToHalf(primaryTop[0].value);
-  const secondaryMax = roundUpToHalf(secondaryTop[0].value);
+  const rawTotalRange = primaryTop[0].value + secondaryTop[0].value;
+  let primaryMax: number;
+  let secondaryMax: number;
+  let axisIncrement: number;
+  if (rawTotalRange < 7) {
+    primaryMax = roundUpToHalf(primaryTop[0].value);
+    secondaryMax = roundUpToHalf(secondaryTop[0].value);
+    axisIncrement = 0.5;
+  } else if (rawTotalRange < 14) {
+    primaryMax = Math.ceil(primaryTop[0].value);
+    secondaryMax = Math.ceil(secondaryTop[0].value);
+    axisIncrement = 1;
+  } else if (rawTotalRange < 21) {
+    primaryMax = 2 * Math.ceil(primaryTop[0].value / 2);
+    secondaryMax = 2 * Math.ceil(secondaryTop[0].value / 2);
+    axisIncrement = 2;
+  } else {
+    primaryMax = 3 * Math.ceil(primaryTop[0].value / 3);
+    secondaryMax = 3 * Math.ceil(secondaryTop[0].value / 3);
+    axisIncrement = 3;
+  }
+
   const totalRange = primaryMax + secondaryMax;
   const secondaryRange = secondaryMax / totalRange * 100
   const primaryRange = primaryMax / totalRange * 100
@@ -328,7 +348,7 @@ const Root = (props: Props) => {
     );
   })
 
-  const totalAxisValues = 11;
+  const totalAxisValues = totalRange / axisIncrement;
   const totalValuesLeftOfZero = Math.round((secondaryRange / 100) * totalAxisValues);
   const totalValuesRightOfZero = totalAxisValues - totalValuesLeftOfZero;
 
@@ -343,7 +363,7 @@ const Root = (props: Props) => {
   const axisValuesLeft: React.ReactElement<any>[] = [];
 
   for (let i = 1; i < totalValuesLeftOfZero + 1; i++) {
-    const value = (secondaryMax / totalValuesLeftOfZero) * i;
+    const value = axisIncrement * i;
     const AxisText = i === totalValuesLeftOfZero ? AxisTextLeft : AxisTextCenter;
     if (value <= secondaryMax) {
       const formatted = formatValue ? formatValue(value) : value;
@@ -376,7 +396,7 @@ const Root = (props: Props) => {
   const axisValuesRight: React.ReactElement<any>[] = [];
   for (let i = 0; i < totalValuesRightOfZero + 1; i++) {
     const AxisText = i === totalValuesRightOfZero ? AxisTextRight : AxisTextCenter;
-    const value = (primaryMax / totalValuesRightOfZero) * i;
+    const value = axisIncrement * i;
     const width = ((primaryRange / 100) * chartWidth) / totalValuesRightOfZero;
     if (value <= primaryMax) {
       const formatted = formatValue ? formatValue(value) : value;
