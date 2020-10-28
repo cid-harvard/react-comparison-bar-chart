@@ -238,6 +238,7 @@ export interface Props {
   axisLabel?: string;
   onRowHover?: (event: RowHoverEvent) => void;
   hideExpandCollapseButton?: boolean;
+  initialExpanded?: boolean;
 }
 
 const roundUpToHalf = (value: number) => {
@@ -258,14 +259,14 @@ interface Measurements {
 const Root = (props: Props) => {
   const {
     primaryData, secondaryData, nValuesToShow, formatValue, titles, expandCollapseText,
-    axisLabel, onRowHover, hideExpandCollapseButton,
+    axisLabel, onRowHover, hideExpandCollapseButton, initialExpanded,
   } = props;
 
   if (!primaryData.length && !secondaryData.length) {
     return null;
   }
 
-  const [expanded, setExpanded] = useState<boolean>(false);
+  const [expanded, setExpanded] = useState<boolean>(initialExpanded ? true : false);
   const [{gridHeight, chartWidth}, setMeasurements] = useState<Measurements>({gridHeight: 0, chartWidth: 0});
   const rootRef = useRef<HTMLDivElement | null>(null);
   const chartRef = useRef<HTMLDivElement | null>(null);
