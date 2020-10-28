@@ -7,6 +7,7 @@ import {
   WithDyanmicFont,
   BarDatum,
   RowHoverEvent,
+  Layout,
 } from './Utils';
 const ArrowCollapseSVG = raw('../assets/arrow-collapse.svg');
 const ArrowExpandSVG = raw('../assets/arrow-expand.svg');
@@ -18,7 +19,6 @@ const Container = styled.div`
   width: 100%;
   height: 100%;
   padding-top: ${titleHeight}px;
-  padding-right: ${overflowPadding}rem;
   padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
@@ -40,9 +40,7 @@ const TitleRoot = styled.div<WithDyanmicFont>`
   height: ${titleHeight}px;
   position: absolute;
   top: 0;
-  right: 0;
   font-size: ${({$dynamicFont}) => $dynamicFont};
-  padding-right: ${overflowPadding}rem;
 `;
 
 const AxisLines = styled.div`
@@ -87,7 +85,6 @@ const Grid = styled.div`
   height: 100%;
   grid-row: 1;
   display: grid;
-  grid-template-columns: clamp(75px, 300px, 25%) 2rem 1fr;
   position: relative;
   /* both auto and overlay required for browsers that don't support overlay */
   overflow: auto;
@@ -209,12 +206,8 @@ const AxisLine = styled.div`
 const AxisTitle = styled.div<WithDyanmicFont>`
   position: absolute;
   bottom: 0;
-  right: 0;
   z-index: 1;
   font-size: ${({$dynamicFont}) => $dynamicFont};
-  display: flex;
-  justify-content: flex-end;
-  text-align: right;
   padding: 0 0 0.3rem 1rem;
   box-sizing: border-box;
   pointer-events: none;
@@ -239,6 +232,7 @@ export interface Props {
   onRowHover?: (event: RowHoverEvent) => void;
   hideExpandCollapseButton?: boolean;
   initialExpanded?: boolean;
+  layout?: Layout;
 }
 
 const roundUpToHalf = (value: number) => {
@@ -259,12 +253,15 @@ interface Measurements {
 const Root = (props: Props) => {
   const {
     primaryData, secondaryData, nValuesToShow, formatValue, titles, expandCollapseText,
-    axisLabel, onRowHover, hideExpandCollapseButton, initialExpanded,
+    axisLabel, onRowHover, hideExpandCollapseButton, initialExpanded, layout,
   } = props;
 
   if (!primaryData.length && !secondaryData.length) {
     return null;
   }
+
+  const leftData = layout === Layout.Right ? primaryData : secondaryData;
+  const rightData = layout === Layout.Right ? secondaryData : primaryData;
 
   const [expanded, setExpanded] = useState<boolean>(initialExpanded ? true : false);
   const [{gridHeight, chartWidth}, setMeasurements] = useState<Measurements>({gridHeight: 0, chartWidth: 0});
@@ -289,79 +286,84 @@ const Root = (props: Props) => {
     };
   }, []);
 
-  const orderedPrimaryData = orderBy(primaryData, ['value'], 'desc');
-  const orderedSecondaryData = orderBy(secondaryData, ['value'], 'desc');
-  const primaryTop = orderedPrimaryData.slice(0, nValuesToShow);
-  const secondaryTop = orderedSecondaryData.slice(0, nValuesToShow);
+  const orderedRightData = orderBy(rightData, ['value'], 'desc');
+  const orderedLeftData = orderBy(leftData, ['value'], 'desc');
+  const rightTop = orderedRightData.slice(0, nValuesToShow);
+  const leftTop = orderedLeftData.slice(0, nValuesToShow);
 
-  let primaryTopValue = primaryTop.length ? primaryTop[0].value : 0;
-  let secondaryTopValue = secondaryTop.length ? secondaryTop[0].value : 0;
-  if (!primaryTopValue) {
-    primaryTopValue = secondaryTopValue;
+  let rightTopValue = rightTop.length ? rightTop[0].value : 0;
+  let leftTopValue = leftTop.length ? leftTop[0].value : 0;
+  if (!rightTopValue) {
+    rightTopValue = leftTopValue;
   }
-  if (!secondaryTopValue) {
-    secondaryTopValue = primaryTopValue;
+  if (!leftTopValue) {
+    leftTopValue = rightTopValue;
   }
-  if (!secondaryTopValue && !primaryTopValue) {
-    primaryTopValue = 1;
-    secondaryTopValue = 1;
+  if (!leftTopValue && !rightTopValue) {
+    rightTopValue = 1;
+    leftTopValue = 1;
   }
 
-  const rawTotalRange = primaryTopValue + secondaryTopValue;
-  let primaryMax: number;
-  let secondaryMax: number;
+  const rawTotalRange = rightTopValue + leftTopValue;
+  let rightMax: number;
+  let leftMax: number;
   let axisIncrement: number;
   if (rawTotalRange < 7) {
-    primaryMax = roundUpToHalf(primaryTopValue);
-    secondaryMax = roundUpToHalf(secondaryTopValue);
+    rightMax = roundUpToHalf(rightTopValue);
+    leftMax = roundUpToHalf(leftTopValue);
     axisIncrement = 0.5;
   } else if (rawTotalRange < 14) {
-    primaryMax = Math.ceil(primaryTopValue);
-    secondaryMax = Math.ceil(secondaryTopValue);
+    rightMax = Math.ceil(rightTopValue);
+    leftMax = Math.ceil(leftTopValue);
     axisIncrement = 1;
   } else if (rawTotalRange < 21) {
-    primaryMax = 2 * Math.ceil(primaryTopValue / 2);
-    secondaryMax = 2 * Math.ceil(secondaryTopValue / 2);
+    rightMax = 2 * Math.ceil(rightTopValue / 2);
+    leftMax = 2 * Math.ceil(leftTopValue / 2);
     axisIncrement = 2;
   } else {
-    primaryMax = 3 * Math.ceil(primaryTopValue / 3);
-    secondaryMax = 3 * Math.ceil(secondaryTopValue / 3);
+    rightMax = 3 * Math.ceil(rightTopValue / 3);
+    leftMax = 3 * Math.ceil(leftTopValue / 3);
     axisIncrement = 3;
   }
 
-  const totalRange = primaryMax + secondaryMax;
-  const secondaryRange = secondaryMax / totalRange * 100
-  const primaryRange = primaryMax / totalRange * 100
+  const totalRange = rightMax + leftMax;
+  const leftRange = leftMax / totalRange * 100
+  const rightRange = rightMax / totalRange * 100
 
-  const totalValues = primaryData.length + secondaryData.length;
-  const totalTopValues = primaryTop.length + secondaryTop.length;
+  const totalValues = rightData.length + leftData.length;
+  const totalTopValues = rightTop.length + leftTop.length;
   const rowHeight = gridHeight ? ((1 / totalTopValues) * gridHeight) : 0;
 
-  const rows = [...orderedPrimaryData, ...orderedSecondaryData.reverse()].map((d, i) => {
+  const rows = [...orderedRightData, ...orderedLeftData.reverse()].map((d, i) => {
     return (
       <Row
         key={d.id}
         i={i}
         d={d}
         expanded={expanded}
-        totalPrimaryValues={primaryTop.length}
-        totalSecondaryValues={secondaryTop.length}
+        totalRightValues={rightTop.length}
+        totalLeftValues={leftTop.length}
         totalValues={totalValues}
         rowHeight={rowHeight}
-        orderedPrimaryData={orderedPrimaryData}
+        orderedRightData={orderedRightData}
         gridHeight={gridHeight}
-        primaryMax={primaryMax}
-        secondaryMax={secondaryMax}
+        rightMax={rightMax}
+        leftMax={leftMax}
         onRowHover={onRowHover}
-        secondaryRange={secondaryRange}
-        primaryRange={primaryRange}
+        leftRange={leftRange}
+        rightRange={rightRange}
         chartRef={chartRef}
+        layout={layout}
       />
     );
   })
 
+  if (layout === Layout.Right) {
+    rows.reverse();
+  }
+
   const totalAxisValues = totalRange / axisIncrement;
-  const totalValuesLeftOfZero = Math.round((secondaryRange / 100) * totalAxisValues);
+  const totalValuesLeftOfZero = Math.round((leftRange / 100) * totalAxisValues);
   const totalValuesRightOfZero = totalAxisValues - totalValuesLeftOfZero;
 
   let axisFontSize: string;
@@ -375,7 +377,7 @@ const Root = (props: Props) => {
   const axisLines: React.ReactElement<any>[] = [];
   for (let i = totalValuesLeftOfZero + 1; i > 0; i--) {
     const value = axisIncrement * i;
-    if (value <= secondaryMax) {
+    if (value <= leftMax) {
       const formatted = formatValue ? formatValue(value) : value;
       axisLines.push(
         <AxisValue
@@ -396,7 +398,7 @@ const Root = (props: Props) => {
 
   for (let i = 0; i < totalValuesRightOfZero + 1; i++) {
     const value = axisIncrement * i;
-    if (value <= primaryMax) {
+    if (value <= rightMax) {
       const formatted = formatValue ? formatValue(value) : value;
       axisLines.push(
         <AxisValue
@@ -417,7 +419,11 @@ const Root = (props: Props) => {
 
   const axisTitle = axisLabel ? (
     <AxisTitle
-      style={{width: (primaryRange / 100) * chartWidth}}
+      style={{
+        width: layout !== Layout.Right ? (rightRange / 100) * chartWidth : (leftRange / 100) * chartWidth,
+        right: layout !== Layout.Right ? 0 : undefined,
+        textAlign: layout !== Layout.Right ? 'right' : undefined,
+      }}
       className={'react-comparison-bar-chart-axis-title'}
       $dynamicFont={`clamp(0.75rem, ${chartWidth * 0.025}px, 1.1rem)`}
     >
@@ -427,17 +433,27 @@ const Root = (props: Props) => {
 
   const titleFormatter = titles && titles.format ? titles.format : (label: string) => label;
 
-  const h1Left = titles && titles.secondary ? (
-    <H1>{titleFormatter(titles.secondary, secondaryTop.length, orderedSecondaryData.length)}</H1>
+  let titleLeft: string | undefined;
+  let titleRight: string | undefined;
+  if (layout === Layout.Right) {
+    titleLeft = titles && titles.primary ? titles.primary : undefined;
+    titleRight = titles && titles.secondary ? titles.secondary : undefined;
+  } else {
+    titleLeft = titles && titles.secondary ? titles.secondary : undefined;
+    titleRight = titles && titles.primary ? titles.primary : undefined;
+  }
+
+  const h1Left = titleLeft ? (
+    <H1>{titleFormatter(titleLeft, leftTop.length, orderedLeftData.length)}</H1>
   ) : null;
-  const h2Left = titles && titles.secondary && titles.primary ? (
-    <H2>{titles.secondary} {'>'} {titles.primary}</H2>
+  const h2Left = titleLeft && titleRight ? (
+    <H2>{titleLeft} {'>'} {titleRight}</H2>
   ) : null;
-  const h1Right = titles && titles.primary ? (
-    <H1>{titleFormatter(titles.primary, primaryTop.length, orderedPrimaryData.length)}</H1>
+  const h1Right = titles && titleRight ? (
+    <H1>{titleFormatter(titleRight, rightTop.length, orderedRightData.length)}</H1>
   ) : null;
-  const h2Right = titles && titles.secondary && titles.primary ? (
-    <H2>{titles.primary} {'>'} {titles.secondary}</H2>
+  const h2Right = titleLeft && titleRight ? (
+    <H2>{titleRight} {'>'} {titleLeft}</H2>
   ) : null;
 
   let expandCollapseButtonText: string;
@@ -448,11 +464,13 @@ const Root = (props: Props) => {
   }
 
   const expandCollapseButton = hideExpandCollapseButton ||
-    (primaryTop.length < nValuesToShow && secondaryTop.length < nValuesToShow)
+    (rightTop.length < nValuesToShow && leftTop.length < nValuesToShow)
     ? null : (
       <ExpandButton
         onClick={() => setExpanded(current => !current)}
         className={'react-comparison-bar-chart-expand-button'}
+        style={{
+        }}
         $dynamicFont={`clamp(0.7rem, ${chartWidth * 0.015}px, 0.85rem)`}
         $dynamicMaxWidth={chartWidth > 300 ? `${chartWidth * 0.25}px` : '75px'}
       >
@@ -462,19 +480,30 @@ const Root = (props: Props) => {
       </ExpandButton>
     );
 
+    const buffer: React.CSSProperties = layout !== Layout.Right
+      ? {paddingRight: overflowPadding + 'rem'} : {paddingLeft: overflowPadding + 'rem'};
+
   return (
-    <Container>
+    <Container
+      style={{...buffer}}
+    >
       <TitleRoot
-        style={{width: chartWidth}}
+        style={{
+          width: chartWidth,
+          marginLeft: layout !== Layout.Right ? undefined : 0,
+          right: layout !== Layout.Right ? 0 : undefined,
+          left: layout !== Layout.Right ? undefined : 0,
+          ...buffer,
+        }}
         $dynamicFont={`clamp(0.65rem, ${chartWidth * 0.03}px, 0.95rem)`}
       >
-        <TitleLeft style={{width: `${secondaryRange}%`}}>
+        <TitleLeft style={{width: `${leftRange}%`}}>
           <div className={'react-comparison-bar-chart-title react-comparison-bar-chart-title-left'}>
             {h1Left}
             {h2Left}
           </div>
         </TitleLeft>
-        <TitleRight style={{width: `${primaryRange}%`}}>
+        <TitleRight style={{width: `${rightRange}%`}}>
           <div className={'react-comparison-bar-chart-title react-comparison-bar-chart-title-right'}>
             {h1Right}
             {h2Right}
@@ -490,12 +519,18 @@ const Root = (props: Props) => {
           ref={rootRef}
           style={{
             gridTemplateRows: 'repeat(${totalValues}, auto)',
+            gridTemplateColumns: layout !== Layout.Right
+              ? 'clamp(75px, 300px, 25%) 2rem 1fr'
+              : '1fr 2rem clamp(75px, 300px, 25%)',
             overflow: expanded ? undefined : 'hidden',
           }}
           className={'react-comparison-bar-chart-grid'}
         >
           <ExpandButtonRow
-            style={{top: (gridHeight / 2)}}
+            style={{
+              top: (gridHeight / 2),
+              width: layout !== Layout.Right ? undefined : chartWidth,
+            }}
             className={'react-comparison-bar-chart-expand-button-container'}
           >
             {expandCollapseButton}

@@ -18,3 +18,8 @@ export interface RowHoverEvent {
   datum: BarDatum | undefined;
   mouseCoords: {x: number, y: number};
 }
+
+export enum Layout {
+  Left = 'left',
+  Right = 'right',
+}

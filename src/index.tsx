@@ -5,6 +5,7 @@ import Root, {
 import {
   BarDatum,
   RowHoverEvent,
+  Layout,
 } from './components/Utils';
 
 const ComparisonBarChart = (props: ComparisonBarChartProps) => {
@@ -17,6 +18,7 @@ export {
   ComparisonBarChartProps,
   BarDatum,
   RowHoverEvent,
+  Layout,
 }
 
 export default ComparisonBarChart;

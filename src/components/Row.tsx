@@ -5,6 +5,7 @@ import {
   BarDatum,
   Category,
   RowHoverEvent,
+  Layout,
 } from './Utils';
 
 const fadeIn = keyframes`
@@ -27,13 +28,12 @@ const LabelText = styled.div<WithDyanmicFont>`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  text-align: right;
   opacity: 0;
   animation: ${fadeIn} 0.15s linear 1 forwards 0.3s;
 `;
 
 const Cell = styled.div`
-  transition: all 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -68,37 +68,38 @@ interface Props {
   i: number;
   d: BarDatum;
   expanded: boolean;
-  totalPrimaryValues: number;
-  totalSecondaryValues: number;
+  totalRightValues: number;
+  totalLeftValues: number;
   totalValues: number;
   rowHeight: number;
-  orderedPrimaryData: BarDatum[];
+  orderedRightData: BarDatum[];
   gridHeight: number;
-  primaryMax: number;
-  secondaryMax: number;
+  rightMax: number;
+  leftMax: number;
   onRowHover: undefined | ((event: RowHoverEvent) => void);
-  secondaryRange: number;
-  primaryRange: number;
+  leftRange: number;
+  rightRange: number;
   chartRef: React.MutableRefObject<HTMLDivElement | null>;
+  layout: Layout | undefined;
 }
 
 const maxCellsForAnimation = 900;
 
 const Row = (props: Props) => {
   const {
-    i, d, expanded, totalPrimaryValues, totalSecondaryValues, rowHeight, totalValues, gridHeight,
-    orderedPrimaryData, primaryMax, secondaryMax, onRowHover,
-    secondaryRange, primaryRange, chartRef,
+    i, d, expanded, totalRightValues, totalLeftValues, rowHeight, totalValues, gridHeight,
+    orderedRightData, rightMax, leftMax, onRowHover,
+    leftRange, rightRange, chartRef, layout,
   } = props;
 
   const [hoveredId, setHoveredId] = useState<BarDatum['id'] | undefined>(undefined); 
   
   const ref = i === 0 ? chartRef : undefined;
-  const isRowVisible = expanded || (i < totalPrimaryValues || i > totalValues - (totalSecondaryValues + 1));
+  const isRowVisible = expanded || (i < totalRightValues || i > totalValues - (totalLeftValues + 1));
   if (!isRowVisible && totalValues > maxCellsForAnimation) {
     return null;
   }
-  const category: Category = i < orderedPrimaryData.length ? Category.Primary : Category.Secondary;
+  const category: Category = i < orderedRightData.length ? Category.Primary : Category.Secondary;
   const style: React.CSSProperties = isRowVisible ? {
     height: rowHeight,
     backgroundColor: hoveredId === d.id ? '#f1f1f1' : undefined,
@@ -110,6 +111,9 @@ const Row = (props: Props) => {
   const label = isRowVisible ? (
     <LabelText
       className={'react-comparison-bar-chart-row-label'}
+      style={{
+        textAlign: layout === Layout.Right ? 'left' : 'right',
+      }}
       $dynamicFont={`clamp(0.5rem, ${gridHeight * 0.04}px, 0.9rem)`}
     >
       {d.title}
@@ -120,7 +124,7 @@ const Row = (props: Props) => {
       className={'react-comparison-bar-chart-bar react-comparison-bar-chart-bar-left'}
       style={{
         backgroundColor: d.color,
-        width: isRowVisible ? `${d.value / secondaryMax * 100}%` : 0,
+        width: isRowVisible ? `${d.value / leftMax * 100}%` : 0,
         transitionDelay: isRowVisible && totalValues <= maxCellsForAnimation ? '0.3s' : undefined,
       }}
     />
@@ -130,7 +134,7 @@ const Row = (props: Props) => {
       className={'react-comparison-bar-chart-bar react-comparison-bar-chart-bar-right'}
       style={{
         backgroundColor: d.color,
-        width: isRowVisible ? `${d.value / primaryMax * 100}%` : 0,
+        width: isRowVisible ? `${d.value / rightMax * 100}%` : 0,
         transitionDelay: isRowVisible && totalValues <= maxCellsForAnimation ? '0.3s' : undefined,
       }}
     />
@@ -161,35 +165,68 @@ const Row = (props: Props) => {
     }
   }
 
-  return (
-    <Root>
-      <Cell
-        style={style}
-        onMouseMove={onMouseMove}
-        onMouseLeave={onMouseLeave}
-      >
-        {label}
-      </Cell>
-      <Cell
-        style={style}
-        onMouseMove={onMouseMove}
-        onMouseLeave={onMouseLeave}
-      />
-      <BarCell
-        style={style}
-        ref={ref}
-        onMouseMove={onMouseMove}
-        onMouseLeave={onMouseLeave}
-      >
-        <RangeLeft style={{width: `${secondaryRange}%`}}>
-          {leftBar}
-        </RangeLeft>
-        <RangeRight style={{width: `${primaryRange}%`}}>
-          {rightBar}
-        </RangeRight>
-      </BarCell>
-    </Root>
-  );
+  if (layout === Layout.Right) {
+    return (
+      <Root>
+        <BarCell
+          style={style}
+          ref={ref}
+          onMouseMove={onMouseMove}
+          onMouseLeave={onMouseLeave}
+        >
+          <RangeLeft style={{width: `${leftRange}%`}}>
+            {leftBar}
+          </RangeLeft>
+          <RangeRight style={{width: `${rightRange}%`}}>
+            {rightBar}
+          </RangeRight>
+        </BarCell>
+        <Cell
+          style={style}
+          onMouseMove={onMouseMove}
+          onMouseLeave={onMouseLeave}
+        />
+        <Cell
+          style={style}
+          onMouseMove={onMouseMove}
+          onMouseLeave={onMouseLeave}
+        >
+          {label}
+        </Cell>
+      </Root>
+    );
+  } else {
+    return (
+      <Root>
+        <Cell
+          style={style}
+          onMouseMove={onMouseMove}
+          onMouseLeave={onMouseLeave}
+        >
+          {label}
+        </Cell>
+        <Cell
+          style={style}
+          onMouseMove={onMouseMove}
+          onMouseLeave={onMouseLeave}
+        />
+        <BarCell
+          style={style}
+          ref={ref}
+          onMouseMove={onMouseMove}
+          onMouseLeave={onMouseLeave}
+        >
+          <RangeLeft style={{width: `${leftRange}%`}}>
+            {leftBar}
+          </RangeLeft>
+          <RangeRight style={{width: `${rightRange}%`}}>
+            {rightBar}
+          </RangeRight>
+        </BarCell>
+      </Root>
+    );
+  }
+
 }
 
 export default React.memo(Row);
