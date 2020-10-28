@@ -2,7 +2,7 @@ import React, {useState, useRef, useEffect} from 'react';
 import styled from 'styled-components/macro';
 import orderBy from 'lodash/orderBy';
 import raw from 'raw.macro';
-import Row from './Row';
+import Row, {highlightedIdName} from './Row';
 import {
   WithDyanmicFont,
   BarDatum,
@@ -233,6 +233,7 @@ export interface Props {
   hideExpandCollapseButton?: boolean;
   initialExpanded?: boolean;
   layout?: Layout;
+  highlighted?: string;
 }
 
 const roundUpToHalf = (value: number) => {
@@ -253,7 +254,7 @@ interface Measurements {
 const Root = (props: Props) => {
   const {
     primaryData, secondaryData, nValuesToShow, formatValue, titles, expandCollapseText,
-    axisLabel, onRowHover, hideExpandCollapseButton, initialExpanded, layout,
+    axisLabel, onRowHover, hideExpandCollapseButton, initialExpanded, layout, highlighted,
   } = props;
 
   if (!primaryData.length && !secondaryData.length) {
@@ -285,6 +286,24 @@ const Root = (props: Props) => {
       window.removeEventListener('resize', updateWindowWidth);
     };
   }, []);
+
+  useEffect(() => {
+    if (rootRef && rootRef.current) {
+      const rootNode = rootRef.current;
+      const highlightedElm: HTMLElement | null = rootRef.current.querySelector(`#${highlightedIdName}`);
+      if (highlightedElm) {
+        const highlightedRect = highlightedElm.getBoundingClientRect();
+        if (highlightedRect.height) {
+          rootNode.scrollTop = highlightedElm.offsetTop;
+        } else {
+          setExpanded(true)
+          setTimeout(() => {
+            rootNode.scrollTop = highlightedElm.offsetTop;
+          }, 500)
+        }
+      }
+    }
+  }, [rootRef, highlighted]);
 
   const orderedRightData = orderBy(rightData, ['value'], 'desc');
   const orderedLeftData = orderBy(leftData, ['value'], 'desc');
@@ -354,6 +373,7 @@ const Root = (props: Props) => {
         rightRange={rightRange}
         chartRef={chartRef}
         layout={layout}
+        highlighted={highlighted}
       />
     );
   })

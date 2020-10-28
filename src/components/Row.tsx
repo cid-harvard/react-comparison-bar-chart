@@ -8,6 +8,8 @@ import {
   Layout,
 } from './Utils';
 
+export const highlightedIdName = 'react-comparison-bar-chart-highlighted-item';
+
 const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -81,6 +83,7 @@ interface Props {
   rightRange: number;
   chartRef: React.MutableRefObject<HTMLDivElement | null>;
   layout: Layout | undefined;
+  highlighted: string | undefined;
 }
 
 const maxCellsForAnimation = 900;
@@ -89,7 +92,7 @@ const Row = (props: Props) => {
   const {
     i, d, expanded, totalRightValues, totalLeftValues, rowHeight, totalValues, gridHeight,
     orderedRightData, rightMax, leftMax, onRowHover,
-    leftRange, rightRange, chartRef, layout,
+    leftRange, rightRange, chartRef, layout, highlighted,
   } = props;
 
   const [hoveredId, setHoveredId] = useState<BarDatum['id'] | undefined>(undefined); 
@@ -102,11 +105,11 @@ const Row = (props: Props) => {
   const category: Category = i < orderedRightData.length ? Category.Primary : Category.Secondary;
   const style: React.CSSProperties = isRowVisible ? {
     height: rowHeight,
-    backgroundColor: hoveredId === d.id ? '#f1f1f1' : undefined,
+    backgroundColor: hoveredId === d.id || highlighted === d.id ? '#f1f1f1' : undefined,
   } : {
     height: 0,
     pointerEvents: 'none',
-    transitionDelay: totalValues <= maxCellsForAnimation ? '0.15s' : undefined,
+    transitionDelay: totalValues <= maxCellsForAnimation && !highlighted ? '0.15s' : undefined,
   };
   const label = isRowVisible ? (
     <LabelText
@@ -125,7 +128,7 @@ const Row = (props: Props) => {
       style={{
         backgroundColor: d.color,
         width: isRowVisible ? `${d.value / leftMax * 100}%` : 0,
-        transitionDelay: isRowVisible && totalValues <= maxCellsForAnimation ? '0.3s' : undefined,
+        transitionDelay: isRowVisible && totalValues <= maxCellsForAnimation && !highlighted ? '0.3s' : undefined,
       }}
     />
   ) : null;
@@ -135,7 +138,7 @@ const Row = (props: Props) => {
       style={{
         backgroundColor: d.color,
         width: isRowVisible ? `${d.value / rightMax * 100}%` : 0,
-        transitionDelay: isRowVisible && totalValues <= maxCellsForAnimation ? '0.3s' : undefined,
+        transitionDelay: isRowVisible && totalValues <= maxCellsForAnimation && !highlighted ? '0.3s' : undefined,
       }}
     />
   ) : null;
@@ -169,6 +172,7 @@ const Row = (props: Props) => {
     return (
       <Root>
         <BarCell
+          id={highlighted === d.id ? highlightedIdName : undefined}
           style={style}
           ref={ref}
           onMouseMove={onMouseMove}
@@ -211,6 +215,7 @@ const Row = (props: Props) => {
           onMouseLeave={onMouseLeave}
         />
         <BarCell
+          id={highlighted === d.id ? highlightedIdName : undefined}
           style={style}
           ref={ref}
           onMouseMove={onMouseMove}
