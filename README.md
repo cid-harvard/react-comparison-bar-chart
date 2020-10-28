@@ -50,11 +50,17 @@ The ComparisonBarChart component takes the following props:
 - **nValuesToShow**: `number`
 - **formatValue** *(optional)*: `(value: number) => string | number`
 - **titles** *(optional)*:
-  - **primary** *(optional)*: { **h1**: `string`, **h2** *(optional)*: `string` }\
-  - **secondary** *(optional)*: { **h1**: `string`, **h2** *(optional)*: `string` }\
+  - **primary**: `string`\
+  - **secondary**: `string`\
+  - **secondary** *(optional)*: `(label: string, count: number, max: number) => string`\
 - **expandCollapseText** *(optional)*: { **toExpand**: `string`, **toCollapse**: `string` }
 - **axisLabel** *(optional)*: `string`
 - **onRowHover** *(optional)*: [`(event: RowHoverEvent) => void`](#rowhoverevent)
+- **hideExpandCollapseButton** *(optional)*: `boolean`
+- **initialExpanded** *(optional)*: `boolean`
+- **layout** *(optional)*: [`Layout`](#layout)
+- **highlighted** *(optional)*: `string`
+- **onExpandCollapseButtonHover** *(optional)*: `(event: React.MouseEvent<HTMLElement>) => void`
 
 <a name="bardatum"/>
 
@@ -75,6 +81,15 @@ The RowHoverEvent type is an interface of the following values:
 
 - **datum**: [`BarDatum[]`](#bardatum) \| `undefined`
 - **mouseCoords**: {**x**: `number`, **y**: `number`}
+
+<a name="layout"/>
+
+#### Layout
+
+The Layout type is an enum with the following values:
+
+- **Layout.Left** = `left`
+- **Layout.Right** = `right`
 
 ## License
 
