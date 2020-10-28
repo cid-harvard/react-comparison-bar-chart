@@ -9,6 +9,9 @@ import {
   RowHoverEvent,
   Layout,
 } from './Utils';
+
+const maxRows = 998;
+
 const ArrowCollapseSVG = raw('../assets/arrow-collapse.svg');
 const ArrowExpandSVG = raw('../assets/arrow-expand.svg');
 
@@ -311,6 +314,22 @@ const Root = (props: Props) => {
 
   const orderedRightData = orderBy(rightData, ['value'], 'desc');
   const orderedLeftData = orderBy(leftData, ['value'], 'desc');
+
+  if (expanded && orderedRightData.length + orderedLeftData.length > maxRows) {
+    if (orderedRightData.length > maxRows / 2) {
+      console.warn(
+        'Data to right of 0 exceeds maximum node count of 998. The following nodes have been removed:',
+        orderedRightData.splice(maxRows / 2, orderedRightData.length),
+      );
+    }
+    if (orderedLeftData.length > maxRows / 2) {
+      console.warn(
+        'Data to left of 0 exceeds maximum node count of 998. The following nodes have been removed:',
+        orderedLeftData.splice(maxRows / 2, orderedLeftData.length),
+      );
+    }
+  }
+
   const rightTop = orderedRightData.slice(0, nValuesToShow);
   const leftTop = orderedLeftData.slice(0, nValuesToShow);
 
@@ -556,6 +575,7 @@ const Root = (props: Props) => {
             style={{
               top: (gridHeight / 2),
               width: layout !== Layout.Right ? undefined : chartWidth,
+              visibility: chartWidth ? undefined : 'hidden',
             }}
             className={'react-comparison-bar-chart-expand-button-container'}
           >

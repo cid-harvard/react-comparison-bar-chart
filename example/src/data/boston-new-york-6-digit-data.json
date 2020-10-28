@@ -1,0 +1,7251 @@
+{
+  "primaryData": [
+    {
+      "id": "2003",
+      "value": 0.0013067050430019818,
+      "title": "Wheat Farming",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2007",
+      "value": 0.00012819632793003384,
+      "title": "All Other Grain Farming ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2008",
+      "value": 0.0010977154545225702,
+      "title": "Potato Farming ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2009",
+      "value": 0.0011688200555935537,
+      "title": "Other Vegetable (except Potato) and Melon Farming ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2012",
+      "value": 0.0009598304671141416,
+      "title": "Apple Orchards ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2016",
+      "value": 0.000589254357535974,
+      "title": "Tree Nut Farming ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2017",
+      "value": 0.00042766783643721806,
+      "title": "Fruit and Tree Nut Combination Farming ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2019",
+      "value": 0.000266081315338462,
+      "title": "Mushroom Production ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2020",
+      "value": 0.0009027387402550918,
+      "title": "Other Food Crops Grown Under Cover ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2022",
+      "value": 0.0005742012533127246,
+      "title": "Floriculture Production ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2023",
+      "value": 0.0012830035093116538,
+      "title": "Tobacco Farming",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2026",
+      "value": 0.00034687457588783996,
+      "title": "Hay Farming ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2031",
+      "value": 0.0002800941895503955,
+      "title": "Cattle Feedlots ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2038",
+      "value": 0.0001044947942397059,
+      "title": "Poultry Hatcheries",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2043",
+      "value": 0.00034687457588783996,
+      "title": "Shellfish Farming ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2044",
+      "value": 0.0016869698120585436,
+      "title": "Other Aquaculture ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2047",
+      "value": 0.0010406237276635198,
+      "title": "Fur-Bearing Animal and Rabbit Production",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2048",
+      "value": 0.0019897253052879515,
+      "title": "All Other Animal Production ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2049",
+      "value": 0.0017343728794391995,
+      "title": "Timber Tract Operations",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2051",
+      "value": 0.0005558641643672516,
+      "title": "Logging ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2052",
+      "value": 0.002219132442735468,
+      "title": "Finfish Fishing ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2053",
+      "value": 0.0017343728794391995,
+      "title": "Shellfish Fishing ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2055",
+      "value": 0.0015156946314813934,
+      "title": "Hunting and Trapping",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2056",
+      "value": 0.0010977154545225702,
+      "title": "Cotton Ginning ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2057",
+      "value": 0.002071558795848645,
+      "title": "Soil Preparation, Planting, and Cultivating ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2060",
+      "value": 0.00002370153369032795,
+      "title": "Farm Labor Contractors and Crew Leaders ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2061",
+      "value": 0.0003134843827191175,
+      "title": "Farm Management Services ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2062",
+      "value": 0.02393450903094923,
+      "title": "Support Activities for Animal Production",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2063",
+      "value": 0.001596487892030771,
+      "title": "Support Activities for Forestry",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2066",
+      "value": 0.0010169221939731919,
+      "title": "Bituminous Coal and Lignite Surface Mining ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2070",
+      "value": 0.0004513693701275459,
+      "title": "Gold Ore Mining ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2072",
+      "value": 0.00002370153369032795,
+      "title": "Copper, Nickel, Lead, and Zinc Mining ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2079",
+      "value": 0.0008693485470863691,
+      "title": "Construction Sand and Gravel Mining ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2080",
+      "value": 0.00018528805478908392,
+      "title": "Industrial Sand Mining ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2091",
+      "value": 0.000266081315338462,
+      "title": "Support Activities for Nonmetallic Minerals (except Fuels) Mining ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2092",
+      "value": 0.0010977154545225702,
+      "title": "Hydroelectric Power Generation ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2093",
+      "value": 0.0010169221939731919,
+      "title": "Fossil Fuel Electric Power Generation ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2094",
+      "value": 0.000589254357535974,
+      "title": "Nuclear Electric Power Generation ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2095",
+      "value": 0.004243288171203456,
+      "title": "Solar Electric Power Generation ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2096",
+      "value": 0.007764801442207367,
+      "title": "Wind Electric Power Generation ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2097",
+      "value": 0.000266081315338462,
+      "title": "Geothermal Electric Power Generation ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2098",
+      "value": 0.000266081315338462,
+      "title": "Biomass Electric Power Generation ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2099",
+      "value": 0.056802639559699365,
+      "title": "Other Electric Power Generation ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2100",
+      "value": 0.0026468002791726858,
+      "title": "Electric Bulk Power Transmission and Control ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2102",
+      "value": 0.0004977322074968857,
+      "title": "Natural Gas Distribution ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2103",
+      "value": 0.003370818934083139,
+      "title": "Water Supply and Irrigation Systems ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2104",
+      "value": 0.0014252127114536208,
+      "title": "Sewage Treatment Facilities ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2105",
+      "value": 0.006101533163839151,
+      "title": "Steam and Air-Conditioning Supply ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2107",
+      "value": 0.0001254022272726427,
+      "title": "New Multifamily Housing Construction (except For-Sale Builders) ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2108",
+      "value": 0.00657348337762308,
+      "title": "New Housing For-Sale Builders ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2109",
+      "value": 0.03496606403518322,
+      "title": "Residential Remodelers ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2112",
+      "value": 0.010009879173344071,
+      "title": "Water and Sewer Line and Related Structures Construction ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2115",
+      "value": 0.011570612193731889,
+      "title": "Land Subdivision ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2116",
+      "value": 0.009694477625290588,
+      "title": "Highway, Street, and Bridge Construction ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2117",
+      "value": 0.012871033485741026,
+      "title": "Other Heavy and Civil Engineering Construction ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2120",
+      "value": 0.1390712495266874,
+      "title": "Framing Contractors ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2121",
+      "value": 0.04803060458299722,
+      "title": "Masonry Contractors ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2123",
+      "value": 0.05929529822254081,
+      "title": "Roofing Contractors ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2126",
+      "value": 0.05662122820650397,
+      "title": "Electrical Contractors and Other Wiring Installation Contractors",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2127",
+      "value": 0.06523041267552601,
+      "title": "Plumbing, Heating, and Air-Conditioning Contractors ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2129",
+      "value": 0.11390842166388639,
+      "title": "Drywall and Insulation Contractors ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2130",
+      "value": 0.548431365782354,
+      "title": "Painting and Wall Covering Contractors",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2131",
+      "value": 0.03481253322668008,
+      "title": "Flooring Contractors",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2132",
+      "value": 0.012510472625017807,
+      "title": "Tile and Terrazzo Contractors",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2133",
+      "value": 0.034305112359704806,
+      "title": "Finish Carpentry Contractors",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2135",
+      "value": 0.03264080385132527,
+      "title": "Site Preparation Contractors",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2137",
+      "value": 0.0005795656980575798,
+      "title": "Dog and Cat Food Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2138",
+      "value": 0.00007110460107098334,
+      "title": "Other Animal Food Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2139",
+      "value": 0.0017106713457488722,
+      "title": "Flour Milling ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2142",
+      "value": 0.0008553356728744361,
+      "title": "Wet Corn Milling ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2145",
+      "value": 0.0002326911221697396,
+      "title": "Breakfast Cereal Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2148",
+      "value": 0.001591123447285917,
+      "title": "Nonchocolate Confectionery Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2154",
+      "value": 0.0007788666270585971,
+      "title": "Specialty Canning ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2155",
+      "value": 0.00015189786162036144,
+      "title": "Dried and Dehydrated Food Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2156",
+      "value": 0.0011688200555935537,
+      "title": "Fluid Milk Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2161",
+      "value": 0.0007077620259876131,
+      "title": "Animal (except Poultry) Slaughtering ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2165",
+      "value": 0.0022331453169474012,
+      "title": "Seafood Product Preparation and Packaging",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2168",
+      "value": 0.0009835320008044698,
+      "title": "Frozen Cakes, Pies, and Other Pastries Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2170",
+      "value": 0.00165790383362336,
+      "title": "Dry Pasta, Dough, and Flour Mixes Manufacturing from Purchased Flour ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2172",
+      "value": 0.0011451185219032258,
+      "title": "Roasted Nuts and Peanut Butter Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2178",
+      "value": 0.0016201894257210996,
+      "title": "Perishable Prepared Food Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2180",
+      "value": 0.00014116897213065072,
+      "title": "Soft Drink Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2181",
+      "value": 0.00012819632793003384,
+      "title": "Bottled Water Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2183",
+      "value": 0.012958231421046575,
+      "title": "Breweries",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2185",
+      "value": 0.0017386970941727382,
+      "title": "Distilleries ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2190",
+      "value": 0.000266081315338462,
+      "title": "Nonwoven Fabric Mills",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2196",
+      "value": 0.004005232604288863,
+      "title": "Textile Bag and Canvas Mills ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2197",
+      "value": 0.00254230548493298,
+      "title": "Rope, Cordage, Twine, Tire Cord, and Tire Fabric Mills ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2207",
+      "value": 0.0025843441075687804,
+      "title": "Footwear Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2216",
+      "value": 0.0002089895884794118,
+      "title": "Reconstituted Wood Product Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2217",
+      "value": 0.00011850766845163958,
+      "title": "Wood Window and Door Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2219",
+      "value": 0.002370153369032793,
+      "title": "Other Millwork (including Flooring) ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2238",
+      "value": 0.005211767067784677,
+      "title": "Support Activities for Printing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2244",
+      "value": 0.002897828490287898,
+      "title": "Petrochemical Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2245",
+      "value": 0.0005030966522417403,
+      "title": "Industrial Gas Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2247",
+      "value": 0.011285274483199962,
+      "title": "Other Basic Inorganic Chemical Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2252",
+      "value": 0.0000474030673806559,
+      "title": "Synthetic Rubber Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2253",
+      "value": 0.0002897828490287899,
+      "title": "Artificial and Synthetic Fibers and Filaments Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2254",
+      "value": 0.00037057610957816784,
+      "title": "Nitrogenous Fertilizer Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2256",
+      "value": 0.002057545921636712,
+      "title": "Fertilizer (Mixing Only) Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2257",
+      "value": 0.0014586029046223434,
+      "title": "Pesticide and Other Agricultural Chemical Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2259",
+      "value": 0.18458451414502325,
+      "title": "Pharmaceutical Preparation Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2260",
+      "value": 0.006667085987684797,
+      "title": "In-Vitro Diagnostic Substance Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2261",
+      "value": 0.03827679147613666,
+      "title": "Biological Product (except Diagnostic) Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2263",
+      "value": 0.0032403788514421992,
+      "title": "Adhesive Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2269",
+      "value": 0.0001044947942397059,
+      "title": "Explosives Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2270",
+      "value": 0.00002370153369032795,
+      "title": "Custom Compounding of Purchased Resins ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2272",
+      "value": 0.0026694615828516963,
+      "title": "All Other Miscellaneous Chemical Product and Preparation Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2276",
+      "value": 0.0002089895884794118,
+      "title": "Unlaminated Plastics Profile Shape Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2278",
+      "value": 0.0000474030673806559,
+      "title": "Laminated Plastics Plate, Sheet (except Packaging), and Shape Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2280",
+      "value": 0.002095260329538973,
+      "title": "Urethane and Other Foam Product (except Polystyrene) Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2284",
+      "value": 0.0008219454797057139,
+      "title": "Tire Manufacturing (except Retreading) ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2290",
+      "value": 0.00003771440790226146,
+      "title": "Clay Building Material and Refractories Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2292",
+      "value": 0.0004793951185514128,
+      "title": "Other Pressed and Blown Glass and Glassware Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2295",
+      "value": 0.000532162630676924,
+      "title": "Cement Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2296",
+      "value": 0.0007260991149330857,
+      "title": "Ready-Mix Concrete Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2300",
+      "value": 0.0017914646062982499,
+      "title": "Lime Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2302",
+      "value": 0.0007648537528466635,
+      "title": "Abrasive Product Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2303",
+      "value": 0.005022154798262055,
+      "title": "Cut Stone and Stone Product Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2305",
+      "value": 0.00037057610957816784,
+      "title": "Mineral Wool Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2315",
+      "value": 0.0010783381355657816,
+      "title": "Nonferrous Metal (except Aluminum) Smelting and Refining ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2323",
+      "value": 0.0012022102487622755,
+      "title": "Aluminum Foundries (except Die-Casting) ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2334",
+      "value": 0.0023042499180183844,
+      "title": "Plate Work Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2345",
+      "value": 0.008255088744936766,
+      "title": "Machine Shops",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2349",
+      "value": 0.0037768656968526614,
+      "title": "Metal Coating, Engraving (except Jewelry and Silverware), and Allied Services to Manufacturers ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2351",
+      "value": 0.0030410779224411813,
+      "title": "Industrial Valve Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2352",
+      "value": 0.0004750709038178736,
+      "title": "Fluid Power Valve and Hose Fitting Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2358",
+      "value": 0.0008790372065647637,
+      "title": "Small Arms, Ordnance, and Ordnance Accessories Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2359",
+      "value": 0.00001401287421193368,
+      "title": "Fabricated Pipe and Pipe Fitting Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2361",
+      "value": 0.0006840604922972857,
+      "title": "Farm Machinery and Equipment Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2364",
+      "value": 0.0001044947942397059,
+      "title": "Mining Machinery and Equipment Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2367",
+      "value": 0.0017106713457488722,
+      "title": "Semiconductor Machinery Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2368",
+      "value": 0.00019930092900101735,
+      "title": "Sawmill, Woodworking, and Paper Machinery Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2370",
+      "value": 0.006228689261757868,
+      "title": "Other Industrial Machinery Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2371",
+      "value": 0.009365613548971679,
+      "title": "Optical Instrument and Lens Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2372",
+      "value": 0.0014629271193558819,
+      "title": "Photographic and Photocopying Equipment Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2373",
+      "value": 0.0022601308353599513,
+      "title": "Other Commercial and Service Industry Machinery Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2375",
+      "value": 0.0023710303043558297,
+      "title": "Heating Equipment (except Warm Air Furnaces) Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2381",
+      "value": 0.0009027387402550918,
+      "title": "Rolling Mill and Other Metalworking Machinery Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2382",
+      "value": 0.01606176551509166,
+      "title": "Turbine and Turbine Generator Set Units Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2384",
+      "value": 0.0010880267950441756,
+      "title": "Mechanical Power Transmission Equipment Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2385",
+      "value": 0.0025660070186233077,
+      "title": "Other Engine Equipment Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2389",
+      "value": 0.0008693485470863691,
+      "title": "Conveyor and Conveying Equipment Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2390",
+      "value": 0.0002897828490287899,
+      "title": "Overhead Traveling Crane, Hoist, and Monorail System Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2398",
+      "value": 0.0031552613761592816,
+      "title": "Scale and Balance Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2399",
+      "value": 0.0030400376924298667,
+      "title": "All Other Miscellaneous General Purpose Machinery Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2400",
+      "value": 0.0023085741327519243,
+      "title": "Electronic Computer Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2401",
+      "value": 0.0021997551237786786,
+      "title": "Computer Storage Device Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2402",
+      "value": 0.0060100110138000635,
+      "title": "Computer Terminal and Other Computer Peripheral Equipment Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2403",
+      "value": 0.003877036276358829,
+      "title": "Telephone Apparatus Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2404",
+      "value": 0.004027893907967872,
+      "title": "Radio and Television Broadcasting and Wireless Communications Equipment Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2405",
+      "value": 0.00518374131936081,
+      "title": "Other Communications Equipment Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2408",
+      "value": 0.03897486484264589,
+      "title": "Semiconductor and Related Device Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2410",
+      "value": 0.0010880267950441756,
+      "title": "Electronic Connector Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2411",
+      "value": 0.00032749725693105103,
+      "title": "Printed Circuit Assembly (Electronic Assembly) Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2412",
+      "value": 0.008034166742268055,
+      "title": "Other Electronic Component Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2413",
+      "value": 0.025108530236599362,
+      "title": "Electromedical and Electrotherapeutic Apparatus Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2414",
+      "value": 0.00867618861192954,
+      "title": "Search, Detection, Navigation, Guidance, Aeronautical, and Nautical System and Instrument Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2415",
+      "value": 0.002997999069794065,
+      "title": "Automatic Environmental Control Manufacturing for Residential, Commercial, and Appliance Use ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2416",
+      "value": 0.014531017779387015,
+      "title": "Instruments and Related Products Manufacturing for Measuring, Displaying, and Controlling Industrial Process Variables ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2418",
+      "value": 0.009560590263239157,
+      "title": "Instrument Manufacturing for Measuring and Testing Electricity and Electrical Signals ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2419",
+      "value": 0.05288964274608438,
+      "title": "Analytical Laboratory Instrument Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2420",
+      "value": 0.002670501812863014,
+      "title": "Irradiation Apparatus Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2421",
+      "value": 0.0206465638174381,
+      "title": "Other Measuring and Controlling Device Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2422",
+      "value": 0.00011850766845163958,
+      "title": "Blank Magnetic and Optical Recording Media Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2431",
+      "value": 0.001529707505693327,
+      "title": "Motor and Generator Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2432",
+      "value": 0.0017009826862704773,
+      "title": "Switchgear and Switchboard Apparatus Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2434",
+      "value": 0.006633695794516076,
+      "title": "Storage Battery Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2437",
+      "value": 0.000266081315338462,
+      "title": "Other Communication and Energy Wire Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2438",
+      "value": 0.0017246842199608054,
+      "title": "Current-Carrying Wiring Device Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2440",
+      "value": 0.002219132442735468,
+      "title": "Carbon and Graphite Product Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2441",
+      "value": 0.010324403786074505,
+      "title": "All Other Miscellaneous Electrical Equipment and Component Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2442",
+      "value": 0.0005461755048888569,
+      "title": "Automobile Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2445",
+      "value": 0.0003371859164094458,
+      "title": "Motor Vehicle Body Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2449",
+      "value": 0.0007982439460153855,
+      "title": "Motor Vehicle Gasoline Engine and Engine Parts Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2452",
+      "value": 0.002276224169594518,
+      "title": "Motor Vehicle Brake System Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2454",
+      "value": 0.0005558641643672516,
+      "title": "Motor Vehicle Seating and Interior Trim Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2456",
+      "value": 0.006015375458544918,
+      "title": "Other Motor Vehicle Parts Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2457",
+      "value": 0.0025229281659761914,
+      "title": "Aircraft Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2458",
+      "value": 0.004395186032823818,
+      "title": "Aircraft Engine and Engine Parts Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2461",
+      "value": 0.0010169221939731919,
+      "title": "Guided Missile and Space Vehicle Propulsion Unit and Propulsion Unit Parts Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2464",
+      "value": 0.0019433624679186113,
+      "title": "Ship Building and Repairing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2465",
+      "value": 0.004970427516147858,
+      "title": "Boat Building ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2466",
+      "value": 0.0012162231229742094,
+      "title": "Motorcycle, Bicycle, and Parts Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2467",
+      "value": 0.0014445900304104096,
+      "title": "Military Armored Vehicle, Tank, and Tank Component Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2477",
+      "value": 0.0015393961651717215,
+      "title": "Office Furniture (except Wood) Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2481",
+      "value": 0.05595770618693811,
+      "title": "Surgical and Medical Instrument Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2482",
+      "value": 0.006014335228533604,
+      "title": "Surgical Appliance and Supplies Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2487",
+      "value": 0.0041701031101098445,
+      "title": "Sporting and Athletic Goods Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2491",
+      "value": 0.0013304065766923097,
+      "title": "Gasket, Packing, and Sealing Device Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2492",
+      "value": 0.0034159782467528877,
+      "title": "Musical Instrument Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2505",
+      "value": 0.0028504254229072415,
+      "title": "Roofing, Siding, and Insulation Material Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2509",
+      "value": 0.048697204921672066,
+      "title": "Computer and Computer Peripheral Equipment and Software Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2513",
+      "value": 0.008028802297523197,
+      "title": "Other Professional Equipment and Supplies Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2520",
+      "value": 0.01328693220267722,
+      "title": "Plumbing and Heating Equipment and Supplies (Hydronics) Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2521",
+      "value": 0.004084985634826923,
+      "title": "Warm Air Heating and Air-Conditioning Equipment and Supplies Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2522",
+      "value": 0.0016956182415256218,
+      "title": "Refrigeration Equipment and Supplies Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2529",
+      "value": 0.006597184911313404,
+      "title": "Sporting and Recreational Goods and Supplies Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2545",
+      "value": 0.00028441840428393336,
+      "title": "Poultry and Poultry Product Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2547",
+      "value": 0.03099795312192516,
+      "title": "Fish and Seafood Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2549",
+      "value": 0.011690444310646442,
+      "title": "Fresh Fruit and Vegetable Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2570",
+      "value": 0.0004750709038178736,
+      "title": "Recreational Vehicle Dealers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2571",
+      "value": 0.014333960605096905,
+      "title": "Boat Dealers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2576",
+      "value": 0.10878554594017167,
+      "title": "Floor Covering Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2581",
+      "value": 0.0013684475739711216,
+      "title": "Home Centers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2582",
+      "value": 0.020033771220900075,
+      "title": "Paint and Wallpaper Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2588",
+      "value": 0.1616449191831213,
+      "title": "Convenience Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2592",
+      "value": 0.09035756421952255,
+      "title": "Baked Goods Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2595",
+      "value": 0.004444609098345435,
+      "title": "Beer, Wine, and Liquor Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2602",
+      "value": 0.056510062610013206,
+      "title": "Other Gasoline Stations ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2612",
+      "value": 0.018746770086231435,
+      "title": "Sporting Goods Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2613",
+      "value": 0.004702592330163308,
+      "title": "Hobby, Toy, and Game Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2615",
+      "value": 0.015168878729003235,
+      "title": "Musical Instrument and Supplies Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2616",
+      "value": 0.033394928714682234,
+      "title": "Book Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2618",
+      "value": 0.00432977246587425,
+      "title": "Department Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2619",
+      "value": 0.0028838156160759655,
+      "title": "Warehouse Clubs and Supercenters ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2621",
+      "value": 0.00013629441145061698,
+      "title": "Florists ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2624",
+      "value": 0.021267454497496723,
+      "title": "Used Merchandise Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2632",
+      "value": 0.06334344638478852,
+      "title": "Fuel Dealers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2633",
+      "value": 0.006739557408143641,
+      "title": "Other Direct Selling Establishments ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2634",
+      "value": 0.007497679896857589,
+      "title": "Scheduled Passenger Air Transportation ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2635",
+      "value": 0.0015630976988620497,
+      "title": "Scheduled Freight Air Transportation ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2639",
+      "value": 0.0016342022999330326,
+      "title": "Line-Haul Railroads ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2646",
+      "value": 0.0007077620259876131,
+      "title": "Inland Water Passenger Transportation ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2650",
+      "value": 0.0026696248775399684,
+      "title": "Used Household and Office Goods Moving",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2656",
+      "value": 0.00018528805478908392,
+      "title": "Other Urban Transit Systems ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2657",
+      "value": 0.002731917754455603,
+      "title": "Interurban and Rural Bus Transportation",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2658",
+      "value": 0.23329469171089592,
+      "title": "Taxi Service ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2663",
+      "value": 0.015231334900607144,
+      "title": "All Other Transit and Ground Passenger Transportation ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2664",
+      "value": 0.0011214169882128977,
+      "title": "Pipeline Transportation of Crude Oil",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2665",
+      "value": 0.0011451185219032258,
+      "title": "Pipeline Transportation of Natural Gas",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2669",
+      "value": 0.0030744681156099035,
+      "title": "Scenic and Sightseeing Transportation, Water",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2670",
+      "value": 0.0010977154545225702,
+      "title": "Scenic and Sightseeing Transportation, Other",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2671",
+      "value": 0.010934075692578584,
+      "title": "Air Traffic Control",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2672",
+      "value": 0.003788798111041964,
+      "title": "Other Airport Operations ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2675",
+      "value": 0.000266081315338462,
+      "title": "Port and Harbor Operations",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2677",
+      "value": 0.0006312929801717746,
+      "title": "Navigational Services to Shipping ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2678",
+      "value": 0.0019002836152714944,
+      "title": "Other Support Activities for Water Transportation",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2680",
+      "value": 0.005029762997717816,
+      "title": "Other Support Activities for Road Transportation ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2684",
+      "value": 0.00850075251130712,
+      "title": "Postal Service",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2686",
+      "value": 0.008209766137578744,
+      "title": "Local Messengers and Local Delivery",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2690",
+      "value": 0.01260062795566902,
+      "title": "Other Warehousing and Storage",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2691",
+      "value": 0.025859534409922363,
+      "title": "Newspaper Publishers ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2693",
+      "value": 0.01380836594386443,
+      "title": "Book Publishers ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2694",
+      "value": 0.00006141594159258924,
+      "title": "Directory and Mailing List Publishers ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2695",
+      "value": 0.0004987724375082017,
+      "title": "Greeting Card Publishers ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2697",
+      "value": 0.2666031361309073,
+      "title": "Software Publishers",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2700",
+      "value": 0.0069914625545819,
+      "title": "Motion Picture Theaters (except Drive-Ins) ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2707",
+      "value": 0.0007648537528466635,
+      "title": "Other Sound Recording Industries",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2708",
+      "value": 0.00307999585504303,
+      "title": "Radio Networks ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2709",
+      "value": 0.002403380267513235,
+      "title": "Radio Stations ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2712",
+      "value": 0.022953220784855656,
+      "title": "Wired Telecommunications Carriers ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2717",
+      "value": 0.04878680990637679,
+      "title": "Data Processing, Hosting, and Related Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2719",
+      "value": 0.0822988794701228,
+      "title": "Libraries and Archives ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2721",
+      "value": 0.017968617099807602,
+      "title": "All Other Information Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2722",
+      "value": 0.00018528805478908392,
+      "title": "Monetary Authorities-Central Bank",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2723",
+      "value": 0.03491072617897023,
+      "title": "Commercial Banking ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2724",
+      "value": 0.06153364468954478,
+      "title": "Savings Institutions ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2725",
+      "value": 0.052577361888064854,
+      "title": "Credit Unions ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2729",
+      "value": 0.0044114426617466555,
+      "title": "Consumer Lending ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2730",
+      "value": 0.0028763707113084727,
+      "title": "Real Estate Credit ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2735",
+      "value": 0.0034155911954946794,
+      "title": "Financial Transactions Processing, Reserve, and Clearinghouse Activities ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2736",
+      "value": 0.00816821739900778,
+      "title": "Other Activities Related to Credit Intermediation ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2737",
+      "value": 0.005835615143188967,
+      "title": "Investment Banking and Securities Dealing ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2742",
+      "value": 0.34605501936657673,
+      "title": "Miscellaneous Intermediation ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2743",
+      "value": 0.01419295492765453,
+      "title": "Portfolio Management ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2744",
+      "value": 0.2157765065840111,
+      "title": "Investment Advice ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2745",
+      "value": 0.38340681594099413,
+      "title": "Trust, Fiduciary, and Custody Activities ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2746",
+      "value": 0.0011484025066254492,
+      "title": "Miscellaneous Financial Investment Activities ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2747",
+      "value": 0.0013252054266357305,
+      "title": "Direct Life Insurance Carriers ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2748",
+      "value": 0.010110049752850236,
+      "title": "Direct Health and Medical Insurance Carriers ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2751",
+      "value": 0.007925347733294806,
+      "title": "Other Direct Insurance (except Life, Health, and Medical) Carriers ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2752",
+      "value": 0.0004416807106491517,
+      "title": "Reinsurance Carriers ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2753",
+      "value": 0.24073827964716504,
+      "title": "Insurance Agencies and Brokerages ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2754",
+      "value": 0.0068028905150705945,
+      "title": "Claims Adjusting ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2755",
+      "value": 0.00016591073583229547,
+      "title": "Third Party Administration of Insurance and Pension Funds ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2756",
+      "value": 0.01198126738968655,
+      "title": "All Other Insurance Related Activities ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2757",
+      "value": 0.0015577332541171942,
+      "title": "Pension Funds ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2759",
+      "value": 0.0001044947942397059,
+      "title": "Other Insurance Funds ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2760",
+      "value": 0.6174052720525207,
+      "title": "Open-End Investment Funds ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2761",
+      "value": 0.11628465311829879,
+      "title": "Trusts, Estates, and Agency Accounts ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2763",
+      "value": 0.3818072497298543,
+      "title": "Lessors of Residential Buildings and Dwellings ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2764",
+      "value": 0.02059028856402044,
+      "title": "Lessors of Nonresidential Buildings (except Miniwarehouses) ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2765",
+      "value": 0.010269555813926357,
+      "title": "Lessors of Miniwarehouses and Self-Storage Units ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2766",
+      "value": 0.035861805383810674,
+      "title": "Lessors of Other Real Estate Property ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2767",
+      "value": 0.20940920679226455,
+      "title": "Offices of Real Estate Agents and Brokers",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2768",
+      "value": 0.012837806587260572,
+      "title": "Residential Property Managers ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2769",
+      "value": 0.13421619089800055,
+      "title": "Nonresidential Property Managers ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2770",
+      "value": 0.025716284977769083,
+      "title": "Offices of Real Estate Appraisers ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2771",
+      "value": 0.025202296141349355,
+      "title": "Other Activities Related to Real Estate ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2772",
+      "value": 0.03227351172646933,
+      "title": "Passenger Car Rental ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2774",
+      "value": 0.000028189043112150213,
+      "title": "Truck, Utility Trailer, and RV (Recreational Vehicle) Rental and Leasing ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2775",
+      "value": 0.009293468717889379,
+      "title": "Consumer Electronics and Appliances Rental",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2778",
+      "value": 0.0012065344634958153,
+      "title": "Home Health Equipment Rental ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2779",
+      "value": 0.0026037214265255686,
+      "title": "Recreational Goods Rental ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2783",
+      "value": 0.00432304120174152,
+      "title": "Construction, Mining, and Forestry Machinery and Equipment Rental and Leasing ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2784",
+      "value": 0.0014252127114536208,
+      "title": "Office Machinery and Equipment Rental and Leasing",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2786",
+      "value": 0.004583758072335126,
+      "title": "Lessors of Nonfinancial Intangible Assets (except Copyrighted Works)",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2787",
+      "value": 0.7991285957032336,
+      "title": "Offices of Lawyers",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2795",
+      "value": 0.15637775379724195,
+      "title": "Architectural Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2796",
+      "value": 0.06302174299478548,
+      "title": "Landscape Architectural Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2797",
+      "value": 0.2119022644083097,
+      "title": "Engineering Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2799",
+      "value": 0.0013229616719248225,
+      "title": "Building Inspection Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2801",
+      "value": 0.006925722398255774,
+      "title": "Surveying and Mapping (except Geophysical) Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2802",
+      "value": 0.05050388592688186,
+      "title": "Testing Laboratories",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2804",
+      "value": 0.0005785254680462632,
+      "title": "Industrial Design Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2805",
+      "value": 0.00378200638502758,
+      "title": "Graphic Design Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2807",
+      "value": 0.5559538902757198,
+      "title": "Custom Computer Programming Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2808",
+      "value": 0.09946207384664242,
+      "title": "Computer Systems Design Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2809",
+      "value": 0.0000517272821141948,
+      "title": "Computer Facilities Management Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2810",
+      "value": 0.010005554958610533,
+      "title": "Other Computer Related Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2811",
+      "value": 0.3849486010646084,
+      "title": "Administrative Management and General Management Consulting Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2812",
+      "value": 0.02731813731454471,
+      "title": "Human Resources Consulting Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2814",
+      "value": 0.0018755418515698516,
+      "title": "Process, Physical Distribution, and Logistics Consulting Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2816",
+      "value": 0.04673878934953021,
+      "title": "Environmental Consulting Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2817",
+      "value": 0.10919591691767472,
+      "title": "Other Scientific and Technical Consulting Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2819",
+      "value": 0.17687872159500928,
+      "title": "Research and Development in Biotechnology (except Nanobiotechnology)",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2820",
+      "value": 0.2788878726544581,
+      "title": "Research and Development in the Physical, Engineering, and Life Sciences (except Nanotechnology and Biotechnology) ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2821",
+      "value": 0.155752049018385,
+      "title": "Research and Development in the Social Sciences and Humanities ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2823",
+      "value": 0.006344402829552105,
+      "title": "Public Relations Agencies",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2830",
+      "value": 0.07238276620152873,
+      "title": "Marketing Research and Public Opinion Polling",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2831",
+      "value": 0.008470749135667264,
+      "title": "Photography Studios, Portrait ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2833",
+      "value": 0.01751620749966874,
+      "title": "Translation and Interpretation Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2836",
+      "value": 0.0029075171497662928,
+      "title": "Offices of Bank Holding Companies ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2840",
+      "value": 0.008504913431352387,
+      "title": "Facilities Support Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2841",
+      "value": 0.03585364683840846,
+      "title": "Employment Placement Agencies ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2842",
+      "value": 0.03833092580765003,
+      "title": "Executive Search Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2843",
+      "value": 0.025214391850226926,
+      "title": "Temporary Help Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2844",
+      "value": 0.0007648537528466635,
+      "title": "Professional Employer Organizations",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2845",
+      "value": 0.006550822073944062,
+      "title": "Document Preparation Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2847",
+      "value": 0.0017386970941727382,
+      "title": "Telemarketing Bureaus and Other Contact Centers ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2848",
+      "value": 0.001699942456259159,
+      "title": "Private Mail Centers ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2853",
+      "value": 0.007714277684792766,
+      "title": "Court Reporting and Stenotype Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2858",
+      "value": 0.008480171667650744,
+      "title": "All Other Travel Arrangement and Reservation Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2863",
+      "value": 0.0027580263375451145,
+      "title": "Locksmiths ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2866",
+      "value": 0.009512086503965511,
+      "title": "Landscaping Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2867",
+      "value": 0.00821200989228965,
+      "title": "Carpet and Upholstery Cleaning Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2868",
+      "value": 0.4135166359137476,
+      "title": "Other Services to Buildings and Dwellings ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2870",
+      "value": 0.007986763674887397,
+      "title": "Convention and Trade Show Organizers",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2874",
+      "value": 0.0008553356728744361,
+      "title": "Other Waste Collection ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2875",
+      "value": 0.009037076062029312,
+      "title": "Hazardous Waste Treatment and Disposal ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2876",
+      "value": 0.0000690241410483504,
+      "title": "Solid Waste Landfill ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2878",
+      "value": 0.00678455342612512,
+      "title": "Other Nonhazardous Waste Treatment and Disposal ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2879",
+      "value": 0.0016094605362313905,
+      "title": "Remediation Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2880",
+      "value": 0.006951667686657,
+      "title": "Materials Recovery Facilities ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2883",
+      "value": 0.03836462449923854,
+      "title": "Elementary and Secondary Schools ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2884",
+      "value": 0.004474939063361881,
+      "title": "Junior Colleges ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2885",
+      "value": 0.34741073614387386,
+      "title": "Colleges, Universities, and Professional Schools ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2886",
+      "value": 0.002702851776020419,
+      "title": "Business and Secretarial Schools ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2887",
+      "value": 0.010185478568654758,
+      "title": "Computer Training ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2888",
+      "value": 0.0013874983035513599,
+      "title": "Professional and Management Development Training ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2891",
+      "value": 0.0031789629098496097,
+      "title": "Apprenticeship Training ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2892",
+      "value": 0.004922147513444157,
+      "title": "Other Technical and Trade Schools ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2893",
+      "value": 0.04624154702609817,
+      "title": "Fine Arts Schools ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2894",
+      "value": 0.014236850253743,
+      "title": "Sports and Recreation Instruction ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2895",
+      "value": 0.01848780708628391,
+      "title": "Language Schools ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2898",
+      "value": 0.13949595996777892,
+      "title": "All Other Miscellaneous Schools and Instruction ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2899",
+      "value": 0.06231355154661469,
+      "title": "Educational Support Services",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2904",
+      "value": 0.051243997916026865,
+      "title": "Offices of Optometrists",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2905",
+      "value": 0.21023242816049703,
+      "title": "Offices of Mental Health Practitioners (except Physicians) ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2910",
+      "value": 0.02733855486351281,
+      "title": "Outpatient Mental Health and Substance Abuse Centers ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2911",
+      "value": 0.006371938693911153,
+      "title": "HMO Medical Centers ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2912",
+      "value": 0.43355989012851287,
+      "title": "Kidney Dialysis Centers ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2915",
+      "value": 0.012887453409352132,
+      "title": "Medical Laboratories ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2917",
+      "value": 0.07015651544340232,
+      "title": "Home Health Care Services",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2921",
+      "value": 0.15006433411145936,
+      "title": "General Medical and Surgical Hospitals ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2922",
+      "value": 0.007373807783661094,
+      "title": "Psychiatric and Substance Abuse Hospitals ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2923",
+      "value": 0.011175415244215399,
+      "title": "Specialty (except Psychiatric and Substance Abuse) Hospitals ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2924",
+      "value": 0.1100573306759288,
+      "title": "Nursing Care Facilities (Skilled Nursing Facilities) ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2926",
+      "value": 0.025320803809801003,
+      "title": "Residential Mental Health and Substance Abuse Facilities ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2927",
+      "value": 0.02096229195486813,
+      "title": "Continuing Care Retirement Communities ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2928",
+      "value": 0.0162643504288149,
+      "title": "Assisted Living Facilities for the Elderly ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2929",
+      "value": 0.0364014129192551,
+      "title": "Other Residential Care Facilities ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2930",
+      "value": 0.01199856424862071,
+      "title": "Child and Youth Services ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2931",
+      "value": 0.02030001583092681,
+      "title": "Services for the Elderly and Persons with Disabilities ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2932",
+      "value": 0.2664061213275422,
+      "title": "Other Individual and Family Services ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2934",
+      "value": 0.007773449871674445,
+      "title": "Temporary Shelters ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2935",
+      "value": 0.0007411522191563357,
+      "title": "Other Community Housing Services ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2936",
+      "value": 0.0016622280483569005,
+      "title": "Emergency and Other Relief Services ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2937",
+      "value": 0.02744304965775253,
+      "title": "Vocational Rehabilitation Services ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2938",
+      "value": 0.09508226750741837,
+      "title": "Child Day Care Services ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2941",
+      "value": 0.016353955413519625,
+      "title": "Musical Groups and Artists ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2943",
+      "value": 0.0003427136558425774,
+      "title": "Sports Teams and Clubs ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2944",
+      "value": 0.0021232860779628404,
+      "title": "Racetracks ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2945",
+      "value": 0.0016085836009083459,
+      "title": "Other Spectator Sports ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2950",
+      "value": 0.023972550028228033,
+      "title": "Museums ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2951",
+      "value": 0.022157934234185956,
+      "title": "Historical Sites",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2955",
+      "value": 0.0007357877744114808,
+      "title": "Amusement Arcades",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2956",
+      "value": 0.0003134843827191175,
+      "title": "Casinos (except Casino Hotels)",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2958",
+      "value": 0.004554692093899942,
+      "title": "Golf Courses and Country Clubs",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2960",
+      "value": 0.006611197785525341,
+      "title": "Marinas",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2961",
+      "value": 0.09685500797351303,
+      "title": "Fitness and Recreational Sports Centers ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2962",
+      "value": 0.004056959886403056,
+      "title": "Bowling Centers",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2963",
+      "value": 0.015216445091072173,
+      "title": "All Other Amusement and Recreation Industries ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2964",
+      "value": 0.08208293486094073,
+      "title": "Hotels (except Casino Hotels) and Motels ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2965",
+      "value": 0.005189105764105665,
+      "title": "Casino Hotels",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2966",
+      "value": 0.04073622324049763,
+      "title": "Bed-and-Breakfast Inns ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2970",
+      "value": 0.01344731519907638,
+      "title": "Rooming and Boarding Houses, Dormitories, and Workers' Camps ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2971",
+      "value": 0.004237923726458601,
+      "title": "Food Service Contractors",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2977",
+      "value": 0.011821761328610424,
+      "title": "Cafeterias, Grill Buffets, and Buffets ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2980",
+      "value": 0.007915659073816413,
+      "title": "Automotive Exhaust System Repair ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "2983",
+      "value": 0.06088674825920327,
+      "title": "Automotive Body, Paint, and Interior Repair and Maintenance ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "2984",
+      "value": 0.017937307366661506,
+      "title": "Automotive Glass Replacement Shops ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "2985",
+      "value": 0.003282417474078,
+      "title": "Automotive Oil Change and Lubrication Shops ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "2986",
+      "value": 0.007596096605717688,
+      "title": "Car Washes ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "2987",
+      "value": 0.00961352107005294,
+      "title": "All Other Automotive Repair and Maintenance ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "2992",
+      "value": 0.00485224643707277,
+      "title": "Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "2995",
+      "value": 0.0006077547411697192,
+      "title": "Reupholstery and Furniture Repair",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "2997",
+      "value": 0.042539946850361755,
+      "title": "Other Personal and Household Goods Repair and Maintenance ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "2998",
+      "value": 0.0004071898255874652,
+      "title": "Barber Shops ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "2999",
+      "value": 0.07764634529327744,
+      "title": "Beauty Salons ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3001",
+      "value": 0.002488497742796151,
+      "title": "Diet and Weight Reducing Centers ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3002",
+      "value": 0.0866630823591771,
+      "title": "Other Personal Care Services ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3003",
+      "value": 0.00969880184002414,
+      "title": "Funeral Homes and Funeral Services ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3004",
+      "value": 0.006212759222211579,
+      "title": "Cemeteries and Crematories ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3006",
+      "value": 0.00455222458261911,
+      "title": "Drycleaning and Laundry Services (except Coin-Operated) ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3009",
+      "value": 0.01529740164630982,
+      "title": "Pet Care (except Veterinary) Services ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3016",
+      "value": 0.0031024938640337703,
+      "title": "Voluntary Health Organizations ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3017",
+      "value": 0.0020812474553270396,
+      "title": "Other Grantmaking and Giving Services ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3020",
+      "value": 0.00030006422537861427,
+      "title": "Other Social Advocacy Organizations ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3021",
+      "value": 0.23096474454101443,
+      "title": "Civic and Social Organizations ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3022",
+      "value": 0.030866962693337708,
+      "title": "Business Associations ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3023",
+      "value": 0.007056978954338112,
+      "title": "Professional Organizations ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3024",
+      "value": 0.008155244754807145,
+      "title": "Labor Unions and Similar Labor Organizations ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3025",
+      "value": 0.01108925753892117,
+      "title": "Political Organizations ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3028",
+      "value": 0.030191224041130976,
+      "title": "Executive Offices ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3030",
+      "value": 0.03497724043781278,
+      "title": "Public Finance Activities ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3032",
+      "value": 0.001606176551509166,
+      "title": "American Indian and Alaska Native Tribal Governments ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3033",
+      "value": 0.07027332970308954,
+      "title": "Other General Government Support ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3034",
+      "value": 0.024093851797337074,
+      "title": "Courts ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3035",
+      "value": 0.011199280072594008,
+      "title": "Police Protection ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3036",
+      "value": 0.012886086589964272,
+      "title": "Legal Counsel and Prosecution ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3037",
+      "value": 0.0018809062963147055,
+      "title": "Correctional Institutions ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3038",
+      "value": 0.00024670399638167294,
+      "title": "Parole Offices and Probation Offices ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3040",
+      "value": 0.0015437203799052606,
+      "title": "Other Justice, Public Order, and Safety Activities ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3041",
+      "value": 0.0015103301867365395,
+      "title": "Administration of Education Programs ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3042",
+      "value": 0.035124814084699606,
+      "title": "Administration of Public Health Programs ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3043",
+      "value": 0.02743544145829676,
+      "title": "Administration of Human Resource Programs (except Education, Public Health, and Veterans' Affairs Programs) ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3044",
+      "value": 0.014146428795596912,
+      "title": "Administration of Veterans' Affairs ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3045",
+      "value": 0.01755271838287141,
+      "title": "Administration of Air and Water Resource and Solid Waste Management Programs ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3046",
+      "value": 0.023511002114557276,
+      "title": "Administration of Conservation Programs ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3047",
+      "value": 0.010083227529125965,
+      "title": "Administration of Housing Programs ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3048",
+      "value": 0.010463329003494247,
+      "title": "Administration of Urban Planning and Community and Rural Development ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3049",
+      "value": 0.006571239622912171,
+      "title": "Administration of General Economic Programs ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3050",
+      "value": 0.034825342576192415,
+      "title": "Regulation and Administration of Transportation Programs ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3051",
+      "value": 0.002879491401342425,
+      "title": "Regulation and Administration of Communications, Electric, Gas, and Other Utilities ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3052",
+      "value": 0.008182780619166191,
+      "title": "Regulation of Agricultural Marketing and Commodities ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3053",
+      "value": 0.021701200419313553,
+      "title": "Regulation, Licensing, and Inspection of Miscellaneous Commercial Sectors ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3055",
+      "value": 0.024526884078519155,
+      "title": "National Security ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    }
+  ],
+  "secondaryData": [
+    {
+      "id": "2000",
+      "value": 0.00040396630274689007,
+      "title": "Soybean Farming",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2001",
+      "value": 0.00016158652109875602,
+      "title": "Oilseed (except Soybean) Farming ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2002",
+      "value": 0.00016158652109875602,
+      "title": "Dry Pea and Bean Farming ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2004",
+      "value": 0.0019724284463537947,
+      "title": "Corn Farming ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2005",
+      "value": 0.00024237978164813405,
+      "title": "Rice Farming",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2010",
+      "value": 0.00016158652109875602,
+      "title": "Orange Groves",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2011",
+      "value": 0.00016158652109875602,
+      "title": "Citrus (except Orange) Groves ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2013",
+      "value": 0.00005709172685905008,
+      "title": "Grape Vineyards ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2014",
+      "value": 0.00008079326054937801,
+      "title": "Strawberry Farming ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2015",
+      "value": 0.00013788498740842812,
+      "title": "Berry (except Strawberry) Farming ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2018",
+      "value": 0.00038995342853495656,
+      "title": "Other Noncitrus Fruit Farming ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2021",
+      "value": 0.001982117105832189,
+      "title": "Nursery and Tree Production ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2024",
+      "value": 0.00008079326054937801,
+      "title": "Cotton Farming",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2027",
+      "value": 0.00008079326054937801,
+      "title": "Sugar Beet Farming ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2029",
+      "value": 0.010271146389884177,
+      "title": "All Other Miscellaneous Crop Farming ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2030",
+      "value": 0.0005418512901553182,
+      "title": "Beef Cattle Ranching and Farming ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2032",
+      "value": 0.005708295750581972,
+      "title": "Dairy Cattle and Milk Production",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2034",
+      "value": 0.0015350719504381822,
+      "title": "Hog and Pig Farming ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2035",
+      "value": 0.00008079326054937801,
+      "title": "Chicken Egg Production ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2036",
+      "value": 0.00024237978164813405,
+      "title": "Broilers and Other Meat Type Chicken Production ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2039",
+      "value": 0.0017063471310153325,
+      "title": "Other Poultry Production ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2040",
+      "value": 0.00008079326054937801,
+      "title": "Sheep Farming",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2042",
+      "value": 0.0009458175929022083,
+      "title": "Finfish Farming and Fish Hatcheries ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2045",
+      "value": 0.00025206844112652847,
+      "title": "Apiculture",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2046",
+      "value": 0.0019153367194947443,
+      "title": "Horses and Other Equine Production",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2050",
+      "value": 0.00017127518057715067,
+      "title": "Forest Nurseries and Gathering of Forest Products ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2054",
+      "value": 0.00032317304219751204,
+      "title": "Other Marine Fishing ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2058",
+      "value": 0.0006463460843950241,
+      "title": "Crop Harvesting, Primarily by Machine ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2059",
+      "value": 0.0003802647690565622,
+      "title": "Postharvest Crop Activities (except Cotton Ginning) ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2064",
+      "value": 0.0027092564507765907,
+      "title": "Crude Petroleum Extraction ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2065",
+      "value": 0.0002994715085071841,
+      "title": "Natural Gas Extraction ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2067",
+      "value": 0.00008079326054937801,
+      "title": "Bituminous Coal Underground Mining ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2068",
+      "value": 0.00016158652109875602,
+      "title": "Anthracite Mining ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2069",
+      "value": 0.00032317304219751204,
+      "title": "Iron Ore Mining",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2073",
+      "value": 0.00008079326054937801,
+      "title": "Uranium-Radium-Vanadium Ore Mining ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2074",
+      "value": 0.00008079326054937801,
+      "title": "All Other Metal Ore Mining ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2075",
+      "value": 0.00013788498740842812,
+      "title": "Dimension Stone Mining and Quarrying ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2076",
+      "value": 0.00032317304219751204,
+      "title": "Crushed and Broken Limestone Mining and Quarrying ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2077",
+      "value": 0.00024237978164813405,
+      "title": "Crushed and Broken Granite Mining and Quarrying ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2078",
+      "value": 0.0003802647690565622,
+      "title": "Other Crushed and Broken Stone Mining and Quarrying ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2081",
+      "value": 0.00024237978164813405,
+      "title": "Kaolin and Ball Clay Mining ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2082",
+      "value": 0.0004847595632962681,
+      "title": "Clay and Ceramic and Refractory Minerals Mining ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2083",
+      "value": 0.00016158652109875602,
+      "title": "Potash, Soda, and Borate Mineral Mining ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2084",
+      "value": 0.00008079326054937801,
+      "title": "Phosphate Rock Mining ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2085",
+      "value": 0.00016158652109875602,
+      "title": "Other Chemical and Fertilizer Mineral Mining ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2086",
+      "value": 0.00035656323536623416,
+      "title": "All Other Nonmetallic Mineral Mining ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2087",
+      "value": 0.0009458175929022083,
+      "title": "Drilling Oil and Gas Wells",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2088",
+      "value": 0.003707841555804311,
+      "title": "Support Activities for Oil and Gas Operations ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2089",
+      "value": 0.0007271393449444022,
+      "title": "Support Activities for Coal Mining ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2090",
+      "value": 0.0005418512901553182,
+      "title": "Support Activities for Metal Mining ",
+      "topLevelParentId": "5",
+      "color": "#77C898"
+    },
+    {
+      "id": "2101",
+      "value": 0.00930195385266818,
+      "title": "Electric Power Distribution ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2106",
+      "value": 0.2536165461830487,
+      "title": "New Single-Family Housing Construction (except For-Sale Builders) ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2110",
+      "value": 0.0035559436941839497,
+      "title": "Industrial Building Construction ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2111",
+      "value": 0.029154821695394392,
+      "title": "Commercial and Institutional Building Construction ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2113",
+      "value": 0.0017634388578743826,
+      "title": "Oil and Gas Pipeline and Related Structures Construction ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2114",
+      "value": 0.00030483595325204023,
+      "title": "Power and Communication Line and Related Structures Construction ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2118",
+      "value": 0.028576949406101212,
+      "title": "Poured Concrete Foundation and Structure Contractors ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2119",
+      "value": 0.005456227309455443,
+      "title": "Structural Steel and Precast Concrete Contractors ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2122",
+      "value": 0.0006634796486409045,
+      "title": "Glass and Glazing Contractors ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2124",
+      "value": 0.0013702014446172054,
+      "title": "Siding Contractors ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2125",
+      "value": 0.011593231126485953,
+      "title": "Other Foundation, Structure, and Building Exterior Contractors ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2128",
+      "value": 0.002885896076098596,
+      "title": "Other Building Equipment Contractors ",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2134",
+      "value": 0.014392969497290312,
+      "title": "Other Building Finishing Contractors",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2136",
+      "value": 0.31361969117342725,
+      "title": "All Other Specialty Trade Contractors",
+      "topLevelParentId": "0",
+      "color": "#A973BE"
+    },
+    {
+      "id": "2140",
+      "value": 0.00040396630274689007,
+      "title": "Rice Milling ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2143",
+      "value": 0.00024237978164813405,
+      "title": "Soybean and Other Oilseed Processing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2144",
+      "value": 0.0009888964455493248,
+      "title": "Fats and Oils Refining and Blending ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2146",
+      "value": 0.00008079326054937801,
+      "title": "Beet Sugar Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2147",
+      "value": 0.0006463460843950241,
+      "title": "Cane Sugar Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2149",
+      "value": 0.003217717547763187,
+      "title": "Chocolate and Confectionery Manufacturing from Cacao Beans ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2150",
+      "value": 0.0004610580296059402,
+      "title": "Confectionery Manufacturing from Purchased Chocolate ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2151",
+      "value": 0.0024237978164813405,
+      "title": "Frozen Fruit, Juice, and Vegetable Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2152",
+      "value": 0.0006894249370421406,
+      "title": "Frozen Specialty Food Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2153",
+      "value": 0.0028805316313537414,
+      "title": "Fruit and Vegetable Canning ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2157",
+      "value": 0.0005655528238456461,
+      "title": "Creamery Butter Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2158",
+      "value": 0.0015210590762262488,
+      "title": "Cheese Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2159",
+      "value": 0.0014025514077746094,
+      "title": "Dry, Condensed, and Evaporated Dairy Product Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2160",
+      "value": 0.00008183349056069408,
+      "title": "Ice Cream and Frozen Dessert Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2162",
+      "value": 0.0011364700924361474,
+      "title": "Meat Processed from Carcasses ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2163",
+      "value": 0.0005655528238456461,
+      "title": "Rendering and Meat Byproduct Processing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2164",
+      "value": 0.0007842310718034523,
+      "title": "Poultry Processing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2166",
+      "value": 0.041857863985280484,
+      "title": "Retail Bakeries ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2167",
+      "value": 0.008034003447579777,
+      "title": "Commercial Bakeries ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2169",
+      "value": 0.0027566595181572466,
+      "title": "Cookie and Cracker Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2171",
+      "value": 0.0009458175929022083,
+      "title": "Tortilla Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2173",
+      "value": 0.00012387211319649444,
+      "title": "Other Snack Food Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2174",
+      "value": 0.0010696897060987031,
+      "title": "Coffee and Tea Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2175",
+      "value": 0.0018108419252550385,
+      "title": "Flavoring Syrup and Concentrate Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2176",
+      "value": 0.002537981270199441,
+      "title": "Mayonnaise, Dressing, and Other Prepared Sauce Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2177",
+      "value": 0.0007325037896892576,
+      "title": "Spice and Extract Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2179",
+      "value": 0.0013658772298836641,
+      "title": "All Other Miscellaneous Food Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2182",
+      "value": 0.0009458175929022083,
+      "title": "Ice Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2184",
+      "value": 0.0021824582648445226,
+      "title": "Wineries ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2186",
+      "value": 0.0012452891014093925,
+      "title": "Tobacco Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2187",
+      "value": 0.0050899754146108145,
+      "title": "Fiber, Yarn, and Thread Mills ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2188",
+      "value": 0.022010197292610854,
+      "title": "Broadwoven Fabric Mills",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2189",
+      "value": 0.004743100838722975,
+      "title": "Narrow Fabric Mills and Schiffli Machine Embroidery",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2191",
+      "value": 0.0027232693249885248,
+      "title": "Knit Fabric Mills",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2192",
+      "value": 0.006644424684005786,
+      "title": "Textile and Fabric Finishing Mills ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2193",
+      "value": 0.00000968865947839444,
+      "title": "Fabric Coating Mills",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2194",
+      "value": 0.003517189056270371,
+      "title": "Carpet and Rug Mills",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2195",
+      "value": 0.004896038930354653,
+      "title": "Curtain and Linen Mills",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2198",
+      "value": 0.010766961432046696,
+      "title": "All Other Miscellaneous Textile Product Mills ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2199",
+      "value": 0.007894038000148717,
+      "title": "Hosiery and Sock Mills",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2200",
+      "value": 0.007765841672218683,
+      "title": "Other Apparel Knitting Mills ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2201",
+      "value": 0.002941947572946331,
+      "title": "Cut and Sew Apparel Contractors ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2202",
+      "value": 0.032009184281776945,
+      "title": "Men’s and Boys’ Cut and Sew Apparel Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2203",
+      "value": 0.04777892319312891,
+      "title": "Women’s, Girls’, and Infants’ Cut and Sew Apparel Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2204",
+      "value": 0.008246277020781413,
+      "title": "Other Cut and Sew Apparel Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2205",
+      "value": 0.019111328572311643,
+      "title": "Apparel Accessories and Other Apparel Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2206",
+      "value": 0.0007799068570699131,
+      "title": "Leather and Hide Tanning and Finishing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2208",
+      "value": 0.002894544505565675,
+      "title": "Women's Handbag and Purse Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2209",
+      "value": 0.007167938885215633,
+      "title": "All Other Leather Good and Allied Product Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2210",
+      "value": 0.0005181497564649904,
+      "title": "Sawmills ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2211",
+      "value": 0.0008079326054937801,
+      "title": "Wood Preservation ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2212",
+      "value": 0.0004847595632962681,
+      "title": "Hardwood Veneer and Plywood Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2213",
+      "value": 0.00008079326054937801,
+      "title": "Softwood Veneer and Plywood Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2215",
+      "value": 0.0005655528238456461,
+      "title": "Truss Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2218",
+      "value": 0.0007605295381131244,
+      "title": "Cut Stock, Resawing Lumber, and Planing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2220",
+      "value": 0.0024668766691284573,
+      "title": "Wood Container and Pallet Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2221",
+      "value": 0.00016158652109875602,
+      "title": "Manufactured Home (Mobile Home) Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2222",
+      "value": 0.0006226445507046963,
+      "title": "Prefabricated Wood Building Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2223",
+      "value": 0.0025487101596891526,
+      "title": "All Other Miscellaneous Wood Product Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2224",
+      "value": 0.0012118989082406703,
+      "title": "Pulp Mills ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2225",
+      "value": 0.0007421924491676513,
+      "title": "Paper (except Newsprint) Mills ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2226",
+      "value": 0.00008079326054937801,
+      "title": "Newsprint Mills ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2227",
+      "value": 0.0023193030222416347,
+      "title": "Paperboard Mills ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2228",
+      "value": 0.003403005602552271,
+      "title": "Corrugated and Solid Fiber Box Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2229",
+      "value": 0.0006226445507046963,
+      "title": "Folding Paperboard Box Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2230",
+      "value": 0.001948726912663467,
+      "title": "Other Paperboard Container Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2231",
+      "value": 0.004159210925931857,
+      "title": "Paper Bag and Coated and Treated Paper Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2232",
+      "value": 0.0008510114581408968,
+      "title": "Stationery Product Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2233",
+      "value": 0.002618774530748819,
+      "title": "Sanitary Paper Product Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2234",
+      "value": 0.00209630055955029,
+      "title": "All Other Converted Paper Product Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2235",
+      "value": 0.04698314675839438,
+      "title": "Commercial Printing (except Screen and Books) ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2236",
+      "value": 0.0062091486481128015,
+      "title": "Commercial Screen Printing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2237",
+      "value": 0.0028848558460872805,
+      "title": "Books Printing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2239",
+      "value": 0.0054465386499770495,
+      "title": "Petroleum Refineries",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2240",
+      "value": 0.0027232693249885248,
+      "title": "Asphalt Paving Mixture and Block Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2241",
+      "value": 0.0004610580296059402,
+      "title": "Asphalt Shingle and Coating Materials Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2242",
+      "value": 0.00025206844112652847,
+      "title": "Petroleum Lubricating Oil and Grease Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2243",
+      "value": 0.0007271393449444022,
+      "title": "All Other Petroleum and Coal Products Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2246",
+      "value": 0.0015113704167478545,
+      "title": "Synthetic Dye and Pigment Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2248",
+      "value": 0.00008079326054937801,
+      "title": "Ethyl Alcohol Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2249",
+      "value": 0.0009458175929022083,
+      "title": "Cyclic Crude, Intermediate, and Gum and Wood Chemical Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2250",
+      "value": 0.0019971702100554387,
+      "title": "All Other Basic Organic Chemical Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2251",
+      "value": 0.0030184166187621703,
+      "title": "Plastics Material and Resin Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2255",
+      "value": 0.00008079326054937801,
+      "title": "Phosphatic Fertilizer Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2258",
+      "value": 0.00671120507034323,
+      "title": "Medicinal and Botanical Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2262",
+      "value": 0.002186782479578061,
+      "title": "Paint and Coating Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2264",
+      "value": 0.00617367799492145,
+      "title": "Soap and Other Detergent Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2265",
+      "value": 0.0024054607275358687,
+      "title": "Polish and Other Sanitation Good Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2266",
+      "value": 0.0008887258660431581,
+      "title": "Surface Active Agent Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2267",
+      "value": 0.02778959764426381,
+      "title": "Toilet Preparation Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2268",
+      "value": 0.0036356967247220106,
+      "title": "Printing Ink Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2271",
+      "value": 0.0009792077860709307,
+      "title": "Photographic Film, Paper, Plate, and Chemical Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2273",
+      "value": 0.003588293657341355,
+      "title": "Plastics Bag and Pouch Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2274",
+      "value": 0.0007271393449444022,
+      "title": "Plastics Packaging Film and Sheet (including Laminated) Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2275",
+      "value": 0.0005041368822530569,
+      "title": "Unlaminated Plastics Film and Sheet (except Packaging) Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2277",
+      "value": 0.00040396630274689007,
+      "title": "Plastics Pipe and Pipe Fitting Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2279",
+      "value": 0.00024237978164813405,
+      "title": "Polystyrene Foam Product Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2281",
+      "value": 0.0008887258660431581,
+      "title": "Plastics Bottle Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2282",
+      "value": 0.0004610580296059402,
+      "title": "Plastics Plumbing Fixture Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2283",
+      "value": 0.019986041564142867,
+      "title": "All Other Plastics Product Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2285",
+      "value": 0.00016158652109875602,
+      "title": "Tire Retreading ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2286",
+      "value": 0.0008650243323528302,
+      "title": "Rubber and Plastics Hoses and Belting Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2287",
+      "value": 0.00005709172685905008,
+      "title": "Rubber Product Manufacturing for Mechanical Use ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2288",
+      "value": 0.002985026425593447,
+      "title": "All Other Rubber Product Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2289",
+      "value": 0.0019250253789731388,
+      "title": "Pottery, Ceramics, and Plumbing Fixture Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2291",
+      "value": 0.0031272356277354143,
+      "title": "Flat Glass Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2293",
+      "value": 0.0009458175929022083,
+      "title": "Glass Container Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2294",
+      "value": 0.0007562053233795851,
+      "title": "Glass Product Manufacturing Made of Purchased Glass ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2297",
+      "value": 0.0012452891014093925,
+      "title": "Concrete Block and Brick Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2298",
+      "value": 0.00040396630274689007,
+      "title": "Concrete Pipe Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2299",
+      "value": 0.002048897492169633,
+      "title": "Other Concrete Product Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2301",
+      "value": 0.00038995342853495656,
+      "title": "Gypsum Product Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2304",
+      "value": 0.0002994715085071841,
+      "title": "Ground or Treated Mineral and Earth Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2306",
+      "value": 0.0019153367194947443,
+      "title": "All Other Miscellaneous Nonmetallic Mineral Product Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2307",
+      "value": 0.0025670472486346236,
+      "title": "Iron and Steel Mills and Ferroalloy Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2308",
+      "value": 0.0008079326054937801,
+      "title": "Iron and Steel Pipe and Tube Manufacturing from Purchased Steel",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2309",
+      "value": 0.0008650243323528302,
+      "title": "Rolled Steel Shape Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2310",
+      "value": 0.0016729569378466102,
+      "title": "Steel Wire Drawing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2311",
+      "value": 0.0012926921687900481,
+      "title": "Alumina Refining and Primary Aluminum Production ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2312",
+      "value": 0.00008079326054937801,
+      "title": "Secondary Smelting and Alloying of Aluminum ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2313",
+      "value": 0.0002994715085071841,
+      "title": "Aluminum Sheet, Plate, and Foil Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2314",
+      "value": 0.0018582449926356943,
+      "title": "Other Aluminum Rolling, Drawing, and Extruding ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2316",
+      "value": 0.0006560347438734187,
+      "title": "Copper Rolling, Drawing, Extruding, and Alloying",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2317",
+      "value": 0.0025616828038897686,
+      "title": "Nonferrous Metal (except Copper and Aluminum) Rolling, Drawing, and Extruding ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2318",
+      "value": 0.0003802647690565622,
+      "title": "Secondary Smelting, Refining, and Alloying of Nonferrous Metal (except Copper and Aluminum) ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2319",
+      "value": 0.0008650243323528302,
+      "title": "Iron Foundries ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2320",
+      "value": 0.0003802647690565622,
+      "title": "Steel Investment Foundries ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2321",
+      "value": 0.0009695191265925362,
+      "title": "Steel Foundries (except Investment) ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2322",
+      "value": 0.0012118989082406703,
+      "title": "Nonferrous Metal Die-Casting Foundries ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2324",
+      "value": 0.0019724284463537947,
+      "title": "Other Nonferrous Metal Foundries (except Die-Casting) ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2325",
+      "value": 0.0007131264707324683,
+      "title": "Iron and Steel Forging ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2326",
+      "value": 0.00008079326054937801,
+      "title": "Nonferrous Forging ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2328",
+      "value": 0.00016158652109875602,
+      "title": "Powder Metallurgy Part Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2329",
+      "value": 0.003893129610593393,
+      "title": "Metal Crown, Closure, and Other Metal Stamping (except Automotive) ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2330",
+      "value": 0.0030658196861428257,
+      "title": "Metal Kitchen Cookware, Utensil, Cutlery, and Flatware (except Precious) Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2331",
+      "value": 0.003412694262030665,
+      "title": "Saw Blade and Handtool Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2332",
+      "value": 0.0008413227986625022,
+      "title": "Prefabricated Metal Building and Component Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2333",
+      "value": 0.0011709005156161868,
+      "title": "Fabricated Structural Metal Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2335",
+      "value": 0.007742140138528356,
+      "title": "Metal Window and Door Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2336",
+      "value": 0.006678855107185823,
+      "title": "Sheet Metal Work Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2337",
+      "value": 0.00011089946899587536,
+      "title": "Ornamental and Architectural Metal Work Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2338",
+      "value": 0.00003339019316872222,
+      "title": "Power Boiler and Heat Exchanger Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2339",
+      "value": 0.0012118989082406703,
+      "title": "Metal Tank (Heavy Gauge) Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2340",
+      "value": 0.0007842310718034523,
+      "title": "Metal Can Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2341",
+      "value": 0.0010266108534515864,
+      "title": "Other Metal Container Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2342",
+      "value": 0.002590748782324951,
+      "title": "Hardware Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2343",
+      "value": 0.0003802647690565622,
+      "title": "Spring Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2344",
+      "value": 0.0038306734389894886,
+      "title": "Other Fabricated Wire Product Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2346",
+      "value": 0.0011978860340287364,
+      "title": "Precision Turned Product Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2347",
+      "value": 0.0017063471310153325,
+      "title": "Bolt, Nut, Screw, Rivet, and Washer Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2348",
+      "value": 0.0004373564959156123,
+      "title": "Metal Heat Treating ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2350",
+      "value": 0.004667672022918452,
+      "title": "Electroplating, Plating, Polishing, Anodizing, and Coloring ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2353",
+      "value": 0.0004944482227746624,
+      "title": "Plumbing Fixture Fitting and Trim Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2354",
+      "value": 0.0019153367194947443,
+      "title": "Other Metal Valve and Pipe Fitting Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2355",
+      "value": 0.0012926921687900481,
+      "title": "Ball and Roller Bearing Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2356",
+      "value": 0.00016158652109875602,
+      "title": "Small Arms Ammunition Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2357",
+      "value": 0.00024237978164813405,
+      "title": "Ammunition (except Small Arms) Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2360",
+      "value": 0.007842310718034522,
+      "title": "All Other Miscellaneous Fabricated Metal Product Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2362",
+      "value": 0.0002994715085071841,
+      "title": "Lawn and Garden Tractor and Home Lawn and Garden Equipment Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2363",
+      "value": 0.001611540996254021,
+      "title": "Construction Machinery Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2365",
+      "value": 0.0008887258660431581,
+      "title": "Oil and Gas Field Machinery and Equipment Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2366",
+      "value": 0.002409784942269407,
+      "title": "Food Product Machinery Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2369",
+      "value": 0.0018442321184237607,
+      "title": "Printing Machinery and Equipment Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2374",
+      "value": 0.0022956014885513066,
+      "title": "Industrial and Commercial Fan and Blower and Air Purification Equipment Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2376",
+      "value": 0.0034988519673248984,
+      "title": "Air-Conditioning and Warm Air Heating Equipment and Commercial and Industrial Refrigeration Equipment Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2377",
+      "value": 0.0031509371614257425,
+      "title": "Industrial Mold Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2378",
+      "value": 0.004648294703961664,
+      "title": "Special Die and Tool, Die Set, Jig, and Fixture Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2379",
+      "value": 0.0005612286091121069,
+      "title": "Cutting Tool and Machine Tool Accessory Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2380",
+      "value": 0.00030483595325204023,
+      "title": "Machine Tool Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2383",
+      "value": 0.0004610580296059402,
+      "title": "Speed Changer, Industrial High-Speed Drive, and Gear Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2386",
+      "value": 0.0006797362775637463,
+      "title": "Air and Gas Compressor Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2387",
+      "value": 0.00012387211319649444,
+      "title": "Measuring, Dispensing, and Other Pumping Equipment Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2388",
+      "value": 0.0012786792945781145,
+      "title": "Elevator and Moving Stairway Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2391",
+      "value": 0.004581514317624219,
+      "title": "Industrial Truck, Tractor, Trailer, and Stacker Machinery Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2392",
+      "value": 0.001050312387141914,
+      "title": "Power-Driven Handtool Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2393",
+      "value": 0.0006463460843950241,
+      "title": "Welding and Soldering Equipment Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2394",
+      "value": 0.0017634388578743826,
+      "title": "Packaging Machinery Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2395",
+      "value": 0.0012452891014093925,
+      "title": "Industrial Process Furnace and Oven Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2396",
+      "value": 0.00040396630274689007,
+      "title": "Fluid Power Cylinder and Actuator Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2397",
+      "value": 0.0013734854293394262,
+      "title": "Fluid Power Pump and Motor Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2406",
+      "value": 0.004492072627607763,
+      "title": "Audio and Video Equipment Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2407",
+      "value": 0.0004847595632962681,
+      "title": "Bare Printed Circuit Board Manufacturing  ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2409",
+      "value": 0.0010600010466203086,
+      "title": "Capacitor, Resistor, Coil, Transformer, and Other Inductor Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2417",
+      "value": 0.0007034378112540741,
+      "title": "Totalizing Fluid Meter and Counting Device Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2423",
+      "value": 0.003038834167730272,
+      "title": "Software and Other Prerecorded Compact Disc, Tape, and Record Reproducing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2424",
+      "value": 0.0005752414833240406,
+      "title": "Electric Lamp Bulb and Part Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2425",
+      "value": 0.0032414190814535142,
+      "title": "Residential Electric Lighting Fixture Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2426",
+      "value": 0.0011601716261264755,
+      "title": "Commercial, Industrial, and Institutional Electric Lighting Fixture Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2427",
+      "value": 0.004886350270876259,
+      "title": "Other Lighting Equipment Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2428",
+      "value": 0.0003662518948446288,
+      "title": "Small Electrical Appliance Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2429",
+      "value": 0.0009081031849999475,
+      "title": "Major Household Appliance Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2430",
+      "value": 0.0031272356277354143,
+      "title": "Power, Distribution, and Specialty Transformer Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2433",
+      "value": 0.0007562053233795851,
+      "title": "Relay and Industrial Control Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2435",
+      "value": 0.00016158652109875602,
+      "title": "Primary Battery Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2436",
+      "value": 0.0006463460843950241,
+      "title": "Fiber Optic Cable Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2439",
+      "value": 0.00033286170167590656,
+      "title": "Noncurrent-Carrying Wiring Device Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2443",
+      "value": 0.00016158652109875602,
+      "title": "Light Truck and Utility Vehicle Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2444",
+      "value": 0.0011311056476912922,
+      "title": "Heavy Duty Truck Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2446",
+      "value": 0.0012926921687900481,
+      "title": "Truck Trailer Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2447",
+      "value": 0.00016158652109875602,
+      "title": "Motor Home Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2448",
+      "value": 0.00021867824795780615,
+      "title": "Travel Trailer and Camper Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2450",
+      "value": 0.0008413227986625022,
+      "title": "Motor Vehicle Electrical and Electronic Equipment Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2451",
+      "value": 0.00024237978164813405,
+      "title": "Motor Vehicle Steering and Suspension Components (except Spring) Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2453",
+      "value": 0.0008887258660431581,
+      "title": "Motor Vehicle Transmission and Power Train Parts Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2455",
+      "value": 0.00005709172685905008,
+      "title": "Motor Vehicle Metal Stamping",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2459",
+      "value": 0.006126274927540795,
+      "title": "Other Aircraft Parts and Auxiliary Equipment Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2460",
+      "value": 0.00040396630274689007,
+      "title": "Guided Missile and Space Vehicle Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2462",
+      "value": 0.00008079326054937801,
+      "title": "Other Guided Missile and Space Vehicle Parts and Auxiliary Equipment Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2463",
+      "value": 0.00017127518057715067,
+      "title": "Railroad Rolling Stock Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2468",
+      "value": 0.00013788498740842812,
+      "title": "All Other Transportation Equipment Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2469",
+      "value": 0.01851983046006476,
+      "title": "Wood Kitchen Cabinet and Countertop Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2470",
+      "value": 0.003369615409383548,
+      "title": "Upholstered Household Furniture Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2471",
+      "value": 0.0024248380464926573,
+      "title": "Nonupholstered Wood Household Furniture Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2472",
+      "value": 0.0004944482227746624,
+      "title": "Metal Household Furniture Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2473",
+      "value": 0.0015113704167478545,
+      "title": "Household Furniture (except Wood and Metal) Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2474",
+      "value": 0.003455773114677782,
+      "title": "Institutional Furniture Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2475",
+      "value": 0.0012549777608877868,
+      "title": "Wood Office Furniture Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2476",
+      "value": 0.00034255036115430135,
+      "title": "Custom Architectural Woodwork and Millwork Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2478",
+      "value": 0.006416057776569585,
+      "title": "Showcase, Partition, Shelving, and Locker Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2479",
+      "value": 0.0008747129918312246,
+      "title": "Mattress Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2480",
+      "value": 0.0027189451102549852,
+      "title": "Blind and Shade Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2483",
+      "value": 0.000015053104223248961,
+      "title": "Dental Equipment and Supplies Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2484",
+      "value": 0.002082287685338356,
+      "title": "Ophthalmic Goods Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2485",
+      "value": 0.020967329810236437,
+      "title": "Dental Laboratories ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2486",
+      "value": 0.04838859509963299,
+      "title": "Jewelry and Silverware Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2488",
+      "value": 0.0020499377221809474,
+      "title": "Doll, Toy, and Game Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2489",
+      "value": 0.002372070534367145,
+      "title": "Office Supplies (except Paper) Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2490",
+      "value": 0.02599364552854375,
+      "title": "Sign Manufacturing",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2493",
+      "value": 0.003968558426397917,
+      "title": "Fastener, Button, Needle, and Pin Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2494",
+      "value": 0.0021577165011428786,
+      "title": "Broom, Brush, and Mop Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2495",
+      "value": 0.00040396630274689007,
+      "title": "Burial Casket Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2496",
+      "value": 0.06595603999735108,
+      "title": "All Other Miscellaneous Manufacturing ",
+      "topLevelParentId": "4",
+      "color": "#488098"
+    },
+    {
+      "id": "2497",
+      "value": 0.007131264707324684,
+      "title": "Automobile and Other Motor Vehicle Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2498",
+      "value": 0.004911968969900942,
+      "title": "Motor Vehicle Supplies and New Parts Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2499",
+      "value": 0.001954091357408321,
+      "title": "Tire and Tube Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2500",
+      "value": 0.0034794746483681094,
+      "title": "Motor Vehicle Parts (Used) Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2501",
+      "value": 0.01978449688043095,
+      "title": "Furniture Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2502",
+      "value": 0.0558958003612807,
+      "title": "Home Furnishing Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2503",
+      "value": 0.036444001887837384,
+      "title": "Lumber, Plywood, Millwork, and Wood Panel Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2504",
+      "value": 0.006867263852008851,
+      "title": "Brick, Stone, and Related Construction Material Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2506",
+      "value": 0.0017688033026192374,
+      "title": "Other Construction Material Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2507",
+      "value": 0.0038834409511149994,
+      "title": "Photographic Equipment and Supplies Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2508",
+      "value": 0.0022222531327694157,
+      "title": "Office Equipment Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2510",
+      "value": 0.014084686264627768,
+      "title": "Other Commercial Equipment Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2511",
+      "value": 0.005560395514318599,
+      "title": "Medical, Dental, and Hospital Equipment and Supplies Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2512",
+      "value": 0.0036356967247220106,
+      "title": "Ophthalmic Goods Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2514",
+      "value": 0.02709688872249945,
+      "title": "Metal Service Centers and Other Metal Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2515",
+      "value": 0.0004804353485627288,
+      "title": "Coal and Other Mineral and Ore Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2516",
+      "value": 0.007166572065827768,
+      "title": "Electrical Apparatus and Equipment, Wiring Supplies, and Related Equipment Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2517",
+      "value": 0.0037422719789843486,
+      "title": "Household Appliances, Electric Housewares, and Consumer Electronics Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2518",
+      "value": 0.029013102377317225,
+      "title": "Other Electronic Parts and Equipment Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2519",
+      "value": 0.009911625759172258,
+      "title": "Hardware Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2523",
+      "value": 0.002964445581937064,
+      "title": "Construction and Mining (except Oil Well) Machinery and Equipment Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2524",
+      "value": 0.0011461587519145412,
+      "title": "Farm and Garden Machinery and Equipment Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2525",
+      "value": 0.000891519966700555,
+      "title": "Industrial Machinery and Equipment Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2526",
+      "value": 0.0015359488857612214,
+      "title": "Industrial Supplies Merchant Wholesalers",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2527",
+      "value": 0.015026179642796443,
+      "title": "Service Establishment Equipment and Supplies Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2528",
+      "value": 0.013284525153278031,
+      "title": "Transportation Equipment and Supplies (except Motor Vehicle) Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2530",
+      "value": 0.01880753284907092,
+      "title": "Toy and Hobby Goods and Supplies Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2531",
+      "value": 0.006865183391986226,
+      "title": "Recyclable Material Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2532",
+      "value": 0.12612660155766958,
+      "title": "Jewelry, Watch, Precious Stone, and Precious Metal Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2533",
+      "value": 0.230775005158717,
+      "title": "Other Miscellaneous Durable Goods Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2534",
+      "value": 0.005075962540398882,
+      "title": "Printing and Writing Paper Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2535",
+      "value": 0.01675535137217906,
+      "title": "Stationery and Office Supplies Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2536",
+      "value": 0.022733012422821722,
+      "title": "Industrial and Personal Service Paper Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2537",
+      "value": 0.05586657108815724,
+      "title": "Drugs and Druggists' Sundries Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2538",
+      "value": 0.04667151907912794,
+      "title": "Piece Goods, Notions, and Other Dry Goods Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2539",
+      "value": 0.06355731053394795,
+      "title": "Men's and Boys' Clothing and Furnishings Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2540",
+      "value": 0.12396904835121499,
+      "title": "Women's, Children's, and Infants' Clothing and Accessories Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2541",
+      "value": 0.020273580658460754,
+      "title": "Footwear Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2542",
+      "value": 0.042061815718391585,
+      "title": "General Line Grocery Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2543",
+      "value": 0.007381252688428583,
+      "title": "Packaged Frozen Food Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2544",
+      "value": 0.009264239444765919,
+      "title": "Dairy Product (except Dried or Canned) Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2546",
+      "value": 0.011440293034854271,
+      "title": "Confectionery Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2548",
+      "value": 0.009155420435792672,
+      "title": "Meat and Meat Product Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2550",
+      "value": 0.06580622259575336,
+      "title": "Other Grocery and Related Products Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2551",
+      "value": 0.0036744513626355882,
+      "title": "Grain and Field Bean Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2552",
+      "value": 0.0006323332101830906,
+      "title": "Livestock Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2553",
+      "value": 0.0022298613322251784,
+      "title": "Other Farm Product Raw Material Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2554",
+      "value": 0.008536059869810203,
+      "title": "Plastics Materials and Basic Forms and Shapes Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2555",
+      "value": 0.0188667050359526,
+      "title": "Other Chemical and Allied Products Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2556",
+      "value": 0.0011407943071696867,
+      "title": "Petroleum Bulk Stations and Terminals ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2557",
+      "value": 0.0176407932535,
+      "title": "Petroleum and Petroleum Products Merchant Wholesalers (except Bulk Stations and Terminals) ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2558",
+      "value": 0.008393850667668236,
+      "title": "Beer and Ale Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2559",
+      "value": 0.024214113336434796,
+      "title": "Wine and Distilled Alcoholic Beverage Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2560",
+      "value": 0.000946857822913524,
+      "title": "Farm Supplies Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2561",
+      "value": 0.023602197675219823,
+      "title": "Book, Periodical, and Newspaper Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2562",
+      "value": 0.0013184741625030065,
+      "title": "Flower, Nursery Stock, and Florists' Supplies Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2563",
+      "value": 0.03259411442457937,
+      "title": "Tobacco and Tobacco Product Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2564",
+      "value": 0.0034708262189010325,
+      "title": "Paint, Varnish, and Supplies Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2565",
+      "value": 0.6305189876293181,
+      "title": "Other Miscellaneous Nondurable Goods Merchant Wholesalers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2567",
+      "value": 0.0025616828038897686,
+      "title": "Wholesale Trade Agents and Brokers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2568",
+      "value": 0.06869058855777581,
+      "title": "New Car Dealers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2569",
+      "value": 0.003786227766954507,
+      "title": "Used Car Dealers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2572",
+      "value": 0.023119518571946173,
+      "title": "Motorcycle, ATV, and All Other Motor Vehicle Dealers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2573",
+      "value": 0.004514407341910229,
+      "title": "Automotive Parts and Accessories Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2574",
+      "value": 0.007610496531187819,
+      "title": "Tire Dealers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2575",
+      "value": 0.07904422161697379,
+      "title": "Furniture Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2577",
+      "value": 0.006384748043423497,
+      "title": "Window Treatment Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2578",
+      "value": 0.02174274915788453,
+      "title": "All Other Home Furnishings Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2579",
+      "value": 0.008877406706264912,
+      "title": "Household Appliance Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2580",
+      "value": 0.0389946896747425,
+      "title": "Electronics Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2583",
+      "value": 0.005824396369634433,
+      "title": "Hardware Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2584",
+      "value": 0.0045865521729925186,
+      "title": "Other Building Material Dealers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2585",
+      "value": 0.001497357542535921,
+      "title": "Outdoor Power Equipment Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2586",
+      "value": 0.008266694569749515,
+      "title": "Nursery, Garden Center, and Farm Supply Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2587",
+      "value": 0.369914746571463,
+      "title": "Supermarkets and Other Grocery (except Convenience) Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2589",
+      "value": 0.05007124069695798,
+      "title": "Meat Markets ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2590",
+      "value": 0.019435541844520475,
+      "title": "Fish and Seafood Markets ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2591",
+      "value": 0.02971133903851473,
+      "title": "Fruit and Vegetable Markets ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2593",
+      "value": 0.015883759070381788,
+      "title": "Confectionery and Nut Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2594",
+      "value": 0.10643313694321292,
+      "title": "All Other Specialty Food Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2596",
+      "value": 0.21634952240358105,
+      "title": "Pharmacies and Drug Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2597",
+      "value": 0.04672828421661045,
+      "title": "Cosmetics, Beauty Supplies, and Perfume Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2598",
+      "value": 0.04426677199222684,
+      "title": "Optical Goods Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2599",
+      "value": 0.03716145257330339,
+      "title": "Food (Health) Supplement Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2600",
+      "value": 0.006548415024544883,
+      "title": "All Other Health and Personal Care Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2601",
+      "value": 0.0017300486647056604,
+      "title": "Gasoline Stations with Convenience Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2603",
+      "value": 0.026298481481795786,
+      "title": "Men's Clothing Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2604",
+      "value": 0.3008316342410648,
+      "title": "Women's Clothing Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2605",
+      "value": 0.011458466829111471,
+      "title": "Children's and Infants' Clothing Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2606",
+      "value": 0.04572417137214959,
+      "title": "Family Clothing Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2607",
+      "value": 0.058385175039399884,
+      "title": "Clothing Accessories Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2608",
+      "value": 0.02693393538201283,
+      "title": "Other Clothing Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2609",
+      "value": 0.01252246550108875,
+      "title": "Shoe Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2610",
+      "value": 0.17615098953319344,
+      "title": "Jewelry Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2611",
+      "value": 0.0004911642380524392,
+      "title": "Luggage and Leather Goods Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2614",
+      "value": 0.01148112813279048,
+      "title": "Sewing, Needlework, and Piece Goods Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2617",
+      "value": 0.0019120527347725215,
+      "title": "News Dealers and Newsstands ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2620",
+      "value": 0.03167046825129135,
+      "title": "All Other General Merchandise Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2622",
+      "value": 0.012244941655625827,
+      "title": "Office Supplies and Stationery Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2623",
+      "value": 0.035813259253612104,
+      "title": "Gift, Novelty, and Souvenir Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2625",
+      "value": 0.010927344428445862,
+      "title": "Pet and Pet Supplies Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2626",
+      "value": 0.014868040401108187,
+      "title": "Art Dealers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2627",
+      "value": 0.0018679336521140889,
+      "title": "Manufactured (Mobile) Home Dealers ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2628",
+      "value": 0.011051216541642362,
+      "title": "Tobacco Stores ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2629",
+      "value": 0.3252995698892721,
+      "title": "All Other Miscellaneous Store Retailers (except Tobacco Stores) ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2630",
+      "value": 0.06063769767530408,
+      "title": "Electronic Shopping and Mail-Order Houses ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2631",
+      "value": 0.013095953113766726,
+      "title": "Vending Machine Operators ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2636",
+      "value": 0.0006463460843950241,
+      "title": "Nonscheduled Chartered Passenger Air Transportation ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2637",
+      "value": 0.0008650243323528302,
+      "title": "Nonscheduled Chartered Freight Air Transportation ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2638",
+      "value": 0.0006851007223086027,
+      "title": "Other Nonscheduled Air Transportation ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2641",
+      "value": 0.024523436799108653,
+      "title": "Deep Sea Freight Transportation ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2642",
+      "value": 0.0007271393449444022,
+      "title": "Deep Sea Passenger Transportation ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2643",
+      "value": 0.00201983151373445,
+      "title": "Coastal and Great Lakes Freight Transportation ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2645",
+      "value": 0.0022244968874803226,
+      "title": "Inland Water Freight Transportation ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2647",
+      "value": 0.36335209491613624,
+      "title": "General Freight Trucking, Local ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2648",
+      "value": 0.04799207370165359,
+      "title": "General Freight Trucking, Long-Distance, Truckload ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2649",
+      "value": 0.0005655528238456461,
+      "title": "General Freight Trucking, Long-Distance, Less Than Truckload ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2651",
+      "value": 0.0025109957517868886,
+      "title": "Specialized Freight (except Used Goods) Trucking, Local ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2652",
+      "value": 0.0018495965631686161,
+      "title": "Specialized Freight (except Used Goods) Trucking, Long-Distance ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2653",
+      "value": 0.024022420606889545,
+      "title": "Mixed Mode Transit Systems ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2654",
+      "value": 0.00006678038633744444,
+      "title": "Commuter Rail Systems ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2655",
+      "value": 0.005004857939327898,
+      "title": "Bus and Other Motor Vehicle Transit Systems ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2659",
+      "value": 0.1150529474689182,
+      "title": "Limousine Service",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2660",
+      "value": 0.005956039976974961,
+      "title": "School and Employee Bus Transportation",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2661",
+      "value": 0.011194629268483915,
+      "title": "Charter Bus Industry",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2666",
+      "value": 0.0005655528238456461,
+      "title": "Pipeline Transportation of Refined Petroleum Products",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2667",
+      "value": 0.00024237978164813405,
+      "title": "All Other Pipeline Transportation",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2668",
+      "value": 0.0008650243323528302,
+      "title": "Scenic and Sightseeing Transportation, Land",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2673",
+      "value": 0.004695697771342319,
+      "title": "Other Support Activities for Air Transportation",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2674",
+      "value": 0.003510457792137644,
+      "title": "Support Activities for Rail Transportation",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2676",
+      "value": 0.0034837988631016494,
+      "title": "Marine Cargo Handling",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2679",
+      "value": 0.0185099785058981,
+      "title": "Motor Vehicle Towing",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2681",
+      "value": 0.1162480394022895,
+      "title": "Freight Transportation Arrangement ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2682",
+      "value": 0.005408824242074788,
+      "title": "Packing and Crating ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2683",
+      "value": 0.4385274388021535,
+      "title": "All Other Support Activities for Transportation ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2685",
+      "value": 0.01627699648363897,
+      "title": "Couriers and Express Delivery Services",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2687",
+      "value": 0.024852851221374064,
+      "title": "General Warehousing and Storage ",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2688",
+      "value": 0.0008510114581408968,
+      "title": "Refrigerated Warehousing and Storage",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2689",
+      "value": 0.0006463460843950241,
+      "title": "Farm Product Warehousing and Storage",
+      "topLevelParentId": "8",
+      "color": "#F28188"
+    },
+    {
+      "id": "2692",
+      "value": 0.0069060184899224315,
+      "title": "Periodical Publishers ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2696",
+      "value": 0.02045733859917368,
+      "title": "All Other Publishers ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2698",
+      "value": 0.07022478357289097,
+      "title": "Motion Picture and Video Production ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2699",
+      "value": 0.43993786453687866,
+      "title": "Motion Picture and Video Distribution",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2701",
+      "value": 0.00032317304219751204,
+      "title": "Drive-In Motion Picture Theaters ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2702",
+      "value": 0.04102984042019515,
+      "title": "Teleproduction and Other Postproduction Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2703",
+      "value": 0.07277190315662228,
+      "title": "Other Motion Picture and Video Industries ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2704",
+      "value": 0.0005569043943785677,
+      "title": "Music Publishers",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2705",
+      "value": 0.007688169101703255,
+      "title": "Sound Recording Studios",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2706",
+      "value": 0.028985239923581645,
+      "title": "Record Production and Distribution",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2710",
+      "value": 0.014593310656302648,
+      "title": "Television Broadcasting",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2711",
+      "value": 0.00911978648791305,
+      "title": "Cable and Other Subscription Programming",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2713",
+      "value": 0.09044263932388051,
+      "title": "Wireless Telecommunications Carriers (except Satellite)",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2714",
+      "value": 0.0008650243323528302,
+      "title": "Satellite Telecommunications",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2715",
+      "value": 0.007766555312853449,
+      "title": "Telecommunications Resellers ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2716",
+      "value": 0.19832852484290617,
+      "title": "All Other Telecommunications ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2718",
+      "value": 0.003755244623184967,
+      "title": "News Syndicates",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2720",
+      "value": 0.0015124106467591701,
+      "title": "Internet Publishing and Broadcasting and Web Search Portals",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2727",
+      "value": 0.00008079326054937801,
+      "title": "Credit Card Issuing ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2728",
+      "value": 0.0006236847807160128,
+      "title": "Sales Financing ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2731",
+      "value": 0.006354641834976997,
+      "title": "International Trade Financing ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2733",
+      "value": 0.05506520645210789,
+      "title": "All Other Nondepository Credit Intermediation ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2734",
+      "value": 0.001145995457226272,
+      "title": "Mortgage and Nonmortgage Loan Brokers ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2738",
+      "value": 0.04363290866796761,
+      "title": "Securities Brokerage ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2739",
+      "value": 0.014021353157700828,
+      "title": "Commodity Contracts Dealing ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2740",
+      "value": 0.004015961493778572,
+      "title": "Commodity Contracts Brokerage ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2741",
+      "value": 0.003792959031087227,
+      "title": "Securities and Commodity Exchanges",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2749",
+      "value": 0.05713780547796785,
+      "title": "Direct Property and Casualty Insurance Carriers ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2750",
+      "value": 0.005632866934777451,
+      "title": "Direct Title Insurance Carriers ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2758",
+      "value": 0.0010890670250554926,
+      "title": "Health and Welfare Funds ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2762",
+      "value": 0.013649410228734789,
+      "title": "Other Financial Vehicles ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2773",
+      "value": 0.004843271418229142,
+      "title": "Passenger Car Leasing ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2776",
+      "value": 0.000001040230011315282,
+      "title": "Formal Wear and Costume Rental",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2777",
+      "value": 0.0002875390943178819,
+      "title": "Video Tape and Disc Rental",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2780",
+      "value": 0.007006189069428596,
+      "title": "All Other Consumer Goods Rental ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2781",
+      "value": 0.0006657234033518131,
+      "title": "General Rental Centers",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2782",
+      "value": 0.006092884734372073,
+      "title": "Commercial Air, Rail, and Water Transportation Equipment Rental and Leasing ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2785",
+      "value": 0.01041198877263826,
+      "title": "Other Commercial and Industrial Machinery and Equipment Rental and Leasing ",
+      "topLevelParentId": "2",
+      "color": "#FFC135"
+    },
+    {
+      "id": "2788",
+      "value": 0.0025390215002107563,
+      "title": "Offices of Notaries",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2789",
+      "value": 0.03173981898171625,
+      "title": "Title Abstract and Settlement Offices ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2790",
+      "value": 0.0036915849268814665,
+      "title": "All Other Legal Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2791",
+      "value": 0.14113362763807918,
+      "title": "Offices of Certified Public Accountants ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2792",
+      "value": 0.11486990316883997,
+      "title": "Tax Preparation Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2793",
+      "value": 0.00397496310115409,
+      "title": "Payroll Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2794",
+      "value": 0.061836297349967574,
+      "title": "Other Accounting Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2798",
+      "value": 0.005874206486414267,
+      "title": "Drafting Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2803",
+      "value": 0.049855193254969316,
+      "title": "Interior Design Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2806",
+      "value": 0.020674426271173694,
+      "title": "Other Specialized Design Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2813",
+      "value": 0.0400135290340501,
+      "title": "Marketing Consulting Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2815",
+      "value": 0.3501161097040455,
+      "title": "Other Management Consulting Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2822",
+      "value": 0.032253154639382886,
+      "title": "Advertising Agencies",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2824",
+      "value": 0.007937116852795833,
+      "title": "Media Buying Agencies",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2825",
+      "value": 0.004379969633912293,
+      "title": "Media Representatives",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2826",
+      "value": 0.0024916184328301013,
+      "title": "Outdoor Advertising",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2827",
+      "value": 0.008309773422396631,
+      "title": "Direct Mail Advertising",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2828",
+      "value": 0.0004664224743507951,
+      "title": "Advertising Material Distribution Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2829",
+      "value": 0.017132332156513396,
+      "title": "Other Services Related to Advertising ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2832",
+      "value": 0.02265517655761801,
+      "title": "Commercial Photography ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2834",
+      "value": 0.021596215741009027,
+      "title": "Veterinary Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2835",
+      "value": 0.30353258694270757,
+      "title": "All Other Professional, Scientific, and Technical Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2837",
+      "value": 0.185730140641948,
+      "title": "Offices of Other Holding Companies ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2839",
+      "value": 0.35710410688826,
+      "title": "Office Administrative Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2846",
+      "value": 0.011171967964804902,
+      "title": "Telephone Answering Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2849",
+      "value": 0.00032525350222014303,
+      "title": "Other Business Service Centers (including Copy Shops) ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2850",
+      "value": 0.006475229963451268,
+      "title": "Collection Agencies",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2851",
+      "value": 0.0012032504787735912,
+      "title": "Credit Bureaus",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2852",
+      "value": 0.000580605928068895,
+      "title": "Repossession Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2854",
+      "value": 0.1014556696645125,
+      "title": "All Other Business Support Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2855",
+      "value": 0.12701347072026006,
+      "title": "Travel Agencies",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2856",
+      "value": 0.00641244720247082,
+      "title": "Tour Operators",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2857",
+      "value": 0.002328991681720029,
+      "title": "Convention and Visitors Bureaus ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2859",
+      "value": 0.012361205569366561,
+      "title": "Investigation Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2860",
+      "value": 0.022570059082335097,
+      "title": "Security Guards and Patrol Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2861",
+      "value": 0.0009231562892231952,
+      "title": "Armored Car Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2862",
+      "value": 0.030775501005180297,
+      "title": "Security Systems Services (except Locksmiths) ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2864",
+      "value": 0.04427333996167129,
+      "title": "Exterminating and Pest Control Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2865",
+      "value": 0.011310463760041533,
+      "title": "Janitorial Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2869",
+      "value": 0.004659023593451373,
+      "title": "Packaging and Labeling Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2871",
+      "value": 0.45951079529573147,
+      "title": "All Other Support Services",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2872",
+      "value": 0.004886350270876259,
+      "title": "Solid Waste Collection ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2873",
+      "value": 0.0005655528238456461,
+      "title": "Hazardous Waste Collection ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2877",
+      "value": 0.00008079326054937801,
+      "title": "Solid Waste Combustors and Incinerators ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2881",
+      "value": 0.023888859834214658,
+      "title": "Septic Tank and Related Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2882",
+      "value": 0.0007939197312818465,
+      "title": "All Other Miscellaneous Waste Management Services ",
+      "topLevelParentId": "7",
+      "color": "#D35162"
+    },
+    {
+      "id": "2889",
+      "value": 0.00016799119585492672,
+      "title": "Cosmetology and Barber Schools ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2890",
+      "value": 0.0004707466890843344,
+      "title": "Flight Training ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2896",
+      "value": 0.0067745381772701795,
+      "title": "Exam Preparation and Tutoring ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2897",
+      "value": 0.006463297549261969,
+      "title": "Automobile Driving Schools ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2900",
+      "value": 0.6543538097758144,
+      "title": "Offices of Physicians (except Mental Health Specialists) ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2901",
+      "value": 0.0028326386799082523,
+      "title": "Offices of Physicians, Mental Health Specialists ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2902",
+      "value": 0.02776789182874634,
+      "title": "Offices of Dentists ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2903",
+      "value": 0.07789461558564874,
+      "title": "Offices of Chiropractors ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2906",
+      "value": 0.1451630516601232,
+      "title": "Offices of Physical, Occupational and Speech Therapists, and Audiologists ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2907",
+      "value": 0.08077251641103335,
+      "title": "Offices of Podiatrists ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2908",
+      "value": 0.12152774801018634,
+      "title": "Offices of All Other Miscellaneous Health Practitioners ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2909",
+      "value": 0.0020262361884906214,
+      "title": "Family Planning Centers ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2913",
+      "value": 0.002249238651181966,
+      "title": "Freestanding Ambulatory Surgical and Emergency Centers ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2914",
+      "value": 0.00622146811356031,
+      "title": "All Other Outpatient Care Centers ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2916",
+      "value": 0.004739816854000751,
+      "title": "Diagnostic Imaging Centers ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2918",
+      "value": 0.015914028573516557,
+      "title": "Ambulance Services ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2919",
+      "value": 0.0026983642665986086,
+      "title": "Blood and Organ Banks ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2920",
+      "value": 0.13419209612404048,
+      "title": "All Other Miscellaneous Ambulatory Health Care Services ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2925",
+      "value": 0.0027286337697333797,
+      "title": "Residential Intellectual and Developmental Disability Facilities ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2933",
+      "value": 0.0011741845003384087,
+      "title": "Community Food Services ",
+      "topLevelParentId": "1",
+      "color": "#F1866C"
+    },
+    {
+      "id": "2939",
+      "value": 0.017626780379288064,
+      "title": "Theater Companies and Dinner Theaters ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2940",
+      "value": 0.0012926921687900481,
+      "title": "Dance Companies ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2942",
+      "value": 0.039773659134607744,
+      "title": "Other Performing Arts Companies ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2946",
+      "value": 0.01486355289168637,
+      "title": "Promoters of Performing Arts, Sports, and Similar Events with Facilities ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2947",
+      "value": 0.004354187640199334,
+      "title": "Promoters of Performing Arts, Sports, and Similar Events without Facilities ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2948",
+      "value": 0.03618224478723246,
+      "title": "Agents and Managers for Artists, Athletes, Entertainers, and Other Public Figures",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2949",
+      "value": 0.20588915079543246,
+      "title": "Independent Artists, Writers, and Performers ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2952",
+      "value": 0.0015932039073085489,
+      "title": "Zoos and Botanical Gardens ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2953",
+      "value": 0.020749691792289946,
+      "title": "Nature Parks and Other Similar Institutions",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2954",
+      "value": 0.0007895955165483075,
+      "title": "Amusement and Theme Parks ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2957",
+      "value": 0.0010837025803106363,
+      "title": "Other Gambling Industries ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2959",
+      "value": 0.00008079326054937801,
+      "title": "Skiing Facilities",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2967",
+      "value": 0.0010890670250554926,
+      "title": "All Other Traveler Accommodation ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2968",
+      "value": 0.0006894249370421406,
+      "title": "RV (Recreational Vehicle) Parks and Campgrounds ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2969",
+      "value": 0.008084690499682657,
+      "title": "Recreational and Vacation Camps (except Campgrounds) ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2972",
+      "value": 0.04398427075327726,
+      "title": "Caterers",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2973",
+      "value": 0.01043842394510433,
+      "title": "Mobile Food Services",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2974",
+      "value": 0.02628108179005507,
+      "title": "Drinking Places (Alcoholic Beverages) ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2975",
+      "value": 0.08594005537434155,
+      "title": "Full-Service Restaurants ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2976",
+      "value": 0.2933009692932536,
+      "title": "Limited-Service Restaurants ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2978",
+      "value": 0.0047958683508484866,
+      "title": "Snack and Nonalcoholic Beverage Bars ",
+      "topLevelParentId": "3",
+      "color": "#93CFD0"
+    },
+    {
+      "id": "2979",
+      "value": 0.02358502174004901,
+      "title": "General Automotive Repair ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "2981",
+      "value": 0.01182592224865569,
+      "title": "Automotive Transmission Repair ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "2982",
+      "value": 0.0025559917697683663,
+      "title": "Other Automotive Mechanical and Electrical Repair and Maintenance ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "2988",
+      "value": 0.0017558306584186216,
+      "title": "Consumer Electronics Repair and Maintenance ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "2989",
+      "value": 0.010617144030448965,
+      "title": "Computer and Office Machine Repair and Maintenance ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "2990",
+      "value": 0.0013831740888178208,
+      "title": "Communication Equipment Repair and Maintenance ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "2991",
+      "value": 0.008853705172574583,
+      "title": "Other Electronic and Precision Equipment Repair and Maintenance ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "2993",
+      "value": 0.003694868911603694,
+      "title": "Home and Garden Equipment Repair and Maintenance ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "2994",
+      "value": 0.09169729049539177,
+      "title": "Appliance Repair and Maintenance ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "2996",
+      "value": 0.001100836144556517,
+      "title": "Footwear and Leather Goods Repair",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3000",
+      "value": 0.10928931386212323,
+      "title": "Nail Salons ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3005",
+      "value": 0.1319682947862382,
+      "title": "Coin-Operated Laundries and Drycleaners ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3007",
+      "value": 0.0030377939377189585,
+      "title": "Linen Supply ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3008",
+      "value": 0.000699113596520535,
+      "title": "Industrial Launderers ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3010",
+      "value": 0.022429216699580996,
+      "title": "Photofinishing Laboratories (except One-Hour) ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3012",
+      "value": 0.008569123473602374,
+      "title": "Parking Lots and Garages ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3013",
+      "value": 0.030776275107696673,
+      "title": "All Other Personal Services ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3014",
+      "value": 0.3201038537847971,
+      "title": "Religious Organizations ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3015",
+      "value": 0.13651329822065975,
+      "title": "Grantmaking Foundations ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3019",
+      "value": 0.0013174339324916913,
+      "title": "Environment, Conservation and Wildlife Organizations ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3026",
+      "value": 0.14684022997989676,
+      "title": "Other Similar Organizations (except Business, Professional, Labor, and Political Organizations) ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3029",
+      "value": 0.031591041810129845,
+      "title": "Legislative Bodies ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3031",
+      "value": 0.0006226445507046963,
+      "title": "Executive and Legislative Offices, Combined ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3039",
+      "value": 0.015547613383983656,
+      "title": "Fire Protection ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3054",
+      "value": 0.00040396630274689007,
+      "title": "Space Research and Technology ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "3056",
+      "value": 0.011822638263933464,
+      "title": "International Affairs ",
+      "topLevelParentId": "6",
+      "color": "#6A6AAD"
+    }
+  ]
+}
