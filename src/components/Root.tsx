@@ -230,14 +230,9 @@ export interface Props {
   nValuesToShow: number;
   formatValue?: (value: number) => string | number;
   titles?: {
-    primary?: {
-      h1: string,
-      h2?: string,
-    }
-    secondary?: {
-      h1: string,
-      h2?: string,
-    }
+    primary: string;
+    secondary: string;
+    format?: (label: string, count: number, max: number) => string;
   }
   expandCollapseText?: {
     toExpand: string,
@@ -435,17 +430,19 @@ const Root = (props: Props) => {
     </AxisTitle>
   ) : null;
 
+  const titleFormatter = titles && titles.format ? titles.format : (label: string) => label;
+
   const h1Left = titles && titles.secondary ? (
-    <H1>{titles.secondary.h1}</H1>
+    <H1>{titleFormatter(titles.secondary, secondaryTop.length, orderedSecondaryData.length)}</H1>
   ) : null;
-  const h2Left = titles && titles.secondary && titles.secondary.h2 ? (
-    <H2>{titles.secondary.h2}</H2>
+  const h2Left = titles && titles.secondary && titles.primary ? (
+    <H2>{titles.secondary} {'>'} {titles.primary}</H2>
   ) : null;
   const h1Right = titles && titles.primary ? (
-    <H1>{titles.primary.h1}</H1>
+    <H1>{titleFormatter(titles.primary, primaryTop.length, orderedPrimaryData.length)}</H1>
   ) : null;
-  const h2Right = titles && titles.primary && titles.primary.h2 ? (
-    <H2>{titles.primary.h2}</H2>
+  const h2Right = titles && titles.secondary && titles.primary ? (
+    <H2>{titles.primary} {'>'} {titles.secondary}</H2>
   ) : null;
 
   let expandCollapseButtonText: string;

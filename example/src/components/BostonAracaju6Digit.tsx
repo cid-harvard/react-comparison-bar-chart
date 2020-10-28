@@ -94,6 +94,11 @@ const BostonNewYork3Digit = () => {
     }
   };
 
+  const titleFormatter = (label: string, count: number, max: number) => {
+    const countText = count === max ? '' : `(Top ${count})`;
+    return `Positive ${label} share (%) ${countText}`;
+  }
+
   return (
     <Root>
       <ComparisonBarChart
@@ -102,14 +107,9 @@ const BostonNewYork3Digit = () => {
         nValuesToShow={10}
         formatValue={formatValue}
         titles={{
-          primary: {
-            h1: 'Positive Boston Share (%) (Top 10)',
-            h2: 'Boston > Aracaju',
-          },
-          secondary: {
-            h1: 'Positive Aracaju Share (%) (Top 10)',
-            h2: 'Aracaju > Boston',
-          }
+          primary: 'Boston',
+          secondary: 'Aracaju',
+          format: titleFormatter,
         }}
         expandCollapseText={{
           toExpand: 'Click to see all industries',
