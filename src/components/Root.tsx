@@ -515,6 +515,7 @@ const Root = (props: Props) => {
       <TitleRoot
         style={{
           width: chartWidth,
+          visibility: chartWidth ? undefined : 'hidden',
           marginLeft: layout !== Layout.Right ? undefined : 0,
           right: layout !== Layout.Right ? 0 : undefined,
           left: layout !== Layout.Right ? undefined : 0,
