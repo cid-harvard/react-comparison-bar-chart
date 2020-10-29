@@ -61,6 +61,7 @@ The ComparisonBarChart component takes the following props:
 - **layout** *(optional)*: [`Layout`](#layout)
 - **highlighted** *(optional)*: `string`
 - **onExpandCollapseButtonHover** *(optional)*: `(event: React.MouseEvent<HTMLElement>) => void`
+- **onHighlightError** *(optional)*: `(value: string) => void`
 
 <a name="bardatum"/>
 

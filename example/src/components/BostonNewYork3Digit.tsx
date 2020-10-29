@@ -287,6 +287,7 @@ const BostonNewYork3Digit = () => {
         axisLabel={'Difference in Share'}
         onRowHover={e => setHovered(e)}
         highlighted={highlighted}
+        onHighlightError={v => alert('Could not find ' + v)}
       />
       {tooltip}
       <form

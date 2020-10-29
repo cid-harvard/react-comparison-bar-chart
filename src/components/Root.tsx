@@ -241,6 +241,7 @@ export interface Props {
   layout?: Layout;
   highlighted?: string;
   onExpandCollapseButtonHover?: (event: React.MouseEvent<HTMLElement>) => void;
+  onHighlightError?: (value: string) => void;
 }
 
 const roundUpToHalf = (value: number) => {
@@ -263,7 +264,7 @@ const Root = (props: Props) => {
   const {
     primaryData, secondaryData, nValuesToShow, formatValue, titles, expandCollapseText,
     axisLabel, onRowHover, hideExpandCollapseButton, initialExpanded, layout, highlighted,
-    onExpandCollapseButtonHover,
+    onExpandCollapseButtonHover, onHighlightError,
   } = props;
 
   if (!primaryData.length && !secondaryData.length) {
@@ -308,23 +309,25 @@ const Root = (props: Props) => {
   }, []);
 
   useEffect(() => {
-    if (rootRef && rootRef.current) {
+    if (rootRef && rootRef.current && highlighted !== undefined) {
       const rootNode = rootRef.current;
-      const highlightedElm: HTMLElement | null = rootRef.current.querySelector(`#${highlightedIdName}`);
+      const highlightedElm: HTMLElement | null = rootNode.querySelector(`#${highlightedIdName}`);
       if (highlightedElm) {
         const highlightedRect = highlightedElm.getBoundingClientRect();
         if (highlightedRect.height > 5) { // > arbitrary number in case function is triggered during animation
-          rootNode.scrollTop = highlightedElm.offsetTop;
+          highlightedElm.scrollIntoView({behavior: "smooth"});
         } else {
           setExpanded(true)
           const scrollToElm = () => {
             setTimeout(() => {
-              rootNode.scrollTop = highlightedElm.offsetTop;
+              highlightedElm.scrollIntoView({behavior: "smooth"});
               highlightedElm.removeEventListener('transitionend', scrollToElm)
             }, 250);
           }
           highlightedElm.addEventListener('transitionend', scrollToElm)
         }
+      } else if (onHighlightError) {
+        onHighlightError(highlighted);
       }
     }
   }, [rootRef, highlighted]);
