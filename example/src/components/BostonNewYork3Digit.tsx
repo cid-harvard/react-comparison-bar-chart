@@ -207,11 +207,19 @@ const Arrow = styled.div`
   }
 `;
 
+const Input = styled.input`
+  position: absolute;
+  top: 0;
+  left: 0;
+`;
+
 const formatValue = (value: number) => {
   return parseFloat((value).toFixed(1)) + '%';
 }
 
 const BostonNewYork3Digit = () => {
+  const [value, setValue] = useState<string>('');
+  const [highlighted, setHighlighted] = useState<string | undefined>(undefined);
   const [hovered, setHovered] = useState<RowHoverEvent | undefined>(undefined);
 
   let tooltip: React.ReactElement<any> | null;
@@ -255,6 +263,11 @@ const BostonNewYork3Digit = () => {
     return `Positive ${label} share (%) ${countText}`;
   }
 
+  const onSubmit = (e: any) => {
+    e.preventDefault();
+    setHighlighted(value.length ? value : undefined);
+  }
+
   return (
     <Root>
       <ComparisonBarChart
@@ -273,8 +286,17 @@ const BostonNewYork3Digit = () => {
         }}
         axisLabel={'Difference in Share'}
         onRowHover={e => setHovered(e)}
+        highlighted={highlighted}
       />
       {tooltip}
+      <form
+        onSubmit={onSubmit}
+      >
+        <Input
+          value={value}
+          onChange={e => setValue(e.target.value)}
+        />
+      </form>
     </Root>
   )
 }
