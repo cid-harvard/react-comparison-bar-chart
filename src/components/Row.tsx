@@ -1,24 +1,15 @@
 import React from 'react';
-import styled, {keyframes} from 'styled-components/macro';
+import styled from 'styled-components/macro';
 import {
   WithDyanmicFont,
   BarDatum,
   Category,
   RowHoverEvent,
   Layout,
+  fadeIn,
 } from './Utils';
 
 export const highlightedIdName = 'react-comparison-bar-chart-highlighted-item';
-
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-`;
 
 const Root = styled.div`
   display: flex;

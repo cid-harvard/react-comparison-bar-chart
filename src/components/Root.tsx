@@ -8,6 +8,7 @@ import {
   BarDatum,
   RowHoverEvent,
   Layout,
+  fadeIn,
 } from './Utils';
 
 const ArrowCollapseSVG = raw('../assets/arrow-collapse.svg');
@@ -135,6 +136,8 @@ const ExpandButton = styled.button<WithDyanmicFont & {$dynamicMaxWidth: string}>
     -1px 1px 0 #fff,
      1px 1px 0 #fff;
   transform: translate(0, 1rem);
+  opacity: 0;
+  animation: ${fadeIn} 0.1s linear 1 forwards;
 
   &:focus:not(:focus-visible) {
     outline: none;
@@ -536,6 +539,7 @@ const Root = (props: Props) => {
   return (
     <Container
       style={{...buffer}}
+      className={'react-comparison-bar-chart-root-container'}
     >
       <TitleRoot
         style={{
