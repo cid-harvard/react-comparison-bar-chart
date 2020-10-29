@@ -313,13 +313,17 @@ const Root = (props: Props) => {
       const highlightedElm: HTMLElement | null = rootRef.current.querySelector(`#${highlightedIdName}`);
       if (highlightedElm) {
         const highlightedRect = highlightedElm.getBoundingClientRect();
-        if (highlightedRect.height) {
+        if (highlightedRect.height > 5) { // > arbitrary number in case function is triggered during animation
           rootNode.scrollTop = highlightedElm.offsetTop;
         } else {
           setExpanded(true)
-          setTimeout(() => {
-            rootNode.scrollTop = highlightedElm.offsetTop;
-          }, 500)
+          const scrollToElm = () => {
+            setTimeout(() => {
+              rootNode.scrollTop = highlightedElm.offsetTop;
+              highlightedElm.removeEventListener('transitionend', scrollToElm)
+            }, 250);
+          }
+          highlightedElm.addEventListener('transitionend', scrollToElm)
         }
       }
     }

@@ -1,6 +1,6 @@
 {
   "name": "react-comparison-bar-chart",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Vertical comparison bar chart component for comparing the difference in values between two datasets.",
   "author": "wsoeltz",
   "license": "MIT",
