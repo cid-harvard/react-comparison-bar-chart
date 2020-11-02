@@ -34,6 +34,8 @@ const ChartContainer = styled.div`
   width: 100%;
   height: 100%;
   position: relative;
+  /* makes this element the relative parent for position: fixed children */
+  will-change: transform;
 `;
 
 const ChartBlock = styled.div`
@@ -115,7 +117,13 @@ const ExpandButtonRow = styled.div`
   grid-column: 1 / -1;
   pointer-events: none;
   position: sticky;
+  right: 0;
   height: 0;
+`;
+
+const ButtonContainer = styled.div`
+  width: 100%;
+  pointer-events: none;
   display: flex;
 `;
 
@@ -141,6 +149,10 @@ const ExpandButton = styled.button<WithDyanmicFont & {$dynamicMaxWidth: string}>
 
   &:focus:not(:focus-visible) {
     outline: none;
+  }
+
+  &:active {
+    color: #333;
   }
 `;
 
@@ -518,19 +530,21 @@ const Root = (props: Props) => {
   const expandCollapseButton = hideExpandCollapseButton ||
     (rightTop.length < nValuesToShow && leftTop.length < nValuesToShow)
     ? null : (
-      <ExpandButton
-        onClick={() => setExpanded(current => !current)}
-        className={'react-comparison-bar-chart-expand-button'}
-        style={{
-        }}
-        $dynamicFont={`clamp(0.7rem, ${chartWidth * 0.015}px, 0.85rem)`}
-        $dynamicMaxWidth={chartWidth > 300 ? `${chartWidth * 0.25}px` : '75px'}
-        onMouseMove={onExpandCollapseButtonHover}
-      >
-        <Arrow
-          dangerouslySetInnerHTML={{__html: expanded ? ArrowCollapseSVG : ArrowExpandSVG}}
-        /> {expandCollapseButtonText}
-      </ExpandButton>
+      <ButtonContainer>
+        <ExpandButton
+          onClick={() => setExpanded(current => !current)}
+          className={'react-comparison-bar-chart-expand-button'}
+          style={{
+          }}
+          $dynamicFont={`clamp(0.7rem, ${chartWidth * 0.015}px, 0.85rem)`}
+          $dynamicMaxWidth={chartWidth > 300 ? `${chartWidth * 0.25}px` : '75px'}
+          onMouseMove={onExpandCollapseButtonHover}
+        >
+          <Arrow
+            dangerouslySetInnerHTML={{__html: expanded ? ArrowCollapseSVG : ArrowExpandSVG}}
+          /> {expandCollapseButtonText}
+        </ExpandButton>
+      </ButtonContainer>
     );
 
     const buffer: React.CSSProperties = layout !== Layout.Right
