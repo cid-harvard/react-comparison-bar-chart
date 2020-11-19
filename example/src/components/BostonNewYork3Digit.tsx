@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import ComparisonBarChart, {
   BarDatum,
   RowHoverEvent,
+  Layout,
 } from 'react-comparison-bar-chart';
 import styled from 'styled-components/macro';
 import raw from 'raw.macro';
@@ -276,8 +277,8 @@ const BostonNewYork3Digit = () => {
         nValuesToShow={10}
         formatValue={formatValue}
         titles={{
-          primary: 'Boston',
-          secondary: 'New York',
+          primary: 'Boston Boston',
+          secondary: 'New Yorkyorkyork',
           format: titleFormatter,
         }}
         expandCollapseText={{
@@ -288,6 +289,7 @@ const BostonNewYork3Digit = () => {
         onRowHover={e => setHovered(e)}
         highlighted={highlighted}
         onHighlightError={v => alert('Could not find ' + v)}
+        layout={Layout.Left}
       />
       {tooltip}
       <form

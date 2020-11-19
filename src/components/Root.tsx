@@ -14,7 +14,7 @@ import {
 const ArrowCollapseSVG = raw('../assets/arrow-collapse.svg');
 const ArrowExpandSVG = raw('../assets/arrow-expand.svg');
 
-const titleHeight = 120; // in px
+const titleHeight = 80; // in px
 const overflowPadding = 1; // in rem. Needed to allow for final axis value to remain visible
 
 const Container = styled.div`
@@ -564,7 +564,7 @@ const Root = (props: Props) => {
           left: layout !== Layout.Right ? undefined : 0,
           ...buffer,
         }}
-        $dynamicFont={`clamp(0.65rem, ${chartWidth * 0.03}px, 0.95rem)`}
+        $dynamicFont={`clamp(0.65rem, ${chartWidth * 0.023}px, 0.87rem)`}
       >
         <TitleLeft style={{width: `${leftRange}%`}}>
           <div className={'react-comparison-bar-chart-title react-comparison-bar-chart-title-left'}>
@@ -589,8 +589,8 @@ const Root = (props: Props) => {
           style={{
             gridTemplateRows: 'repeat(${totalValues}, auto)',
             gridTemplateColumns: layout !== Layout.Right
-              ? 'clamp(75px, 300px, 25%) 2rem 1fr'
-              : '1fr 2rem clamp(75px, 300px, 25%)',
+              ? 'clamp(75px, 300px, 15%) 2rem 1fr'
+              : '1fr 2rem clamp(75px, 300px, 15%)',
             overflow: expanded ? undefined : 'hidden',
           }}
           className={'react-comparison-bar-chart-grid'}
