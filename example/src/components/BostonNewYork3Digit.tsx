@@ -277,8 +277,8 @@ const BostonNewYork3Digit = () => {
         nValuesToShow={10}
         formatValue={formatValue}
         titles={{
-          primary: 'Boston Boston',
-          secondary: 'New Yorkyorkyork',
+          primary: 'Boston',
+          secondary: 'New York',
           format: titleFormatter,
         }}
         expandCollapseText={{
