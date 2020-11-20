@@ -48,7 +48,7 @@ const TitleRoot = styled.div<WithDyanmicFont>`
   display: flex;
   height: ${titleHeight}px;
   position: absolute;
-  top: 0;
+  top: 1px;
   font-size: ${({$dynamicFont}) => $dynamicFont};
 `;
 
