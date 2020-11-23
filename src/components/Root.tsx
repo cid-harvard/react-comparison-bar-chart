@@ -365,6 +365,13 @@ const Root = (props: Props) => {
     rightTopValue = 1;
     leftTopValue = 1;
   }
+  // If either side is too big, scale to be half size
+  if (rightTopValue < leftTopValue * 0.5) {
+    rightTopValue = leftTopValue / 2;
+  }
+  if (leftTopValue < rightTopValue * 0.5) {
+    leftTopValue = rightTopValue / 2;
+  }
 
   const rawTotalRange = rightTopValue + leftTopValue;
   let rightMax: number;
@@ -382,10 +389,18 @@ const Root = (props: Props) => {
     rightMax = 2 * Math.ceil(rightTopValue / 2);
     leftMax = 2 * Math.ceil(leftTopValue / 2);
     axisIncrement = 2;
-  } else {
+  } else if (rawTotalRange < 35) {
     rightMax = 3 * Math.ceil(rightTopValue / 3);
     leftMax = 3 * Math.ceil(leftTopValue / 3);
     axisIncrement = 3;
+  }  else if (rawTotalRange < 60) {
+    rightMax = 5 * Math.ceil(rightTopValue / 5);
+    leftMax = 5 * Math.ceil(leftTopValue / 5);
+    axisIncrement = 5;
+  } else {
+    rightMax = 10 * Math.ceil(rightTopValue / 10);
+    leftMax = 10 * Math.ceil(leftTopValue / 10);
+    axisIncrement = 10;
   }
 
   const totalRange = rightMax + leftMax;
