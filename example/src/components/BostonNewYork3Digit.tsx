@@ -289,7 +289,7 @@ const BostonNewYork3Digit = () => {
         onRowHover={e => setHovered(e)}
         highlighted={highlighted}
         onHighlightError={v => alert('Could not find ' + v)}
-        layout={Layout.Left}
+        layout={Layout.Right}
       />
       {tooltip}
       <form

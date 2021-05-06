@@ -95,22 +95,8 @@ const Grid = styled.div`
   grid-row: 1;
   display: grid;
   position: relative;
-  /* both auto and overlay required for browsers that don't support overlay */
-  overflow: auto;
-  overflow-y: overlay;
-  overflow-x: hidden
-
-  ::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 7px;
-  }
-  ::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: rgba(0, 0, 0, .3);
-  }
-  ::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, .1);
-  }
+  overflow-y: scroll;
+  overflow-x: hidden;
 `;
 
 const ExpandButtonRow = styled.div`
@@ -273,6 +259,7 @@ interface Measurements {
   gridHeight: number,
   chartWidth: number,
   textWidth: number,
+  scrollWidth: number,
 }
 
 const Root = (props: Props) => {
@@ -290,8 +277,8 @@ const Root = (props: Props) => {
   const rightData = layout === Layout.Right ? secondaryData : primaryData;
 
   const [expanded, setExpanded] = useState<boolean>(initialExpanded ? true : false);
-  const [{gridHeight, chartWidth, textWidth}, setMeasurements] = useState<Measurements>({
-    gridHeight: 0, chartWidth: 0, textWidth: 0
+  const [{gridHeight, chartWidth, textWidth, scrollWidth}, setMeasurements] = useState<Measurements>({
+    gridHeight: 0, chartWidth: 0, textWidth: 0, scrollWidth: 0,
   });
   const rootRef = useRef<HTMLDivElement | null>(null);
   const textRef = useRef<HTMLDivElement | null>(null);
@@ -301,8 +288,10 @@ const Root = (props: Props) => {
     if (rootRef && rootRef.current && chartRef && chartRef.current && textRef && textRef.current) {
       const chartRect = chartRef.current.getBoundingClientRect();
       const textRect = textRef.current.getBoundingClientRect();
+      const scrollWidth = rootRef.current.offsetWidth - rootRef.current.clientWidth;
       setMeasurements({
         gridHeight: rootRef.current.offsetHeight, chartWidth: chartRect.width, textWidth: textRect.width,
+        scrollWidth,
       });
     }
   }, [rootRef, chartRef])
@@ -312,8 +301,10 @@ const Root = (props: Props) => {
       if (rootRef && rootRef.current && chartRef && chartRef.current && textRef && textRef.current) {
         const chartRect = chartRef.current.getBoundingClientRect();
         const textRect = textRef.current.getBoundingClientRect();
+        const scrollWidth = rootRef.current.offsetWidth - rootRef.current.clientWidth;
         setMeasurements({
           gridHeight: rootRef.current.offsetHeight, chartWidth: chartRect.width, textWidth: textRect.width,
+          scrollWidth,
         });
       }
     };
@@ -575,6 +566,7 @@ const Root = (props: Props) => {
           width: chartWidth,
           visibility: chartWidth ? undefined : 'hidden',
           marginLeft: layout !== Layout.Right ? undefined : 0,
+          marginRight: scrollWidth,
           right: layout !== Layout.Right ? 0 : undefined,
           left: layout !== Layout.Right ? undefined : 0,
           ...buffer,
@@ -606,7 +598,6 @@ const Root = (props: Props) => {
             gridTemplateColumns: layout !== Layout.Right
               ? 'clamp(75px, 300px, 15%) 2rem 1fr'
               : '1fr 2rem clamp(75px, 300px, 15%)',
-            overflow: expanded ? undefined : 'hidden',
           }}
           className={'react-comparison-bar-chart-grid'}
         >
