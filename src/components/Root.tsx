@@ -49,6 +49,7 @@ const TitleRoot = styled.div<WithDyanmicFont>`
   height: ${titleHeight}px;
   position: absolute;
   top: 1px;
+  font-size: 0.65rem;
   font-size: ${({$dynamicFont}) => $dynamicFont};
 `;
 
@@ -97,6 +98,7 @@ const Grid = styled.div`
   position: relative;
   overflow-y: scroll;
   overflow-x: hidden;
+  grid-template-columns: 1fr 2rem 200px;
 `;
 
 const ExpandButtonRow = styled.div`
@@ -122,6 +124,7 @@ const ExpandButton = styled.button<WithDyanmicFont & {$dynamicMaxWidth: string}>
   cursor: pointer;
   display: flex;
   align-items: center;
+  font-size: 0.7rem;
   font-size: ${({$dynamicFont}) => $dynamicFont};
   max-width: ${({$dynamicMaxWidth}) => $dynamicMaxWidth};
   text-shadow:
@@ -196,6 +199,7 @@ const AxisValue = styled.div`
 `;
 
 const AxisText = styled.span<WithDyanmicFont>`
+  font-size: 0.55rem;
   font-size: ${({$dynamicFont}) => $dynamicFont};
   transform: translate(-50%, calc(100% + 4px));
   position: absolute;
@@ -214,6 +218,7 @@ const AxisTitle = styled.div<WithDyanmicFont>`
   position: absolute;
   bottom: 0;
   z-index: 1;
+  font-size: 0.75rem;
   font-size: ${({$dynamicFont}) => $dynamicFont};
   padding: 0 0 0.3rem 1rem;
   box-sizing: border-box;
