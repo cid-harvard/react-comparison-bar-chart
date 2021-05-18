@@ -120,6 +120,8 @@ const Row = (props: Props) => {
         width: isRowVisible ? `${d.value / leftMax * 100}%` : 0,
         transitionDelay: isRowVisible && !highlighted ? '0.3s' : undefined,
       }}
+      role={isRowVisible ? 'graphics-symbol' : undefined}
+      aria-label={isRowVisible ? `${d.value / leftMax * 100}%` : undefined}
     />
   ) : null;
   const rightBar = category === Category.Primary ? (
@@ -130,6 +132,8 @@ const Row = (props: Props) => {
         width: isRowVisible ? `${d.value / rightMax * 100}%` : 0,
         transitionDelay: isRowVisible && !highlighted ? '0.3s' : undefined,
       }}
+      role={isRowVisible ? 'graphics-symbol' : undefined}
+      aria-label={isRowVisible ? `${d.value / rightMax * 100}%` : undefined}
     />
   ) : null;
   const onMouseMove = (e: React.MouseEvent) => {
