@@ -226,11 +226,16 @@ const AxisTitle = styled.div<WithDyanmicFont>`
   transform: translate(-1rem, 0);
 `;
 
+export enum Direction {
+  Over = 'over',
+  Under = 'under',
+}
+
 export interface Props {
   primaryData: BarDatum[];
   secondaryData: BarDatum[];
   nValuesToShow: number;
-  formatValue?: (value: number) => string | number;
+  formatValue?: (value: number, direction: Direction) => string | number | React.ReactNode;
   titles?: {
     primary: string;
     secondary: string;
@@ -248,6 +253,7 @@ export interface Props {
   highlighted?: string;
   onExpandCollapseButtonHover?: (event: React.MouseEvent<HTMLElement>) => void;
   onHighlightError?: (value: string) => void;
+  numberOfXAxisTicks?: number;
 }
 
 const roundUpToHalf = (value: number) => {
@@ -271,7 +277,7 @@ const Root = (props: Props) => {
   const {
     primaryData, secondaryData, nValuesToShow, formatValue, titles, expandCollapseText,
     axisLabel, onRowHover, hideExpandCollapseButton, initialExpanded, layout, highlighted,
-    onExpandCollapseButtonHover, onHighlightError,
+    onExpandCollapseButtonHover, onHighlightError, numberOfXAxisTicks,
   } = props;
 
   if (!primaryData.length && !secondaryData.length) {
@@ -373,7 +379,11 @@ const Root = (props: Props) => {
   let rightMax: number;
   let leftMax: number;
   let axisIncrement: number;
-  if (rawTotalRange < 7) {
+  if (numberOfXAxisTicks) {
+    rightMax = 100;
+    leftMax = 100;
+    axisIncrement = 200 / numberOfXAxisTicks;
+  } else if (rawTotalRange < 7) {
     rightMax = roundUpToHalf(rightTopValue);
     leftMax = roundUpToHalf(leftTopValue);
     axisIncrement = 0.5;
@@ -451,9 +461,10 @@ const Root = (props: Props) => {
 
   const axisLines: React.ReactElement<any>[] = [];
   for (let i = totalValuesLeftOfZero + 1; i > 0; i--) {
-    const value = axisIncrement * i;
+    const value = axisIncrement * i; 
+    const direction = layout === Layout.Right ? Direction.Over : Direction.Under;
     if (value <= leftMax) {
-      const formatted = formatValue ? formatValue(value) : value;
+      const formatted = formatValue ? formatValue(value, direction) : value;
       axisLines.push(
         <AxisValue
           key={'axis-line-left-' + i}
@@ -473,8 +484,9 @@ const Root = (props: Props) => {
 
   for (let i = 0; i < totalValuesRightOfZero + 1; i++) {
     const value = axisIncrement * i;
+    const direction = layout === Layout.Right ? Direction.Under : Direction.Over;
     if (value <= rightMax) {
-      const formatted = formatValue ? formatValue(value) : value;
+      const formatted = formatValue ? formatValue(value, direction) : value;
       axisLines.push(
         <AxisValue
           key={'axis-line-right-' + i}

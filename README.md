@@ -48,7 +48,7 @@ The ComparisonBarChart component takes the following props:
 - **primaryData**: [`BarDatum[]`](#bardatum)
 - **secondaryData**: [`BarDatum[]`](#bardatum)
 - **nValuesToShow**: `number`
-- **formatValue** *(optional)*: `(value: number) => string | number`
+- **formatValue** *(optional)*: `(value: number, direction: Direction) => string | number | React.ReactNode`
 - **titles** *(optional)*:
   - **primary**: `string`\
   - **secondary**: `string`\
@@ -62,6 +62,7 @@ The ComparisonBarChart component takes the following props:
 - **highlighted** *(optional)*: `string`
 - **onExpandCollapseButtonHover** *(optional)*: `(event: React.MouseEvent<HTMLElement>) => void`
 - **onHighlightError** *(optional)*: `(value: string) => void`
+- **numberOfXAxisTicks** *(optional)*: `number`
 
 <a name="bardatum"/>
 

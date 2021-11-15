@@ -4,6 +4,7 @@ import BostonAracaju6Digit from './components/BostonAracaju6Digit';
 import BostonAracaju2Digit from './components/BostonAracaju2Digit';
 import BostonAracaju1Digit from './components/BostonAracaju1Digit';
 import BostonAracajuServicesOnly from './components/BostonAracajuServicesOnly';
+import RCAComparison from './components/RCAComparison';
 import {
   Route,
   Switch,
@@ -19,6 +20,7 @@ const App = () => {
         <Route exact path={'/6-digit'} component={BostonAracaju6Digit} />
         <Route exact path={'/2-digit'} component={BostonAracaju2Digit} />
         <Route exact path={'/1-digit'} component={BostonAracaju1Digit} />
+        <Route exact path={'/rca'} component={RCAComparison} />
         <Route exact path={'/services-only'} component={BostonAracajuServicesOnly} />
         <Route component={BostonNewYork3Digit} />
       </Switch>

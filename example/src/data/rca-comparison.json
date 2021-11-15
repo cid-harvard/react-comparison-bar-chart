@@ -1,0 +1,828 @@
+{
+  "highPresenceData": [
+    {
+      "id": "106",
+      "title": "Mining (except Oil and Gas)",
+      "value": 6.738432579027097,
+      "color": "#77C898"
+    },
+    {
+      "id": "107",
+      "title": "Support Activities for Mining",
+      "value": 19.433880782080948,
+      "color": "#77C898"
+    },
+    {
+      "id": "108",
+      "title": "Utilities ",
+      "value": 9.684773375768373,
+      "color": "#A973BE"
+    },
+    {
+      "id": "110",
+      "title": "Heavy and Civil Engineering Construction",
+      "value": 23.64046395193881,
+      "color": "#A973BE"
+    },
+    {
+      "id": "111",
+      "title": "Specialty Trade Contractors",
+      "value": 12.621008793747654,
+      "color": "#A973BE"
+    },
+    {
+      "id": "112",
+      "title": "Food Manufacturing",
+      "value": 26.384454354184978,
+      "color": "#488098"
+    },
+    {
+      "id": "114",
+      "title": "Textile Mills",
+      "value": 12.718809040935783,
+      "color": "#488098"
+    },
+    {
+      "id": "117",
+      "title": "Leather and Allied Product Manufacturing",
+      "value": 10.121141010030913,
+      "color": "#488098"
+    },
+    {
+      "id": "118",
+      "title": "Wood Product Manufacturing",
+      "value": 16.04596509747976,
+      "color": "#488098"
+    },
+    {
+      "id": "122",
+      "title": "Chemical Manufacturing",
+      "value": 20.629158690113584,
+      "color": "#488098"
+    },
+    {
+      "id": "123",
+      "title": "Plastics and Rubber Products Manufacturing",
+      "value": 1.4605554665109453,
+      "color": "#488098"
+    },
+    {
+      "id": "124",
+      "title": "Nonmetallic Mineral Product Manufacturing",
+      "value": 15.498576202060555,
+      "color": "#488098"
+    },
+    {
+      "id": "125",
+      "title": "Primary Metal Manufacturing",
+      "value": 15.297437366033751,
+      "color": "#488098"
+    },
+    {
+      "id": "126",
+      "title": "Fabricated Metal Product Manufacturing",
+      "value": 10.8530618762853,
+      "color": "#488098"
+    },
+    {
+      "id": "134",
+      "title": "Merchant Wholesalers, Nondurable Goods ",
+      "value": 17.284299675717783,
+      "color": "#F28188"
+    },
+    {
+      "id": "136",
+      "title": "Motor Vehicle and Parts Dealers ",
+      "value": 2.5501876695181225,
+      "color": "#F28188"
+    },
+    {
+      "id": "137",
+      "title": "Furniture and Home Furnishings Stores ",
+      "value": 7.1158448869800255,
+      "color": "#F28188"
+    },
+    {
+      "id": "138",
+      "title": "Electronics and Appliance Stores ",
+      "value": 10.657915093706166,
+      "color": "#F28188"
+    },
+    {
+      "id": "148",
+      "title": "Air Transportation",
+      "value": 11.625893799148333,
+      "color": "#F28188"
+    },
+    {
+      "id": "150",
+      "title": "Water Transportation",
+      "value": 10.40390039016432,
+      "color": "#F28188"
+    },
+    {
+      "id": "151",
+      "title": "Truck Transportation",
+      "value": 6.044022612147931,
+      "color": "#F28188"
+    },
+    {
+      "id": "155",
+      "title": "Support Activities for Transportation",
+      "value": 2.41373647106801,
+      "color": "#F28188"
+    },
+    {
+      "id": "156",
+      "title": "Postal Service",
+      "value": 3.335293951065532,
+      "color": "#F28188"
+    },
+    {
+      "id": "171",
+      "title": "Rental and Leasing Services",
+      "value": 13.713658181570654,
+      "color": "#FFC135"
+    },
+    {
+      "id": "185",
+      "title": "Accommodation",
+      "value": 6.498976194122291,
+      "color": "#93CFD0"
+    }
+  ],
+  "lowPresenceData": [
+    {
+      "id": "100",
+      "title": "Crop Production",
+      "value": 46.171047577309466,
+      "color": "#77C898"
+    },
+    {
+      "id": "101",
+      "title": "Animal Production and Aquaculture",
+      "value": 8.602632008198052,
+      "color": "#77C898"
+    },
+    {
+      "id": "102",
+      "title": "Forestry and Logging",
+      "value": 35.74444088632374,
+      "color": "#77C898"
+    },
+    {
+      "id": "103",
+      "title": "Fishing, Hunting and Trapping",
+      "value": 0.5334004789400382,
+      "color": "#77C898"
+    },
+    {
+      "id": "104",
+      "title": "Support Activities for Agriculture and Forestry",
+      "value": 22.775467946038084,
+      "color": "#77C898"
+    },
+    {
+      "id": "105",
+      "title": "Oil and Gas Extraction",
+      "value": 16.17247948303866,
+      "color": "#77C898"
+    },
+    {
+      "id": "109",
+      "title": "Construction of Buildings",
+      "value": 19.40019579315836,
+      "color": "#A973BE"
+    },
+    {
+      "id": "113",
+      "title": "Beverage and Tobacco Product Manufacturing",
+      "value": 8.029289287161312,
+      "color": "#488098"
+    },
+    {
+      "id": "115",
+      "title": "Textile Product Mills",
+      "value": 8.665005683057093,
+      "color": "#488098"
+    },
+    {
+      "id": "116",
+      "title": "Apparel Manufacturing",
+      "value": 26.93096845925641,
+      "color": "#488098"
+    },
+    {
+      "id": "119",
+      "title": "Paper Manufacturing",
+      "value": 31.64131453328851,
+      "color": "#488098"
+    },
+    {
+      "id": "120",
+      "title": "Printing and Related Support Activities",
+      "value": 44.69268168736201,
+      "color": "#488098"
+    },
+    {
+      "id": "121",
+      "title": "Petroleum and Coal Products Manufacturing",
+      "value": 10.492591245779149,
+      "color": "#488098"
+    },
+    {
+      "id": "127",
+      "title": "Machinery Manufacturing",
+      "value": 5.357700353654704,
+      "color": "#488098"
+    },
+    {
+      "id": "128",
+      "title": "Computer and Electronic Product Manufacturing",
+      "value": 23.4168502225096,
+      "color": "#488098"
+    },
+    {
+      "id": "129",
+      "title": "Electrical Equipment, Appliance, and Component Manufacturing",
+      "value": 4.686742321186454,
+      "color": "#488098"
+    },
+    {
+      "id": "130",
+      "title": "Transportation Equipment Manufacturing",
+      "value": 5.443493407230038,
+      "color": "#488098"
+    },
+    {
+      "id": "131",
+      "title": "Furniture and Related Product Manufacturing",
+      "value": 38.141661565280124,
+      "color": "#488098"
+    },
+    {
+      "id": "132",
+      "title": "Miscellaneous Manufacturing",
+      "value": 3.744012951576503,
+      "color": "#488098"
+    },
+    {
+      "id": "133",
+      "title": "Merchant Wholesalers, Durable Goods ",
+      "value": 7.073592729013378,
+      "color": "#F28188"
+    },
+    {
+      "id": "139",
+      "title": "Building Material and Garden Equipment and Supplies Dealers ",
+      "value": 4.309159951254371,
+      "color": "#F28188"
+    },
+    {
+      "id": "140",
+      "title": "Food and Beverage Stores ",
+      "value": 0.6632342814964609,
+      "color": "#F28188"
+    },
+    {
+      "id": "141",
+      "title": "Health and Personal Care Stores ",
+      "value": 14.420666118570436,
+      "color": "#F28188"
+    },
+    {
+      "id": "142",
+      "title": "Gasoline Stations ",
+      "value": 16.559769881973306,
+      "color": "#F28188"
+    },
+    {
+      "id": "143",
+      "title": "Clothing and Clothing Accessories Stores ",
+      "value": 25.569737182725138,
+      "color": "#F28188"
+    },
+    {
+      "id": "144",
+      "title": "Sporting Goods, Hobby, Musical Instrument, and Book Stores ",
+      "value": 19.180559893962833,
+      "color": "#F28188"
+    },
+    {
+      "id": "146",
+      "title": "Miscellaneous Store Retailers ",
+      "value": 8.163566806993948,
+      "color": "#F28188"
+    },
+    {
+      "id": "149",
+      "title": "Rail Transportation",
+      "value": 23.726262993631597,
+      "color": "#F28188"
+    },
+    {
+      "id": "152",
+      "title": "Transit and Ground Passenger Transportation",
+      "value": 20.409413835373158,
+      "color": "#F28188"
+    },
+    {
+      "id": "153",
+      "title": "Pipeline Transportation",
+      "value": 8.751679005874657,
+      "color": "#F28188"
+    },
+    {
+      "id": "158",
+      "title": "Warehousing and Storage",
+      "value": 18.514088031815323,
+      "color": "#F28188"
+    },
+    {
+      "id": "159",
+      "title": "Publishing Industries (except Internet)",
+      "value": 45.25800680596286,
+      "color": "#D35162"
+    },
+    {
+      "id": "160",
+      "title": "Motion Picture and Sound Recording Industries",
+      "value": 32.14568192852285,
+      "color": "#D35162"
+    },
+    {
+      "id": "161",
+      "title": "Broadcasting (except Internet)",
+      "value": 35.89529879821474,
+      "color": "#D35162"
+    },
+    {
+      "id": "162",
+      "title": "Telecommunications",
+      "value": 5.975111185090743,
+      "color": "#D35162"
+    },
+    {
+      "id": "164",
+      "title": "Other Information Services",
+      "value": 17.162325743538574,
+      "color": "#D35162"
+    },
+    {
+      "id": "166",
+      "title": "Credit Intermediation and Related Activities",
+      "value": 4.896546357919496,
+      "color": "#FFC135"
+    },
+    {
+      "id": "167",
+      "title": "Securities, Commodity Contracts, and Other Financial Investments and Related Activities",
+      "value": 63.52036939622079,
+      "color": "#FFC135"
+    },
+    {
+      "id": "168",
+      "title": "Insurance Carriers and Related Activities",
+      "value": 23.68965485804605,
+      "color": "#FFC135"
+    },
+    {
+      "id": "170",
+      "title": "Real Estate",
+      "value": 19.85079022959937,
+      "color": "#FFC135"
+    },
+    {
+      "id": "173",
+      "title": "Professional, Scientific, and Technical Services",
+      "value": 10.963638668176134,
+      "color": "#D35162"
+    },
+    {
+      "id": "174",
+      "title": "Management of Companies and Enterprises",
+      "value": 22.373895265212195,
+      "color": "#D35162"
+    },
+    {
+      "id": "175",
+      "title": "Administrative and Support Services",
+      "value": 16.45122095297723,
+      "color": "#D35162"
+    },
+    {
+      "id": "177",
+      "title": "Educational Services",
+      "value": 29.856445805157104,
+      "color": "#F1866C"
+    },
+    {
+      "id": "178",
+      "title": "Ambulatory Health Care Services",
+      "value": 34.667088337561104,
+      "color": "#F1866C"
+    },
+    {
+      "id": "179",
+      "title": "Hospitals",
+      "value": 32.003440793927474,
+      "color": "#F1866C"
+    },
+    {
+      "id": "181",
+      "title": "Social Assistance",
+      "value": 57.041226941926446,
+      "color": "#F1866C"
+    },
+    {
+      "id": "182",
+      "title": "Performing Arts, Spectator Sports, and Related Industries",
+      "value": 42.648232645292886,
+      "color": "#93CFD0"
+    },
+    {
+      "id": "183",
+      "title": "Museums, Historical Sites, and Similar Institutions",
+      "value": 42.18525120580602,
+      "color": "#93CFD0"
+    },
+    {
+      "id": "184",
+      "title": "Amusement, Gambling, and Recreation Industries",
+      "value": 82.95482320610564,
+      "color": "#93CFD0"
+    },
+    {
+      "id": "186",
+      "title": "Food Services and Drinking Places",
+      "value": 15.658902056242251,
+      "color": "#93CFD0"
+    },
+    {
+      "id": "187",
+      "title": "Repair and Maintenance",
+      "value": 37.738526698850464,
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "188",
+      "title": "Personal and Laundry Services",
+      "value": 27.73196725187762,
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "189",
+      "title": "Religious, Grantmaking, Civic, Professional, and Similar Organizations",
+      "value": 42.02187893556749,
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "196",
+      "title": "Administration of Economic Programs ",
+      "value": 66.20709293908067,
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "197",
+      "title": "Space Research and Technology ",
+      "value": 13.935036401047752,
+      "color": "#6A6AAD"
+    },
+    {
+      "id": "198",
+      "title": "National Security and International Affairs ",
+      "value": 34.19758825080994,
+      "color": "#6A6AAD"
+    }
+  ],
+  "filteredIndustryRCA": [
+    {
+      "naicsId": 100,
+      "rca": 0.041197282794846676
+    },
+    {
+      "naicsId": 101,
+      "rca": 0.5519770737232008
+    },
+    {
+      "naicsId": 102,
+      "rca": 0.0846577600633243
+    },
+    {
+      "naicsId": 103,
+      "rca": 0.963824553150329
+    },
+    {
+      "naicsId": 104,
+      "rca": 0.20736524139358797
+    },
+    {
+      "naicsId": 105,
+      "rca": 0.3272092824755469
+    },
+    {
+      "naicsId": 106,
+      "rca": 1.5927696708769332
+    },
+    {
+      "naicsId": 107,
+      "rca": 3.8283922065175036
+    },
+    {
+      "naicsId": 108,
+      "rca": 1.9522849271610208
+    },
+    {
+      "naicsId": 109,
+      "rca": 0.26181475977630536
+    },
+    {
+      "naicsId": 110,
+      "rca": 5.119339345357428
+    },
+    {
+      "naicsId": 111,
+      "rca": 2.391279076434275
+    },
+    {
+      "naicsId": 112,
+      "rca": 6.187762421071965
+    },
+    {
+      "naicsId": 113,
+      "rca": 0.5742768656595305
+    },
+    {
+      "naicsId": 114,
+      "rca": 2.407488776884113
+    },
+    {
+      "naicsId": 115,
+      "rca": 0.5496039299720045
+    },
+    {
+      "naicsId": 116,
+      "rca": 0.1556219834468163
+    },
+    {
+      "naicsId": 117,
+      "rca": 2.012028973363011
+    },
+    {
+      "naicsId": 118,
+      "rca": 3.0295557787037515
+    },
+    {
+      "naicsId": 119,
+      "rca": 0.11239851256556224
+    },
+    {
+      "naicsId": 120,
+      "rca": 0.04562675150902468
+    },
+    {
+      "naicsId": 121,
+      "rca": 0.4844202200631572
+    },
+    {
+      "naicsId": 122,
+      "rca": 4.157906899223159
+    },
+    {
+      "naicsId": 123,
+      "rca": 1.1061567249329411
+    },
+    {
+      "naicsId": 124,
+      "rca": 2.917140091936907
+    },
+    {
+      "naicsId": 125,
+      "rca": 2.876889101359046
+    },
+    {
+      "naicsId": 126,
+      "rca": 2.1163712650755664
+    },
+    {
+      "naicsId": 127,
+      "rca": 0.6906674507528304
+    },
+    {
+      "naicsId": 128,
+      "rca": 0.1983784503106002
+    },
+    {
+      "naicsId": 129,
+      "rca": 0.7234320251639523
+    },
+    {
+      "naicsId": 130,
+      "rca": 0.6865864018565768
+    },
+    {
+      "naicsId": 131,
+      "rca": 0.07173814673660138
+    },
+    {
+      "naicsId": 132,
+      "rca": 0.7721107719194759
+    },
+    {
+      "naicsId": 133,
+      "rca": 0.613468429905409
+    },
+    {
+      "naicsId": 134,
+      "rca": 3.300114362861375
+    },
+    {
+      "naicsId": 136,
+      "rca": 1.192629726710472
+    },
+    {
+      "naicsId": 137,
+      "rca": 1.6348403442827575
+    },
+    {
+      "naicsId": 138,
+      "rca": 2.088033455236595
+    },
+    {
+      "naicsId": 139,
+      "rca": 0.7425491434635925
+    },
+    {
+      "naicsId": 140,
+      "rca": 0.9552190423422385
+    },
+    {
+      "naicsId": 141,
+      "rca": 0.3693006027179166
+    },
+    {
+      "naicsId": 142,
+      "rca": 0.3185714876262879
+    },
+    {
+      "naicsId": 143,
+      "rca": 0.1709652652917203
+    },
+    {
+      "naicsId": 144,
+      "rca": 0.26581727599038685
+    },
+    {
+      "naicsId": 146,
+      "rca": 0.5689747527740449
+    },
+    {
+      "naicsId": 148,
+      "rca": 2.232424674200323
+    },
+    {
+      "naicsId": 149,
+      "rca": 0.1941834041202638
+    },
+    {
+      "naicsId": 150,
+      "rca": 2.051714896691925
+    },
+    {
+      "naicsId": 151,
+      "rca": 1.5181709547631734
+    },
+    {
+      "naicsId": 152,
+      "rca": 0.24418421436807666
+    },
+    {
+      "naicsId": 153,
+      "rca": 0.5463231827611058
+    },
+    {
+      "naicsId": 155,
+      "rca": 1.1814411519620702
+    },
+    {
+      "naicsId": 156,
+      "rca": 1.2590959254945058
+    },
+    {
+      "naicsId": 158,
+      "rca": 0.278341112699025
+    },
+    {
+      "naicsId": 159,
+      "rca": 0.04387931061876344
+    },
+    {
+      "naicsId": 160,
+      "rca": 0.10854992860402819
+    },
+    {
+      "naicsId": 161,
+      "rca": 0.08378013118476692
+    },
+    {
+      "naicsId": 162,
+      "rca": 0.661830327799978
+    },
+    {
+      "naicsId": 164,
+      "rca": 0.3055837300276388
+    },
+    {
+      "naicsId": 166,
+      "rca": 0.713023115150809
+    },
+    {
+      "naicsId": 167,
+      "rca": 0.012427647264250228
+    },
+    {
+      "naicsId": 168,
+      "rca": 0.19467507660263472
+    },
+    {
+      "naicsId": 170,
+      "rca": 0.25379104449431017
+    },
+    {
+      "naicsId": 171,
+      "rca": 2.578752995415045
+    },
+    {
+      "naicsId": 173,
+      "rca": 0.4689114525614918
+    },
+    {
+      "naicsId": 174,
+      "rca": 0.21319800773927047
+    },
+    {
+      "naicsId": 175,
+      "rca": 0.3209692085939809
+    },
+    {
+      "naicsId": 177,
+      "rca": 0.12714714880661376
+    },
+    {
+      "naicsId": 178,
+      "rca": 0.09119842746970255
+    },
+    {
+      "naicsId": 179,
+      "rca": 0.10962176143936385
+    },
+    {
+      "naicsId": 181,
+      "rca": 0.019442996220112852
+    },
+    {
+      "naicsId": 182,
+      "rca": 0.05254761637089418
+    },
+    {
+      "naicsId": 183,
+      "rca": 0.05425533680463896
+    },
+    {
+      "naicsId": 184,
+      "rca": 0.003246050737647682
+    },
+    {
+      "naicsId": 185,
+      "rca": 1.5666402702498585
+    },
+    {
+      "naicsId": 186,
+      "rca": 0.3390259474363209
+    },
+    {
+      "naicsId": 187,
+      "rca": 0.0737639558168037
+    },
+    {
+      "naicsId": 188,
+      "rca": 0.14724514445877823
+    },
+    {
+      "naicsId": 189,
+      "rca": 0.05487109562284069
+    },
+    {
+      "naicsId": 196,
+      "rca": 0.010322555149590788
+    },
+    {
+      "naicsId": 197,
+      "rca": 0.38189934012671495
+    },
+    {
+      "naicsId": 198,
+      "rca": 0.0942046526265116
+    }
+  ]
+}
