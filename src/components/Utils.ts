@@ -1,6 +1,6 @@
 import {keyframes} from 'styled-components/macro';
 
-export interface WithDyanmicFont {
+export interface WithDynamicFont {
   $dynamicFont: string; // should be value of clamp
 }
 

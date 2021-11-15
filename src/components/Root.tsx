@@ -4,7 +4,7 @@ import orderBy from 'lodash/orderBy';
 import raw from 'raw.macro';
 import Row, {Cell, highlightedIdName} from './Row';
 import {
-  WithDyanmicFont,
+  WithDynamicFont,
   BarDatum,
   RowHoverEvent,
   Layout,
@@ -14,13 +14,18 @@ import {
 const ArrowCollapseSVG = raw('../assets/arrow-collapse.svg');
 const ArrowExpandSVG = raw('../assets/arrow-expand.svg');
 
-const titleHeight = 80; // in px
+const baseTitleHeight = 80; // in px
+const minimizedTitleHeight = 8; // in px
 const overflowPadding = 1; // in rem. Needed to allow for final axis value to remain visible
 
-const Container = styled.div`
+interface WithTitleHeight {
+  $titleHeight: number;
+}
+
+const Container = styled.div<WithTitleHeight>`
   width: 100%;
   height: 100%;
-  padding-top: ${titleHeight}px;
+  padding-top: ${({$titleHeight}) => $titleHeight}px;
   padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
@@ -43,19 +48,19 @@ const ChartBlock = styled.div`
   width: 100%;
 `;
 
-const TitleRoot = styled.div<WithDyanmicFont>`
+const TitleRoot = styled.div<WithDynamicFont & WithTitleHeight>`
   margin-left: auto;
   display: flex;
-  height: ${titleHeight}px;
+  height: ${({$titleHeight}) => $titleHeight}px;
   position: absolute;
   top: 1px;
   font-size: 0.65rem;
   font-size: ${({$dynamicFont}) => $dynamicFont};
 `;
 
-const AxisLines = styled.div`
+const AxisLines = styled.div <WithTitleHeight>`
   position: absolute;
-  top: ${titleHeight}px;
+  top: ${({$titleHeight}) => $titleHeight}px;
   width: 100%;
   display: flex;
 `;
@@ -115,7 +120,7 @@ const ButtonContainer = styled.div`
   display: flex;
 `;
 
-const ExpandButton = styled.button<WithDyanmicFont & {$dynamicMaxWidth: string}>`
+const ExpandButton = styled.button<WithDynamicFont & {$dynamicMaxWidth: string}>`
   pointer-events: all;
   margin-left: auto;
   border: none;
@@ -198,7 +203,7 @@ const AxisValue = styled.div`
   }
 `;
 
-const AxisText = styled.span<WithDyanmicFont>`
+const AxisText = styled.span<WithDynamicFont>`
   font-size: 0.55rem;
   font-size: ${({$dynamicFont}) => $dynamicFont};
   transform: translate(-50%, calc(100% + 4px));
@@ -214,7 +219,7 @@ const AxisLine = styled.div`
   border-left: solid 1px #dfdfdf;
 `;
 
-const AxisTitle = styled.div<WithDyanmicFont>`
+const AxisTitle = styled.div<WithDynamicFont>`
   position: absolute;
   bottom: 0;
   z-index: 1;
@@ -541,7 +546,7 @@ const Root = (props: Props) => {
   ) : null;
   const h2Right = titleLeft && titleRight ? (
     <H2>{titleRight} {'>'} {titleLeft}</H2>
-  ) : null;
+  ) : null; 
 
   let expandCollapseButtonText: string;
   if (expanded) {
@@ -570,13 +575,16 @@ const Root = (props: Props) => {
       </ButtonContainer>
     );
 
-    const buffer: React.CSSProperties = layout !== Layout.Right
-      ? {paddingRight: overflowPadding + 'rem'} : {paddingLeft: overflowPadding + 'rem'};
+  const buffer: React.CSSProperties = layout !== Layout.Right
+    ? {paddingRight: overflowPadding + 'rem'} : {paddingLeft: overflowPadding + 'rem'};
+  
+  const titleHeight = titleLeft || titleRight ? baseTitleHeight : minimizedTitleHeight;
 
   return (
     <Container
       style={{...buffer}}
       className={'react-comparison-bar-chart-root-container'}
+      $titleHeight={titleHeight}
     >
       <TitleRoot
         style={{
@@ -589,6 +597,7 @@ const Root = (props: Props) => {
           ...buffer,
         }}
         $dynamicFont={`clamp(0.65rem, ${chartWidth * 0.023}px, 0.87rem)`}
+        $titleHeight={titleHeight}
       >
         <TitleLeft style={{width: `${leftRange}%`}}>
           <div className={'react-comparison-bar-chart-title react-comparison-bar-chart-title-left'}>
@@ -602,7 +611,10 @@ const Root = (props: Props) => {
             {h2Right}
           </div>
         </TitleRight>
-        <AxisLines style={{height: gridHeight}}>
+        <AxisLines
+          style={{height: gridHeight}}
+          $titleHeight={titleHeight}
+        >
           {axisTitle}
           {axisLines}
         </AxisLines>
